@@ -49,7 +49,7 @@ export function Layout({ children }: { children: ReactNode }) {
               <img 
                 src={`${import.meta.env.BASE_URL}logo.png`} 
                 alt="Al-Ameri Travel Agency Logo" 
-                className="h-12 w-auto"
+                className="h-12 w-auto mt-[9px] mb-[9px] pt-[0px] pb-[0px] pl-[44px] pr-[44px] ml-[33px] mr-[33px] opacity-[1] border-t-[color:var(--tw-gradient-via)] border-r-[color:var(--tw-gradient-via)] border-b-[color:var(--tw-gradient-via)] border-l-[color:var(--tw-gradient-via)] border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px] rounded-tl-[2px] rounded-tr-[2px] rounded-br-[2px] rounded-bl-[2px]"
                 onError={(e) => {
                   e.currentTarget.src = "https://via.placeholder.com/150x50?text=Al-Ameri+Logo";
                 }}
@@ -135,11 +135,9 @@ export function Layout({ children }: { children: ReactNode }) {
           </div>
         )}
       </header>
-
       <main className="flex-1">
         {children}
       </main>
-
       <footer className="bg-secondary text-secondary-foreground pt-16 pb-8 border-t-4 border-accent">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
@@ -228,7 +226,6 @@ export function Layout({ children }: { children: ReactNode }) {
           </div>
         </div>
       </footer>
-
       <a 
         href={WHATSAPP_LINK}
         target="_blank"
