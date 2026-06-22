@@ -4,37 +4,48 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
 import { useLanguage } from "@/contexts/language";
 
+const SERVICE_LABELS: Record<string, { ar: string; en: string }> = {
+  chinese:      { ar: "السفارة الصينية",                          en: "Chinese Embassy" },
+  yemeni:       { ar: "السفارة اليمنية",                          en: "Yemeni Embassy" },
+  american:     { ar: "السفارة الأمريكية",                        en: "American Embassy" },
+  tourism:      { ar: "خدمات السياحة",                            en: "Tourism Services" },
+  facilitation: { ar: "خدمات التسهيل (تأجير، استقبال...)",        en: "Facilitation (Rental, Pickup...)" },
+  other:        { ar: "أخرى",                                     en: "Other" },
+};
+
 export default function Contact() {
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const { lang } = useLanguage();
   const t = (ar: string, en: string) => lang === "ar" ? ar : en;
 
+  const [name, setName]       = useState("");
+  const [phone, setPhone]     = useState("");
+  const [email, setEmail]     = useState("");
+  const [service, setService] = useState("");
+  const [message, setMessage] = useState("");
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate API call
-    setTimeout(() => {
-      setIsSubmitting(false);
-      toast({
-        title: t("تم إرسال رسالتك بنجاح", "Your message was sent successfully"),
-        description: t("سنتواصل معك في أقرب وقت ممكن.", "We will contact you as soon as possible."),
-        variant: "default",
-      });
-      (e.target as HTMLFormElement).reset();
-    }, 1000);
+
+    const serviceLabel = service
+      ? (lang === "ar" ? SERVICE_LABELS[service]?.ar : SERVICE_LABELS[service]?.en) ?? service
+      : t("غير محدد", "Not specified");
+
+    const text = lang === "ar"
+      ? `مرحباً وكالة العامري للسفر 👋\n\nالاسم: ${name}\nرقم الهاتف: ${phone}${email ? `\nالبريد: ${email}` : ""}\nالخدمة المطلوبة: ${serviceLabel}\n\nالرسالة:\n${message}`
+      : `Hello Al-Ameri Travel Agency 👋\n\nName: ${name}\nPhone: ${phone}${email ? `\nEmail: ${email}` : ""}\nService needed: ${serviceLabel}\n\nMessage:\n${message}`;
+
+    const encoded = encodeURIComponent(text);
+    window.open(`https://wa.me/601111600826?text=${encoded}`, "_blank");
   };
 
   return (
     <Layout>
-      <HeroSection 
+      <HeroSection
         titleAr="اتصل بنا"
         titleEn="Contact Us"
         descriptionAr="نحن هنا لمساعدتك والإجابة على كافة استفساراتك. لا تتردد في التواصل معنا عبر قنواتنا المتعددة أو بزيارة مكتبنا."
@@ -46,13 +57,13 @@ export default function Contact() {
       <section className="py-20 bg-gray-50" dir={lang === "ar" ? "rtl" : "ltr"}>
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
-            
+
             {/* Contact Info */}
             <div>
               <h2 className={`text-3xl font-bold text-secondary mb-8 ${lang === "ar" ? "font-arabic" : ""}`}>
                 {t("معلومات التواصل", "Contact Information")}
               </h2>
-              
+
               <div className="grid gap-6 mb-12">
                 <div className="flex items-start gap-4 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
                   <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center shrink-0">
@@ -62,7 +73,7 @@ export default function Contact() {
                     <h3 className={`font-bold text-lg mb-2 ${lang === "ar" ? "font-arabic" : ""}`}>
                       {t("العنوان", "Address")}
                     </h3>
-                    <p className="text-muted-foreground font-sans text-sm leading-relaxed" dir="ltr" style={{textAlign: lang === "ar" ? 'right' : 'left'}}>
+                    <p className="text-muted-foreground font-sans text-sm leading-relaxed" dir="ltr" style={{textAlign: lang === "ar" ? "right" : "left"}}>
                       One South,<br />
                       43300 Seri Kembangan,<br />
                       Selangor, Malaysia
@@ -78,9 +89,14 @@ export default function Contact() {
                     <h3 className={`font-bold text-lg mb-2 ${lang === "ar" ? "font-arabic" : ""}`}>
                       {t("رقم الهاتف & واتساب", "Phone & WhatsApp")}
                     </h3>
-                    <p className="text-muted-foreground font-sans" dir="ltr" style={{textAlign: lang === "ar" ? 'right' : 'left'}}>
-                      01111600826
-                    </p>
+                    <a
+                      href="tel:+601111600826"
+                      className="text-muted-foreground font-sans hover:text-primary transition-colors"
+                      dir="ltr"
+                      style={{display: "block", textAlign: lang === "ar" ? "right" : "left"}}
+                    >
+                      +60 111 160 0826
+                    </a>
                   </div>
                 </div>
 
@@ -92,9 +108,14 @@ export default function Contact() {
                     <h3 className={`font-bold text-lg mb-2 ${lang === "ar" ? "font-arabic" : ""}`}>
                       {t("البريد الإلكتروني", "Email Address")}
                     </h3>
-                    <p className="text-muted-foreground font-sans" dir="ltr" style={{textAlign: lang === "ar" ? 'right' : 'left'}}>
+                    <a
+                      href="mailto:ALAMERI.T.A10@GMAIL.COM"
+                      className="text-muted-foreground font-sans hover:text-primary transition-colors text-sm"
+                      dir="ltr"
+                      style={{display: "block", textAlign: lang === "ar" ? "right" : "left"}}
+                    >
                       ALAMERI.T.A10@GMAIL.COM
-                    </p>
+                    </a>
                   </div>
                 </div>
 
@@ -120,25 +141,45 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Contact Form */}
+            {/* Contact Form → WhatsApp */}
             <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-xl border border-gray-100">
-              <h2 className={`text-2xl font-bold text-secondary mb-6 ${lang === "ar" ? "font-arabic" : ""}`}>
+              <h2 className={`text-2xl font-bold text-secondary mb-2 ${lang === "ar" ? "font-arabic" : ""}`}>
                 {t("أرسل لنا رسالة", "Send Us a Message")}
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <p className={`text-sm text-muted-foreground mb-6 flex items-center gap-2 ${lang === "ar" ? "font-arabic" : ""}`}>
+                <MessageCircle className="text-[#25D366] w-4 h-4 shrink-0" />
+                {t("سيتم فتح واتساب برسالة جاهزة", "WhatsApp will open with a ready message")}
+              </p>
+
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="space-y-2">
                     <Label htmlFor="name" className={`font-medium ${lang === "ar" ? "font-arabic" : ""}`}>
-                      {t("الاسم الكامل", "Full Name")}
+                      {t("الاسم الكامل *", "Full Name *")}
                     </Label>
-                    <Input id="name" required className={`h-12 ${lang === "ar" ? "font-arabic text-right" : ""}`} placeholder={t("الاسم الكامل", "Full Name")} />
+                    <Input
+                      id="name"
+                      required
+                      value={name}
+                      onChange={e => setName(e.target.value)}
+                      className={`h-12 ${lang === "ar" ? "font-arabic text-right" : ""}`}
+                      placeholder={t("الاسم الكامل", "Full Name")}
+                    />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="phone" className={`font-medium ${lang === "ar" ? "font-arabic" : ""}`}>
-                      {t("رقم الهاتف / واتساب", "Phone / WhatsApp")}
+                      {t("رقم الهاتف / واتساب *", "Phone / WhatsApp *")}
                     </Label>
-                    <Input id="phone" required className="font-sans h-12" style={{textAlign: lang === "ar" ? "right" : "left"}} placeholder={t("رقم الهاتف", "Phone Number")} dir="ltr" />
+                    <Input
+                      id="phone"
+                      required
+                      value={phone}
+                      onChange={e => setPhone(e.target.value)}
+                      className="font-sans h-12"
+                      style={{textAlign: lang === "ar" ? "right" : "left"}}
+                      placeholder={t("رقم الهاتف", "Phone Number")}
+                      dir="ltr"
+                    />
                   </div>
                 </div>
 
@@ -146,47 +187,59 @@ export default function Contact() {
                   <Label htmlFor="email" className={`font-medium ${lang === "ar" ? "font-arabic" : ""}`}>
                     {t("البريد الإلكتروني (اختياري)", "Email (Optional)")}
                   </Label>
-                  <Input id="email" type="email" className="font-sans h-12" style={{textAlign: lang === "ar" ? "right" : "left"}} placeholder="example@email.com" dir="ltr" />
+                  <Input
+                    id="email"
+                    type="email"
+                    value={email}
+                    onChange={e => setEmail(e.target.value)}
+                    className="font-sans h-12"
+                    style={{textAlign: lang === "ar" ? "right" : "left"}}
+                    placeholder="example@email.com"
+                    dir="ltr"
+                  />
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="service" className={`font-medium ${lang === "ar" ? "font-arabic" : ""}`}>
-                    {t("نوع الخدمة المطلوبة", "Service Needed")}
+                    {t("نوع الخدمة المطلوبة *", "Service Needed *")}
                   </Label>
-                  <Select required>
-                    <SelectTrigger className={`h-12 justify-between ${lang === "ar" ? "font-arabic text-right flex-row-reverse" : "text-left"}`} dir={lang === "ar" ? "rtl" : "ltr"}>
+                  <Select required onValueChange={setService}>
+                    <SelectTrigger
+                      className={`h-12 justify-between ${lang === "ar" ? "font-arabic text-right flex-row-reverse" : "text-left"}`}
+                      dir={lang === "ar" ? "rtl" : "ltr"}
+                    >
                       <SelectValue placeholder={t("اختر الخدمة", "Select a Service")} />
                     </SelectTrigger>
                     <SelectContent dir={lang === "ar" ? "rtl" : "ltr"} className={lang === "ar" ? "font-arabic" : ""}>
-                      <SelectItem value="chinese">{t("السفارة الصينية", "Chinese Embassy")}</SelectItem>
-                      <SelectItem value="yemeni">{t("السفارة اليمنية", "Yemeni Embassy")}</SelectItem>
-                      <SelectItem value="american">{t("السفارة الأمريكية", "American Embassy")}</SelectItem>
-                      <SelectItem value="tourism">{t("خدمات السياحة", "Tourism Services")}</SelectItem>
-                      <SelectItem value="facilitation">{t("خدمات التسهيل (تأجير، استقبال...)", "Facilitation (Rental, Pickup...)")}</SelectItem>
-                      <SelectItem value="other">{t("أخرى", "Other")}</SelectItem>
+                      {Object.entries(SERVICE_LABELS).map(([value, labels]) => (
+                        <SelectItem key={value} value={value}>
+                          {lang === "ar" ? labels.ar : labels.en}
+                        </SelectItem>
+                      ))}
                     </SelectContent>
                   </Select>
                 </div>
 
                 <div className="space-y-2">
                   <Label htmlFor="message" className={`font-medium ${lang === "ar" ? "font-arabic" : ""}`}>
-                    {t("الرسالة / الاستفسار", "Message / Inquiry")}
+                    {t("الرسالة / الاستفسار *", "Message / Inquiry *")}
                   </Label>
-                  <Textarea 
-                    id="message" 
-                    required 
-                    className={`min-h-[120px] resize-none ${lang === "ar" ? "font-arabic text-right" : ""}`} 
-                    placeholder={t("كيف يمكننا مساعدتك؟", "How can we help you?")} 
+                  <Textarea
+                    id="message"
+                    required
+                    value={message}
+                    onChange={e => setMessage(e.target.value)}
+                    className={`min-h-[120px] resize-none ${lang === "ar" ? "font-arabic text-right" : ""}`}
+                    placeholder={t("كيف يمكننا مساعدتك؟", "How can we help you?")}
                   />
                 </div>
 
-                <Button 
-                  type="submit" 
-                  className={`w-full h-14 text-lg rounded-xl gap-2 mt-4 flex items-center justify-center ${lang === "ar" ? "font-arabic" : ""}`}
-                  disabled={isSubmitting}
+                <Button
+                  type="submit"
+                  className={`w-full h-14 text-lg rounded-xl gap-3 mt-2 bg-[#25D366] hover:bg-[#1DA851] text-white font-bold flex items-center justify-center ${lang === "ar" ? "font-arabic" : ""}`}
                 >
-                  {isSubmitting ? t("جاري الإرسال...", "Sending...") : t("إرسال الرسالة", "Send Message")}
-                  {!isSubmitting && <Send className={`w-5 h-5 ${lang === "ar" ? "mr-2 rotate-180" : "ml-2"}`} />}
+                  <MessageCircle className="w-6 h-6" />
+                  {t("إرسال عبر واتساب", "Send via WhatsApp")}
                 </Button>
               </form>
             </div>
@@ -195,15 +248,19 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Map Placeholder */}
-      <section className="h-[400px] w-full bg-slate-200 relative">
-        <div className={`absolute inset-0 flex items-center justify-center flex-col text-slate-500 ${lang === "ar" ? "font-arabic" : ""}`}>
-          <MapPin className="w-12 h-12 mb-4 opacity-50" />
-          <p className="text-lg">{t("خريطة الموقع (Seri Kembangan, Selangor)", "Location Map (Seri Kembangan, Selangor)")}</p>
-          <p className="text-sm font-sans mt-2">Map embed placeholder</p>
-        </div>
+      {/* Google Maps — One South, Seri Kembangan */}
+      <section className="h-[420px] w-full">
+        <iframe
+          title="Al-Ameri Office Location"
+          src="https://maps.google.com/maps?q=One+South+Seri+Kembangan+43300+Selangor+Malaysia&t=&z=16&ie=UTF8&iwloc=&output=embed"
+          width="100%"
+          height="100%"
+          style={{ border: 0, display: "block" }}
+          loading="lazy"
+          allowFullScreen
+          referrerPolicy="no-referrer-when-downgrade"
+        />
       </section>
-
     </Layout>
   );
 }

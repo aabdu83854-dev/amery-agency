@@ -960,7 +960,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "مبنى برداني بوترا هو المقر الرسمي لعمل رئيس وزراء ماليزيا، ويُشكّل المحور البصري الأساسي لمدينة بتراجايا الإدارية. يتميز بقبته الضخمة ذات اللون الأخضر المنير المستوحاة من الهندسة الإسلامية الكلاسيكية.\n\nيقع المبنى على تلة مرتفعة تطل مباشرة على بحيرة بتراجايا، مما يوفر إطلالة بانورامية ساحرة من الجانبين. تُحيط به مسطحات خضراء واسعة وميدان بوترا الشهير. الساعة الزهرية المزروعة بالأزهار الملونة أمام المبنى أصبحت معلماً سياحياً شهيراً.",
     descEn: "Perdana Putra is the official working office of Malaysia's Prime Minister and forms the primary visual axis of the Putrajaya administrative city. It is distinguished by its large dome in luminous green color inspired by classic Islamic architecture.\n\nThe building sits on an elevated hill overlooking Putrajaya Lake directly, providing a breathtaking panoramic view from both sides. It is surrounded by spacious green lawns and the famous Putra Square. The floral clock planted with colorful flowers in front of the building has become a famous tourist landmark.",
     image: "/tourism/perdana-putra.png",
-    heroImage: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1560814304-4f05b62af116?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=800&auto=format&fit=crop",
