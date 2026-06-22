@@ -1,0 +1,1 @@
+- [Unsplash IDs in Replit proxy](unsplash-ids.md) — some Unsplash photo IDs fail silently (dark bg) in Replit preview proxy; use confirmed working IDs only.

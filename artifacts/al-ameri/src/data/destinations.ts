@@ -50,7 +50,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "يعتبر برجا بتروناس التوأم من أشهر المعالم السياحية في ماليزيا وأطول برجين توأمين في العالم. يتميزان بتصميم إسلامي مذهل يجمع بين الحداثة والتراث. يمكن للزوار الصعود إلى الجسر المعلق (Skybridge) في الطابق 41، ثم المتابعة إلى منصة المراقبة في الطابق 86 للحصول على إطلالة بانورامية ساحرة على العاصمة.\n\nتحت البرجين يقع مركز تسوق 'سوريا كيه إل سي سي' الفاخر الذي يضم أشهر الماركات العالمية، ومطاعم متنوعة، بالإضافة إلى حوض أسماك 'أكواريا' وعالم الاستكشاف 'بتروساينس'. وفي الخارج، تقع حديقة واسعة تضم نوافير راقصة ومسارات للمشي وسط المساحات الخضراء.",
     descEn: "The Petronas Twin Towers are one of Malaysia's most famous landmarks and the tallest twin towers in the world. They feature a stunning Islamic design that blends modernity with heritage. Visitors can go up to the Skybridge on the 41st floor, then continue to the observation deck on the 86th floor for a magical panoramic view of the capital.\n\nBelow the towers is the luxurious 'Suria KLCC' shopping mall, housing top global brands, diverse restaurants, as well as the 'Aquaria' aquarium and 'Petrosains' discovery center. Outside, a vast park offers dancing fountains and walking trails amidst green spaces.",
     image: "/tourism/petronas.png",
-    heroImage: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1560814304-4f05b62af116?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1546708688-662580dfbf3a?q=80&w=800&auto=format&fit=crop",
@@ -178,7 +178,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "تُعرف جزيرة بينانج بأنها 'لؤلؤة الشرق'، وهي وجهة فريدة تمزج بين الثقافات المتعددة والتراث التاريخي. عاصمتها 'جورج تاون' مدرجة ضمن مواقع التراث العالمي لليونسكو، وتشتهر بهندستها المعمارية الاستعمارية وفنون الشارع الجدارية الرائعة.\n\nتعتبر بينانج عاصمة الطهي في ماليزيا، حيث تقدم أشهى المأكولات الشعبية في شوارعها النابضة بالحياة. يمكنك زيارة 'تل بينانج' باستخدام القطار الجبلي المائل للحصول على إطلالة مذهلة وهواء منعش، أو زيارة المعابد المتنوعة وحديقة الفراشات والحديقة النباتية.",
     descEn: "Known as the 'Pearl of the Orient', Penang is a unique destination blending multiple cultures and historical heritage. Its capital, 'George Town', is a UNESCO World Heritage site, famous for its colonial architecture and stunning street art murals.\n\nPenang is considered the culinary capital of Malaysia, offering delicious local street food in its vibrant alleys. You can visit 'Penang Hill' using the funicular railway for breathtaking views and cool air, or visit diverse temples, the Butterfly Farm, and Botanical Gardens.",
     image: "/tourism/penang.png",
-    heroImage: "https://images.unsplash.com/photo-1570183864708-306fc6e0ea79?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1570183864708-306fc6e0ea79?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1555819206-7b30da4f1506?q=80&w=800&auto=format&fit=crop",
@@ -242,7 +242,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "تعتبر مرتفعات كاميرون الملاذ الجبلي الأشهر في ماليزيا، حيث تتميز بمناخها المعتدل والبارد طوال العام. تكتسي الجبال باللون الأخضر الزاهي بفضل مزارع الشاي الممتدة على التلال، مما يوفر مناظر طبيعية تحبس الأنفاس.\n\nتزخر المنطقة بالعديد من الأنشطة الهادئة، مثل زيارة مزارع الفراولة والزهور ومناحل العسل، وتذوق الشاي الطازج في المقاهي الإنجليزية ذات الطراز الكلاسيكي. لمحبي المغامرة، تقدم 'غابة الطحالب' (Mossy Forest) مسارات مشي مشوقة في غابة تبدو وكأنها من القصص الخيالية.",
     descEn: "Cameron Highlands is Malaysia's most popular hill retreat, known for its mild and cool climate year-round. The mountains are blanketed in vibrant green thanks to the rolling tea plantations, offering breathtaking landscapes.\n\nThe area is full of relaxing activities, such as visiting strawberry farms, flower gardens, and honey bee farms, as well as tasting fresh tea in classic English-style teahouses. For adventure lovers, the 'Mossy Forest' offers intriguing hiking trails in a forest that looks straight out of a fairy tale.",
     image: "/tourism/cameron.png",
-    heroImage: "https://images.unsplash.com/photo-1582236021175-9b2f6dc448bc?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1582236021175-9b2f6dc448bc?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1543309914-99889baaf392?q=80&w=800&auto=format&fit=crop",
@@ -306,7 +306,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "تعتبر جزر برهنتيان (Perhentian) الواقعة قبالة ساحل ولاية ترنجانو، من أجمل الجزر الاستوائية في العالم. تتكون من جزيرتين رئيسيتين: 'برهنتيان بيسار' (الكبيرة) الهادئة والمناسبة للعائلات، و'برهنتيان كيسيل' (الصغيرة) النابضة بالحياة والمفضلة للشباب والرحالة.\n\nتتميز الجزيرتان بمياه كريستالية شديدة الصفاء ورمال بيضاء ناعمة، وهما من أفضل الوجهات للغطس والغوص في ماليزيا. يمكنك السباحة جنباً إلى جنب مع السلاحف البحرية العظيمة، وأسماك القرش المرجانية غير المؤذية، وسط حدائق مرجانية زاهية الألوان.",
     descEn: "The Perhentian Islands, located off the coast of Terengganu state, are among the most beautiful tropical islands in the world. They consist of two main islands: 'Perhentian Besar' (Big) which is quiet and family-friendly, and 'Perhentian Kecil' (Small) which is lively and popular with youth and backpackers.\n\nBoth islands feature crystal clear waters and soft white sands, making them one of the best destinations for snorkeling and scuba diving in Malaysia. You can swim alongside giant sea turtles, harmless reef sharks, amid vividly colored coral gardens.",
     image: "/tourism/perhentian.png",
-    heroImage: "https://images.unsplash.com/photo-1544485542-a279c6d48259?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1544485542-a279c6d48259?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=800&auto=format&fit=crop",
@@ -436,7 +436,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "ملقا مدينة تاريخية ساحلية تأسست في القرن الخامس عشر وأصبحت مركزاً تجارياً عالمياً. مدرجة ضمن التراث العالمي لليونسكو، تعكس تأثيرات برتغالية وهولندية وبريطانية فريدة جعلتها بوتقة انصهار للثقافات الآسيوية والأوروبية.\n\nتزخر المدينة بالمعالم التاريخية كقلعة 'أ فاموسا' البرتغالية، والميدان الهولندي الأحمر، وشارع جونكر الشهير بحوانيته التراثية ومطاعمه ذات المطبخ الفريد من نوعه. لا تفوت تجربة ركوب العربات الملونة المزينة بالأزهار الصناعية في الشوارع التاريخية.",
     descEn: "Malacca is a historic coastal city founded in the 15th century that became a global trading center. Listed as a UNESCO World Heritage Site, it reflects unique Portuguese, Dutch, and British influences that made it a melting pot of Asian and European cultures.\n\nThe city is full of historic landmarks like the Portuguese 'A Famosa' fort, the red Dutch Square, and the famous Jonker Street with its heritage shops and unique cuisine restaurants. Don't miss riding the colorful flower-decorated tricycles through the historic streets.",
     image: "/tourism/malacca.png",
-    heroImage: "https://images.unsplash.com/photo-1583418855738-71b8a06a1ce5?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1583418855738-71b8a06a1ce5?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=800&auto=format&fit=crop",
@@ -476,7 +476,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "كهوف باتو هي سلسلة من الكهوف الجيرية الضخمة تقع شمال كوالالمبور بمسافة 13 كيلومتراً، وهي موقع ديني هندوسي مقدس. يرمز إليها التمثال الذهبي العملاق للإله موروغان (43 متراً) الذي يستقبلك عند مدخل الدرج الملون المكون من 272 درجة.\n\nعند الصعود إلى القمة ستجد 'كهف الكاتدرائية' الرئيسي ذو الأسقف الشاهقة والمضاء بشكل طبيعي من فتحات علوية. كما تضم المنطقة 'كهف معرض الفنون' وكهف 'راماياناH' المليء بالمشاهد الملونة من الملحمة الهندية الشهيرة. تحتضن الكهوف مهرجان 'تايبوسام' السنوي الذي يجذب مئات الآلاف من الزوار.",
     descEn: "Batu Caves are a series of massive limestone caves located 13km north of Kuala Lumpur, a sacred Hindu religious site. Symbolized by the colossal golden statue of Lord Murugan (43m) that greets you at the entrance of the colorful 272-step stairway.\n\nAt the top, you'll find the main 'Cathedral Cave' with soaring ceilings naturally lit from upper openings. The area also includes the 'Art Gallery Cave' and 'Ramayana Cave' filled with colorful scenes from the famous Indian epic. The caves host the annual 'Thaipusam' festival which draws hundreds of thousands of visitors.",
     image: "/tourism/batucaves.png",
-    heroImage: "https://images.unsplash.com/photo-1588416499018-d8c621e7d2b1?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1544485542-a279c6d48259?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1588416499018-d8c621e7d2b1?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?q=80&w=800&auto=format&fit=crop",
@@ -596,7 +596,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "منطقة KLCC هي المركز الترفيهي والتجاري الأول في كوالالمبور، تحتضن الوجهات الأكثر شهرة في العاصمة الماليزية. تُشكّل البرجان التوأمان الخلفية الرئيسية للمنطقة، لتضفيان عليها طابعاً معمارياً فريداً يجذب ملايين الزوار سنوياً.\n\nفي المنطقة ذاتها ستجد 'أكواريا KLCC' أحد أكبر أحواض الأسماك في آسيا، وحديقة KLCC الفسيحة مع نوافيرها الراقصة المضاءة، ومركز التسوق الفاخر 'سوريا KLCC'. في المساء تتحول الحديقة إلى مشهد ساحر بعروض الضوء والنوافير.",
     descEn: "The KLCC area is Kuala Lumpur's premier entertainment and commercial center, housing the Malaysian capital's most famous destinations. The Twin Towers form the main backdrop of the area, giving it a unique architectural character that attracts millions of visitors annually.\n\nIn the same area you'll find 'Aquaria KLCC', one of Asia's largest aquariums, the spacious KLCC Park with its illuminated dancing fountains, and the luxury 'Suria KLCC' shopping center. In the evening, the park transforms into a magical scene with light and fountain shows.",
     image: "/tourism/klcc.png",
-    heroImage: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1546708688-662580dfbf3a?q=80&w=800&auto=format&fit=crop",
@@ -636,7 +636,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "مرتفعات جنتنج هي وجهة سياحية وترفيهية لا مثيل لها تقع على ارتفاع 1800 متر فوق مستوى سطح البحر. تحيط بها الغيوم الكثيفة والضباب طوال العام، مما يوفر مناخاً بارداً منعشاً ومشهداً طبيعياً ساحراً بعيداً عن حر المدينة.\n\nتضم المرتفعات مدينة الملاهي الداخلية 'سكايتروبوليس' وملاهي الهواء الطلق 'جنتنج سكاي ووردز' التي تضم ألعاباً مثيرة لجميع الأعمار، إلى جانب مراكز التسوق الضخمة ومجمع فنادق ضخم وأشهر المطاعم الماليزية والدولية.",
     descEn: "Genting Highlands is an unparalleled tourism and entertainment destination located at 1,800 meters above sea level. It is surrounded by thick clouds and mist year-round, providing a cool refreshing climate and a breathtaking natural scenery far from the city heat.\n\nThe highlands feature the 'Skytropolis' indoor entertainment city and 'Genting SkyWorlds' outdoor theme park with thrilling rides for all ages, alongside massive shopping centers, a large hotel complex, and famous Malaysian and international restaurants.",
     image: "/tourism/genting.png",
-    heroImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1582236021175-9b2f6dc448bc?q=80&w=800&auto=format&fit=crop",
@@ -678,7 +678,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "جزيرة كاباس، التي تعني 'القطن' بالملايو، هي جزيرة صغيرة هادئة تقع على بعد 6 كيلومترات من مدينة مرانج بترنجانو. تتميز بشواطئها البيضاء الناعمة ومياهها الشفافة الفيروزية التي تجعلها تبدو وكأنها منتجع مجزأ في المحيط.\n\nتعتبر كاباس وجهة مثالية لمن يريد الهروب من ضجيج الحياة اليومية والاستمتاع بهدوء حقيقي. رغم صغرها، تقدم تجارب غطس وغوص رائعة، وكهوفاً بحرية مثيرة للاستكشاف، ومسارات مشي عبر الغابات الاستوائية الكثيفة للوصول إلى شواطئ مخفية.",
     descEn: "Kapas Island, meaning 'cotton' in Malay, is a small quiet island located 6 kilometers from Marang town in Terengganu. Known for its soft white beaches and transparent turquoise waters that make it look like a resort carved in the ocean.\n\nKapas is ideal for those wanting to escape daily hustle and enjoy true tranquility. Despite its small size, it offers wonderful snorkeling and diving experiences, exciting sea caves to explore, and hiking trails through dense tropical forests leading to hidden beaches.",
     image: "/tourism/kapas.png",
-    heroImage: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=800&auto=format&fit=crop",
@@ -718,7 +718,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "جزيرة لانج تيرنجاه هي الجوهرة المخفية لترنجانو، تقع بين جزيرتي برهنتيان وريدانج الشهيرتين. تتميز بعدد محدود من المنتجعات الصغيرة مما يضمن هدوءاً نادراً وبيئة طبيعية بكر بعيدة عن الازدحام السياحي.\n\nتتميز الجزيرة بمياه فيروزية شديدة الصفاء وشعاب مرجانية غنية بالحياة البحرية، وتعتبر من أفضل وجهات الغطس في ماليزيا. يمكنك الاستمتاع بمشاهدة السلاحف البحرية بشكل شبه مضمون، والسباحة وسط أسماك مدرسة ملونة في بحيرة زرقاء فاتنة.",
     descEn: "Lang Tengah Island is Terengganu's hidden jewel, located between the famous Perhentian and Redang islands. It features a limited number of small resorts, ensuring rare tranquility and a pristine natural environment far from tourist crowds.\n\nThe island features crystal turquoise waters and coral reefs rich with marine life, making it one of Malaysia's top diving destinations. You can almost guarantee sea turtle sightings, and swim amongst colorful fish schools in a mesmerizing blue lagoon.",
     image: "/tourism/langterngah.png",
-    heroImage: "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1540202404-b711142289eb?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=800&auto=format&fit=crop",
@@ -758,7 +758,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "جزيرة تينجول هي الجزيرة الأبعد والأكثر نائيةً في ساحل ترنجانو، مما يجعلها وجهة حصرية للغواصين المحترفين وعشاق المغامرات البحرية الحقيقية. تضم مياهها ثروات بحرية نادرة لا توجد في أي جزيرة ماليزية أخرى.\n\nتشتهر الجزيرة بمشاهدات القرش الحوت العملاق وأسماك المانتا الضخمة في مواسم معينة، فضلاً عن حدائق مرجانية بكر لم تمسها يد الإنسان. الشعاب العميقة تضم تشكيلات 'بومي' المرجانية الضخمة التي تعيش حولها الأسماك الضخمة وثعابين البحر ونجوم البحر.",
     descEn: "Tenggol Island is the most remote island off Terengganu's coast, making it an exclusive destination for professional divers and true ocean adventure lovers. Its waters contain rare marine treasures found nowhere else in Malaysia.\n\nThe island is famous for whale shark and giant manta ray sightings during certain seasons, as well as pristine coral gardens untouched by human hands. The deep reefs contain massive 'bommie' coral formations inhabited by large fish, sea snakes, and starfish.",
     image: "/tourism/tenggol.png",
-    heroImage: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1582236021175-9b2f6dc448bc?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?q=80&w=800&auto=format&fit=crop",
@@ -798,7 +798,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "كوالا ترنجانو عاصمة ولاية ترنجانو الساحلية، مدينة تمزج بين الأصالة الثقافية والجمال الطبيعي. تشتهر بمسجدها المعائم الأيقوني الذي يطفو على نهر ترنجانو، والذي أصبح رمزاً للمدينة ووجهة تصوير لا تُنسى.\n\nتتميز المدينة بصناعة الباتيك التقليدية وصناعة القوارب الشراعية الكلاسيكية، ومتحف ولاية ترنجانو الذي يعتبر الأكبر في ماليزيا بمساحة أكثر من 40 هكتاراً. أسواقها التقليدية تعج بالمصنوعات اليدوية الفريدة والأطعمة المحلية.",
     descEn: "Kuala Terengganu is the capital of coastal Terengganu state, a city blending cultural authenticity with natural beauty. Famous for its iconic floating mosque that drifts on the Terengganu River, which has become the city's symbol and an unforgettable photography destination.\n\nThe city is known for its traditional batik craft and classic sailboat construction, and the Terengganu State Museum, Malaysia's largest at over 40 hectares. Its traditional markets are filled with unique handicrafts and local foods.",
     image: "/tourism/terengganu-city.png",
-    heroImage: "https://images.unsplash.com/photo-1570183864708-306fc6e0ea79?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1570183864708-306fc6e0ea79?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1583418855738-71b8a06a1ce5?q=80&w=800&auto=format&fit=crop",
@@ -840,7 +840,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "مسجد بوترا هو أحد أجمل المساجد في جنوب شرق آسيا، يتميز بقبته الوردية الفريدة المستوحاة من مسجد الإمام في طهران. يطل مباشرة على بحيرة بتراجايا مما يمنحه مظهراً يوحي بأنه يطفو على سطح الماء، خاصة في ساعات الغروب.\n\nيتسع المسجد لأربعة عشر ألف مصلٍّ وهو مفتوح للزوار غير المسلمين خارج أوقات الصلاة. تصميمه الداخلي يجمع بين الزخارف الإسلامية المعقدة والفسيفساء المذهبة والقباب المتعددة التي تضفي عليه طابعاً روحانياً فريداً.",
     descEn: "Putra Mosque is one of Southeast Asia's most beautiful mosques, featuring a unique pink dome inspired by the Imam mosque in Tehran. It overlooks Putrajaya Lake directly, giving it the appearance of floating on the water's surface, especially at sunset.\n\nThe mosque accommodates 14,000 worshippers and is open to non-Muslim visitors outside prayer times. Its interior design combines intricate Islamic decorations, golden mosaics, and multiple domes that give it a unique spiritual character.",
     image: "/tourism/putra-mosque.png",
-    heroImage: "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1570183864708-306fc6e0ea79?q=80&w=800&auto=format&fit=crop",
@@ -880,7 +880,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "الحديقة النباتية في بتراجايا هي إحدى أكبر الحدائق النباتية في جنوب شرق آسيا، تمتد على مساحة 92 هكتاراً وتضم أكثر من 700 نوع من النباتات المدارية والمحلية. صُممت لتكون متنفساً طبيعياً لسكان المدينة الإدارية وزوارها.\n\nتنقسم الحديقة إلى أقسام متخصصة متعددة، منها: حديقة النخيل التي تضم أكثر من 1000 نوع من النخيل، والحديقة العطرية التي تضم الأعشاب الطبية والتوابل، وحديقة الزهور وحديقة الأوركيد والبروميلياد، وحديقة الخيزران الخضراء النادرة.",
     descEn: "The Putrajaya Botanical Garden is one of Southeast Asia's largest botanical gardens, spanning 92 hectares and housing over 700 species of tropical and local plants. It was designed as a natural retreat for administrative city residents and visitors.\n\nThe garden is divided into multiple specialized sections, including: the Palm Garden with over 1,000 palm species, the Fragrant Garden with medicinal herbs and spices, the Flower Garden, the Orchid and Bromeliad Garden, and the rare Green Bamboo Garden.",
     image: "/tourism/putrajaya-botanical.png",
-    heroImage: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1517454378121-72991e4a1a36?q=80&w=800&auto=format&fit=crop",
@@ -920,7 +920,7 @@ export const DESTINATIONS: Destination[] = [
     descAr: "قصر العدالة أو 'بالاس أوف جاستيس' هو مقر المحكمة الاتحادية لماليزيا ويعتبر أحد أكثر المباني الحكومية إثارةً للإعجاب المعماري في البلاد. يجمع في تصميمه بين الطراز الغرناطي الأندلسي بقببه المتعددة وأقواسه المعمارية والمعمار الإسلامي الحديث.\n\nبُني المبنى باستخدام الحجر الهندي والرخام الإيطالي، وتتصدره أقواس ضخمة وعمود مركزي بارز. يقع في موقع استراتيجي على الطريق الرئيسية مقابل ميدان بوترا، مما يجعله معلماً بصرياً أساسياً يرتبط ارتباطاً وثيقاً بصورة بتراجايا الإدارية.",
     descEn: "The Palace of Justice, or 'Istana Kehakiman', is the seat of Malaysia's Federal Court and one of the country's most architecturally impressive government buildings. Its design blends the Andalusian Granadan style with its multiple domes and architectural arches, with modern Islamic architecture.\n\nThe building is constructed using Indian stone and Italian marble, fronted by massive arches and a prominent central column. It sits in a strategic location on the main road opposite Putra Square, making it an essential visual landmark closely linked to Putrajaya's administrative image.",
     image: "/tourism/palace-justice.png",
-    heroImage: "https://images.unsplash.com/photo-1583418855738-71b8a06a1ce5?q=80&w=1600&auto=format&fit=crop",
+    heroImage: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=1600&auto=format&fit=crop",
     gallery: [
       "https://images.unsplash.com/photo-1583418855738-71b8a06a1ce5?q=80&w=800&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=800&auto=format&fit=crop",

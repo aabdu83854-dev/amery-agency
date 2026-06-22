@@ -21,12 +21,12 @@ function DestCard({
       <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group flex flex-col h-full cursor-pointer">
         <div className="relative h-64 overflow-hidden">
           <img
-            src={dest.image.startsWith("http") ? dest.image : getImageUrl(dest.image)}
+            src={dest.heroImage}
             alt={dest.nameEn}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
             onError={(e) => {
               e.currentTarget.src =
-                "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=800&auto=format&fit=crop";
+                "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800&auto=format&fit=crop";
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
