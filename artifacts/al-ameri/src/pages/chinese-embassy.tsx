@@ -2,69 +2,237 @@ import { Layout } from "@/components/layout";
 import { HeroSection } from "@/components/ui/hero-section";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle2, FileCheck, FileSignature, Zap, MapPin } from "lucide-react";
+import { useLanguage } from "@/contexts/language";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function ChineseEmbassy() {
+  const { lang } = useLanguage();
+  const t = (ar: string, en: string) => lang === "ar" ? ar : en;
+
   const visaServices = [
-    { title: "تأشيرة سياحية (L)", desc: "للراغبين في زيارة الصين بغرض السياحة والترفيه." },
-    { title: "تأشيرة تجارية (M)", desc: "لأغراض التجارة والأعمال وحضور المعارض." },
-    { title: "تأشيرة طالب (X1/X2)", desc: "للطلاب المقبولين للدراسة في المؤسسات التعليمية الصينية." },
-    { title: "تأشيرة عمل (Z)", desc: "للراغبين في العمل داخل جمهورية الصين." },
-    { title: "تأشيرات العائلة (Q1/Q2)", desc: "لزيارة أقارب من المواطنين الصينيين." },
-    { title: "تأشيرات (S1/S2)", desc: "لعائلات الأجانب المقيمين في الصين." },
-    { title: "تأشيرة صحفي (J)", desc: "للصحفيين ومراسلي وسائل الإعلام." },
-    { title: "تجديد وتحويل التأشيرات", desc: "تجديد وتمديد التأشيرات الحالية أو تحويل نوع التأشيرة." },
+    { titleAr: "تأشيرة سياحية (L)", titleEn: "Tourist Visa (L)", descAr: "للراغبين في زيارة الصين بغرض السياحة والترفيه.", descEn: "For those wishing to visit China for tourism and leisure." },
+    { titleAr: "تأشيرة تجارية (M)", titleEn: "Business Visa (M)", descAr: "لأغراض التجارة والأعمال وحضور المعارض.", descEn: "For commerce, business, and attending exhibitions." },
+    { titleAr: "تأشيرة طالب (X1/X2)", titleEn: "Student Visa (X1/X2)", descAr: "للطلاب المقبولين للدراسة في المؤسسات التعليمية الصينية.", descEn: "For students accepted to study in Chinese educational institutions." },
+    { titleAr: "تأشيرة عمل (Z)", titleEn: "Work Visa (Z)", descAr: "للراغبين في العمل داخل جمهورية الصين.", descEn: "For those wishing to work inside the People's Republic of China." },
+    { titleAr: "تأشيرات العائلة (Q1/Q2)", titleEn: "Family Visas (Q1/Q2)", descAr: "لزيارة أقارب من المواطنين الصينيين.", descEn: "For visiting relatives who are Chinese citizens." },
+    { titleAr: "تأشيرات (S1/S2)", titleEn: "S1/S2 Visas", descAr: "لعائلات الأجانب المقيمين في الصين.", descEn: "For families of foreigners residing in China." },
+    { titleAr: "تأشيرة صحفي (J)", titleEn: "Journalist Visa (J)", descAr: "للصحفيين ومراسلي وسائل الإعلام.", descEn: "For journalists and media correspondents." },
+    { titleAr: "تجديد وتحويل التأشيرات", titleEn: "Visa Renewal and Transfer", descAr: "تجديد وتمديد التأشيرات الحالية أو تحويل نوع التأشيرة.", descEn: "Renewal, extension, or conversion of current visas." },
   ];
 
   const docServices = [
-    { title: "تصديق وتوثيق الوثائق (公证)", desc: "تصديق رسمي للشهادات والعقود للاستخدام في الصين." },
-    { title: "خدمات الأبوستيل (Apostille)", desc: "اعتماد الوثائق دولياً وفقاً لمعاهدة لاهاي." },
-    { title: "الترجمة المعتمدة", desc: "ترجمة رسمية من العربية/الإنجليزية إلى الصينية." },
-    { title: "التقديم نيابة عن العميل", desc: "تسليم واستلام الوثائق دون الحاجة لحضورك الشخصي." },
+    { titleAr: "تصديق وتوثيق الوثائق (公证)", titleEn: "Document Authentication", descAr: "تصديق رسمي للشهادات والعقود للاستخدام في الصين.", descEn: "Official authentication of certificates and contracts for use in China." },
+    { titleAr: "خدمات الأبوستيل (Apostille)", titleEn: "Apostille Services", descAr: "اعتماد الوثائق دولياً وفقاً لمعاهدة لاهاي.", descEn: "International document accreditation according to the Hague Convention." },
+    { titleAr: "الترجمة المعتمدة", titleEn: "Certified Translation", descAr: "ترجمة رسمية من العربية/الإنجليزية إلى الصينية.", descEn: "Official translation from Arabic/English to Chinese." },
+    { titleAr: "التقديم نيابة عن العميل", titleEn: "Submission on Behalf", descAr: "تسليم واستلام الوثائق دون الحاجة لحضورك الشخصي.", descEn: "Document submission and collection without your personal attendance." },
+  ];
+
+  const visaRequirements = [
+    {
+      titleAr: "التأشيرة السياحية (L)",
+      titleEn: "Tourist Visa (L)",
+      reqAr: [
+        "جواز سفر ساري المفعول لـ 6 أشهر على الأقل وبه صفحتين فارغتين",
+        "نموذج طلب التأشيرة معبأ وموقع",
+        "صورة شخصية حديثة بخلفية بيضاء (33×48 مم)",
+        "حجوزات طيران (ذهاب وعودة)",
+        "تأكيد حجز فندق",
+        "كشف حساب بنكي (لآخر 3 أشهر، برصيد لا يقل عن 3000 رنجت)",
+        "تأمين سفر",
+        "للمتقدمين لأول مرة: خطاب عمل أو إثبات دراسة"
+      ],
+      reqEn: [
+        "Passport valid for 6+ months with 2 blank visa pages",
+        "Completed visa application form (signed)",
+        "Recent passport photo (33×48mm, white background)",
+        "Flight bookings (round trip)",
+        "Hotel booking confirmation",
+        "Bank statement (last 3 months, minimum RM 3,000 balance)",
+        "Travel insurance",
+        "For first-time applicants: employment letter or proof of enrollment"
+      ]
+    },
+    {
+      titleAr: "التأشيرة التجارية (M)",
+      titleEn: "Business Visa (M)",
+      reqAr: [
+        "جميع متطلبات التأشيرة السياحية",
+        "رسالة دعوة من شركة صينية (على ورق الشركة الرسمي)",
+        "وثائق تسجيل الشركة التجارية",
+        "خطاب من جهة العمل يوضح الغرض من الرحلة"
+      ],
+      reqEn: [
+        "All tourist visa requirements",
+        "Invitation letter from Chinese company (on company letterhead)",
+        "Business registration documents",
+        "Employer letter confirming business purpose"
+      ]
+    },
+    {
+      titleAr: "تأشيرة الطالب (X1/X2)",
+      titleEn: "Student Visa (X1/X2)",
+      reqAr: [
+        "إشعار القبول (نموذج JW201 أو JW202)",
+        "نموذج فحص طبي (من مستشفى معتمد)",
+        "جواز سفر ساري المفعول لمدة 6 أشهر أو أكثر",
+        "نموذج طلب التأشيرة والصورة",
+        "لـ X1: يتطلب شهادة صحية وتصريح إقامة خلال 30 يوم من الوصول"
+      ],
+      reqEn: [
+        "Admission notice (JW201 or JW202 form)",
+        "Physical examination form (completed at designated hospital)",
+        "Passport valid 6+ months",
+        "Visa application form + photo",
+        "X1 also requires: health certificate, residence permit within 30 days of arrival"
+      ]
+    },
+    {
+      titleAr: "تأشيرة العمل (Z)",
+      titleEn: "Work Visa (Z)",
+      reqAr: [
+        "موافقة تصريح عمل من السلطات الصينية",
+        "رسالة تأكيد الوظيفة",
+        "جواز سفر ساري لمدة 6 أشهر أو أكثر",
+        "نموذج الطلب مع صورة شخصية",
+        "شهادة طبية",
+        "صحيفة خالة جنائية (فيش وتشبيه)"
+      ],
+      reqEn: [
+        "Work permit approval from Chinese authority",
+        "Employment confirmation letter",
+        "Passport valid 6+ months",
+        "Visa application form + photo",
+        "Medical health certificate",
+        "Criminal background check"
+      ]
+    },
+    {
+      titleAr: "تأشيرة S1 (للعائلات المقيمة)",
+      titleEn: "S1 Visa (Spouse/Children)",
+      reqAr: [
+        "جواز سفر المقيم في الصين (أجنبي مع تصريح عمل/إقامة)",
+        "عقد زواج أو شهادة ميلاد (مصدقة)",
+        "جواز سفر المتقدم ساري لمدة 6 أشهر",
+        "نموذج الطلب وصورة شخصية",
+        "إثبات صلة القرابة"
+      ],
+      reqEn: [
+        "Passport of Chinese resident (foreigner with work/residence permit)",
+        "Marriage certificate or birth certificate (notarized)",
+        "Applicant's passport valid 6+ months",
+        "Visa application form + photo",
+        "Proof of relationship"
+      ]
+    },
+    {
+      titleAr: "تأشيرة S2 (زيارة الأهل)",
+      titleEn: "S2 Visa (Parents/Siblings)",
+      reqAr: [
+        "رسالة دعوة من الأجنبي المقيم في الصين",
+        "صورة تصريح الإقامة للأجنبي",
+        "إثبات صلة القرابة (مصدقة)",
+        "جواز السفر وصورة شخصية",
+        "حجز طيران عودة"
+      ],
+      reqEn: [
+        "Invitation letter from the foreigner residing in China",
+        "Foreigner's residence permit copy",
+        "Proof of relationship (birth certificate, family book, notarized)",
+        "Applicant's passport + photo",
+        "Return flight booking"
+      ]
+    }
   ];
 
   return (
     <Layout>
       <HeroSection 
         titleAr="خدمات السفارة الصينية"
-        titleEn="CHINESE EMBASSY SERVICES"
+        titleEn="Chinese Embassy Services"
         descriptionAr="الخدمات الأبرز لدينا. نقدم دعماً شاملاً لجميع متطلبات التأشيرات وتصديق الوثائق للسفارة الصينية في كوالالمبور بدقة واحترافية."
+        descriptionEn="Our flagship services. We provide comprehensive support for all visa requirements and document authentication for the Chinese Embassy in Kuala Lumpur with precision and professionalism."
         imageFallbackUrl="/heroes/chinese.jpg"
       />
 
-      <section className="py-20 bg-white" dir="rtl">
+      <section className="py-20 bg-white" dir={lang === "ar" ? "rtl" : "ltr"}>
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
-            <h2 className="text-3xl font-bold font-arabic text-secondary mb-4">خدمات التأشيرات</h2>
-            <p className="text-muted-foreground font-arabic text-lg">
-              نساعدك في تحديد نوع التأشيرة المناسب وتجهيز الملف بالكامل لضمان قبول الطلب.
+            <h2 className={`text-3xl font-bold text-secondary mb-4 ${lang === "ar" ? "font-arabic" : ""}`}>
+              {t("خدمات التأشيرات", "Visa Services")}
+            </h2>
+            <p className={`text-muted-foreground text-lg ${lang === "ar" ? "font-arabic" : ""}`}>
+              {t("نساعدك في تحديد نوع التأشيرة المناسب وتجهيز الملف بالكامل لضمان قبول الطلب.", "We help you determine the appropriate visa type and prepare the full file to ensure approval.")}
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {visaServices.map((service, i) => (
               <Card key={i} className="border-t-4 border-t-primary hover:shadow-lg transition-shadow">
                 <CardHeader className="pb-3">
-                  <CardTitle className="font-arabic text-xl flex items-center gap-2">
+                  <CardTitle className={`text-xl flex items-center gap-2 ${lang === "ar" ? "font-arabic" : ""}`}>
                     <CheckCircle2 className="w-5 h-5 text-accent shrink-0" />
-                    {service.title}
+                    {t(service.titleAr, service.titleEn)}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="font-arabic text-base">{service.desc}</CardDescription>
+                  <CardDescription className={`text-base ${lang === "ar" ? "font-arabic" : ""}`}>
+                    {t(service.descAr, service.descEn)}
+                  </CardDescription>
                 </CardContent>
               </Card>
             ))}
           </div>
+
+          <div className="max-w-4xl mx-auto">
+            <h2 className={`text-3xl font-bold text-secondary mb-8 border-${lang === "ar" ? "r" : "l"}-4 border-primary px-4 ${lang === "ar" ? "font-arabic" : ""}`}>
+              {t("متطلبات التأشيرات", "Visa Requirements")}
+            </h2>
+            <Accordion type="single" collapsible className="w-full space-y-4">
+              {visaRequirements.map((visa, i) => (
+                <AccordionItem key={i} value={`visa-${i}`} className="border rounded-xl px-4 bg-gray-50 hover:border-primary/30 transition-colors">
+                  <AccordionTrigger className={`text-lg font-medium text-secondary hover:no-underline ${lang === "ar" ? "font-arabic" : ""}`}>
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                        <CheckCircle2 className="w-5 h-5 text-primary" />
+                      </div>
+                      <span>{t(visa.titleAr, visa.titleEn)}</span>
+                    </div>
+                  </AccordionTrigger>
+                  <AccordionContent className="pt-2 pb-6 px-4">
+                    <h4 className={`font-bold text-secondary mb-4 ${lang === "ar" ? "font-arabic" : ""}`}>
+                      {t("المتطلبات:", "Requirements:")}
+                    </h4>
+                    <ul className="space-y-3">
+                      {(lang === "ar" ? visa.reqAr : visa.reqEn).map((req, idx) => (
+                        <li key={idx} className="flex items-start gap-3">
+                          <div className="mt-1 w-2 h-2 rounded-full bg-accent shrink-0"></div>
+                          <span className={`text-muted-foreground ${lang === "ar" ? "font-arabic" : ""}`}>{req}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+
         </div>
       </section>
 
-      <section className="py-20 bg-slate-50" dir="rtl">
+      <section className="py-20 bg-slate-50" dir={lang === "ar" ? "rtl" : "ltr"}>
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row gap-12 items-center">
             <div className="lg:w-1/2">
-              <h2 className="text-3xl font-bold font-arabic text-secondary mb-6">خدمات الوثائق والتصديقات</h2>
-              <p className="text-muted-foreground font-arabic text-lg mb-8 leading-relaxed">
-                إن تجهيز الوثائق بشكل صحيح هو الخطوة الأهم. فريقنا متخصص في مراجعة وتصديق جميع الأوراق الرسمية المطلوبة من قبل السفارة الصينية لضمان عدم رفض المعاملة.
+              <h2 className={`text-3xl font-bold text-secondary mb-6 ${lang === "ar" ? "font-arabic" : ""}`}>
+                {t("خدمات الوثائق والتصديقات", "Document & Authentication Services")}
+              </h2>
+              <p className={`text-muted-foreground text-lg mb-8 leading-relaxed ${lang === "ar" ? "font-arabic" : ""}`}>
+                {t("إن تجهيز الوثائق بشكل صحيح هو الخطوة الأهم. فريقنا متخصص في مراجعة وتصديق جميع الأوراق الرسمية المطلوبة من قبل السفارة الصينية لضمان عدم رفض المعاملة.", "Preparing documents correctly is the most important step. Our team specializes in reviewing and authenticating all official documents required by the Chinese Embassy to ensure your transaction is not rejected.")}
               </p>
               
               <div className="space-y-6">
@@ -74,8 +242,12 @@ export default function ChineseEmbassy() {
                       {i % 2 === 0 ? <FileSignature /> : <FileCheck />}
                     </div>
                     <div>
-                      <h3 className="font-bold font-arabic text-lg mb-1">{service.title}</h3>
-                      <p className="text-muted-foreground font-arabic text-sm">{service.desc}</p>
+                      <h3 className={`font-bold text-lg mb-1 ${lang === "ar" ? "font-arabic" : ""}`}>
+                        {t(service.titleAr, service.titleEn)}
+                      </h3>
+                      <p className={`text-muted-foreground text-sm ${lang === "ar" ? "font-arabic" : ""}`}>
+                        {t(service.descAr, service.descEn)}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -84,27 +256,29 @@ export default function ChineseEmbassy() {
             
             <div className="lg:w-1/2 w-full">
               <div className="bg-primary text-primary-foreground rounded-2xl p-8 lg:p-12 shadow-xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 opacity-10">
-                  <Zap className="w-64 h-64 -mt-16 -mr-16" />
+                <div className={`absolute top-0 ${lang === "ar" ? "right-0" : "left-0"} opacity-10`}>
+                  <Zap className={`w-64 h-64 -mt-16 ${lang === "ar" ? "-mr-16" : "-ml-16"}`} />
                 </div>
                 
-                <h3 className="text-2xl font-bold font-arabic mb-6 relative z-10">مميزات إضافية</h3>
-                <ul className="space-y-4 font-arabic relative z-10">
+                <h3 className={`text-2xl font-bold mb-6 relative z-10 ${lang === "ar" ? "font-arabic" : ""}`}>
+                  {t("مميزات إضافية", "Additional Features")}
+                </h3>
+                <ul className={`space-y-4 relative z-10 ${lang === "ar" ? "font-arabic" : ""}`}>
                   <li className="flex items-center gap-3">
                     <div className="w-2 h-2 rounded-full bg-accent"></div>
-                    <span className="text-lg">معالجة سريعة (Express Processing)</span>
+                    <span className="text-lg">{t("معالجة سريعة", "Express Processing")}</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="w-2 h-2 rounded-full bg-accent"></div>
-                    <span className="text-lg">حجز وإدارة المواعيد بفعالية</span>
+                    <span className="text-lg">{t("حجز وإدارة المواعيد بفعالية", "Efficient appointment booking and management")}</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="w-2 h-2 rounded-full bg-accent"></div>
-                    <span className="text-lg">استشارات مجانية حول متطلبات التأشيرة</span>
+                    <span className="text-lg">{t("استشارات مجانية حول متطلبات التأشيرة", "Free consultations on visa requirements")}</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="w-2 h-2 rounded-full bg-accent"></div>
-                    <span className="text-lg">متابعة حالة الطلب وتحديث العميل أولاً بأول</span>
+                    <span className="text-lg">{t("متابعة حالة الطلب وتحديث العميل أولاً بأول", "Track application status and keep clients updated")}</span>
                   </li>
                 </ul>
 
@@ -112,7 +286,9 @@ export default function ChineseEmbassy() {
                   <div className="flex items-start gap-3">
                     <MapPin className="text-accent mt-1 shrink-0" />
                     <div>
-                      <h4 className="font-bold font-arabic mb-1">موقع السفارة الصينية في كوالالمبور</h4>
+                      <h4 className={`font-bold mb-1 ${lang === "ar" ? "font-arabic" : ""}`}>
+                        {t("موقع السفارة الصينية في كوالالمبور", "Chinese Embassy Location in Kuala Lumpur")}
+                      </h4>
                       <p className="text-sm font-sans" dir="ltr">233, Jalan Ampang, 50450 Kuala Lumpur, Malaysia</p>
                     </div>
                   </div>
