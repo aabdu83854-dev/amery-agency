@@ -1,8 +1,9 @@
 import { Layout } from "@/components/layout";
 import { HeroSection } from "@/components/ui/hero-section";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle2, FileCheck, FileSignature, Zap, MapPin } from "lucide-react";
+import { CheckCircle2, FileCheck, FileSignature, Zap, MapPin, ArrowLeft } from "lucide-react";
 import { useLanguage } from "@/contexts/language";
+import { useState } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -13,16 +14,31 @@ import {
 export default function ChineseEmbassy() {
   const { lang } = useLanguage();
   const t = (ar: string, en: string) => lang === "ar" ? ar : en;
+  const [openItem, setOpenItem] = useState<string>("");
+
+  const handleServiceClick = (reqIndex: number | null) => {
+    if (reqIndex === null) {
+      const el = document.getElementById("visa-requirements");
+      el?.scrollIntoView({ behavior: "smooth", block: "start" });
+      return;
+    }
+    const value = `visa-${reqIndex}`;
+    setOpenItem(value);
+    setTimeout(() => {
+      const el = document.getElementById(`req-${reqIndex}`);
+      el?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }, 100);
+  };
 
   const visaServices = [
-    { titleAr: "تأشيرة سياحية (L)", titleEn: "Tourist Visa (L)", descAr: "للراغبين في زيارة الصين بغرض السياحة والترفيه.", descEn: "For those wishing to visit China for tourism and leisure." },
-    { titleAr: "تأشيرة تجارية (M)", titleEn: "Business Visa (M)", descAr: "لأغراض التجارة والأعمال وحضور المعارض.", descEn: "For commerce, business, and attending exhibitions." },
-    { titleAr: "تأشيرة طالب (X1/X2)", titleEn: "Student Visa (X1/X2)", descAr: "للطلاب المقبولين للدراسة في المؤسسات التعليمية الصينية.", descEn: "For students accepted to study in Chinese educational institutions." },
-    { titleAr: "تأشيرة عمل (Z)", titleEn: "Work Visa (Z)", descAr: "للراغبين في العمل داخل جمهورية الصين.", descEn: "For those wishing to work inside the People's Republic of China." },
-    { titleAr: "تأشيرات العائلة (Q1/Q2)", titleEn: "Family Visas (Q1/Q2)", descAr: "لزيارة أقارب من المواطنين الصينيين.", descEn: "For visiting relatives who are Chinese citizens." },
-    { titleAr: "تأشيرات (S1/S2)", titleEn: "S1/S2 Visas", descAr: "لعائلات الأجانب المقيمين في الصين.", descEn: "For families of foreigners residing in China." },
-    { titleAr: "تأشيرة صحفي (J)", titleEn: "Journalist Visa (J)", descAr: "للصحفيين ومراسلي وسائل الإعلام.", descEn: "For journalists and media correspondents." },
-    { titleAr: "تجديد وتحويل التأشيرات", titleEn: "Visa Renewal and Transfer", descAr: "تجديد وتمديد التأشيرات الحالية أو تحويل نوع التأشيرة.", descEn: "Renewal, extension, or conversion of current visas." },
+    { titleAr: "تأشيرة سياحية (L)", titleEn: "Tourist Visa (L)", descAr: "للراغبين في زيارة الصين بغرض السياحة والترفيه.", descEn: "For those wishing to visit China for tourism and leisure.", reqIndex: 0 },
+    { titleAr: "تأشيرة تجارية (M)", titleEn: "Business Visa (M)", descAr: "لأغراض التجارة والأعمال وحضور المعارض.", descEn: "For commerce, business, and attending exhibitions.", reqIndex: 1 },
+    { titleAr: "تأشيرة طالب (X1/X2)", titleEn: "Student Visa (X1/X2)", descAr: "للطلاب المقبولين للدراسة في المؤسسات التعليمية الصينية.", descEn: "For students accepted to study in Chinese educational institutions.", reqIndex: 2 },
+    { titleAr: "تأشيرة عمل (Z)", titleEn: "Work Visa (Z)", descAr: "للراغبين في العمل داخل جمهورية الصين.", descEn: "For those wishing to work inside the People's Republic of China.", reqIndex: 3 },
+    { titleAr: "تأشيرات العائلة (Q1/Q2)", titleEn: "Family Visas (Q1/Q2)", descAr: "لزيارة أقارب من المواطنين الصينيين.", descEn: "For visiting relatives who are Chinese citizens.", reqIndex: null },
+    { titleAr: "تأشيرات (S1/S2)", titleEn: "S1/S2 Visas", descAr: "لعائلات الأجانب المقيمين في الصين.", descEn: "For families of foreigners residing in China.", reqIndex: 4 },
+    { titleAr: "تأشيرة صحفي (J)", titleEn: "Journalist Visa (J)", descAr: "للصحفيين ومراسلي وسائل الإعلام.", descEn: "For journalists and media correspondents.", reqIndex: null },
+    { titleAr: "تجديد وتحويل التأشيرات", titleEn: "Visa Renewal and Transfer", descAr: "تجديد وتمديد التأشيرات الحالية أو تحويل نوع التأشيرة.", descEn: "Renewal, extension, or conversion of current visas.", reqIndex: null },
   ];
 
   const docServices = [
@@ -172,29 +188,40 @@ export default function ChineseEmbassy() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             {visaServices.map((service, i) => (
-              <Card key={i} className="border-t-4 border-t-primary hover:shadow-lg transition-shadow">
-                <CardHeader className="pb-3">
-                  <CardTitle className={`text-xl flex items-center gap-2 ${lang === "ar" ? "font-arabic" : ""}`}>
-                    <CheckCircle2 className="w-5 h-5 text-accent shrink-0" />
-                    {t(service.titleAr, service.titleEn)}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className={`text-base ${lang === "ar" ? "font-arabic" : ""}`}>
-                    {t(service.descAr, service.descEn)}
-                  </CardDescription>
-                </CardContent>
-              </Card>
+              <button
+                key={i}
+                type="button"
+                onClick={() => handleServiceClick(service.reqIndex)}
+                className="text-start"
+              >
+                <Card className="h-full border-t-4 border-t-primary hover:shadow-lg hover:border-t-accent hover:-translate-y-1 transition-all cursor-pointer group">
+                  <CardHeader className="pb-3">
+                    <CardTitle className={`text-xl flex items-center gap-2 ${lang === "ar" ? "font-arabic" : ""}`}>
+                      <CheckCircle2 className="w-5 h-5 text-accent shrink-0" />
+                      {t(service.titleAr, service.titleEn)}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription className={`text-base ${lang === "ar" ? "font-arabic" : ""}`}>
+                      {t(service.descAr, service.descEn)}
+                    </CardDescription>
+                    <span className={`mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-primary group-hover:text-accent transition-colors ${lang === "ar" ? "font-arabic" : ""}`}>
+                      {t("عرض المتطلبات", "View Requirements")}
+                      <ArrowLeft className={`w-4 h-4 ${lang === "ar" ? "" : "rotate-180"} group-hover:${lang === "ar" ? "-translate-x-1" : "translate-x-1"} transition-transform`} />
+                    </span>
+                  </CardContent>
+                </Card>
+              </button>
             ))}
           </div>
 
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto" id="visa-requirements">
             <h2 className={`text-3xl font-bold text-secondary mb-8 border-${lang === "ar" ? "r" : "l"}-4 border-primary px-4 ${lang === "ar" ? "font-arabic" : ""}`}>
               {t("متطلبات التأشيرات", "Visa Requirements")}
             </h2>
-            <Accordion type="single" collapsible className="w-full space-y-4">
+            <Accordion type="single" collapsible value={openItem} onValueChange={setOpenItem} className="w-full space-y-4">
               {visaRequirements.map((visa, i) => (
-                <AccordionItem key={i} value={`visa-${i}`} className="border rounded-xl px-4 bg-gray-50 hover:border-primary/30 transition-colors">
+                <AccordionItem key={i} id={`req-${i}`} value={`visa-${i}`} className="border rounded-xl px-4 bg-gray-50 hover:border-primary/30 transition-colors data-[state=open]:border-accent data-[state=open]:ring-2 data-[state=open]:ring-accent/20 scroll-mt-24">
                   <AccordionTrigger className={`text-lg font-medium text-secondary hover:no-underline ${lang === "ar" ? "font-arabic" : ""}`}>
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
