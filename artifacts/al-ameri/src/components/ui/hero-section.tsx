@@ -45,7 +45,7 @@ export function HeroSection({
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-transparent to-transparent"></div>
       </div>
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-3xl" dir={isAr ? "rtl" : "ltr"}>
+        <div className="max-w-3xl lg:max-w-5xl" dir={isAr ? "rtl" : "ltr"}>
           <div className={`inline-block px-4 py-1.5 rounded-full bg-accent/20 text-accent border border-accent/30 text-sm font-medium tracking-wider mb-6 animate-in slide-in-from-bottom-4 duration-500 ${isAr ? "font-sans" : "font-arabic"}`}>
             {subtitle}
           </div>
