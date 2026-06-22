@@ -10,6 +10,7 @@ import ChineseEmbassy from "@/pages/chinese-embassy";
 import YemeniEmbassy from "@/pages/yemeni-embassy";
 import AmericanEmbassy from "@/pages/american-embassy";
 import Tourism from "@/pages/tourism";
+import TourismDetail from "@/pages/tourism-detail";
 import Facilitation from "@/pages/facilitation";
 import Contact from "@/pages/contact";
 
@@ -23,6 +24,7 @@ function Router() {
       <Route path="/yemeni-embassy" component={YemeniEmbassy} />
       <Route path="/american-embassy" component={AmericanEmbassy} />
       <Route path="/tourism" component={Tourism} />
+      <Route path="/tourism/:id" component={TourismDetail} />
       <Route path="/facilitation" component={Facilitation} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
