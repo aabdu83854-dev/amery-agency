@@ -38,7 +38,7 @@ export default function Contact() {
         titleAr="اتصل بنا"
         titleEn="Contact Us"
         descriptionAr="نحن هنا لمساعدتك والإجابة على كافة استفساراتك. لا تتردد في التواصل معنا عبر قنواتنا المتعددة أو بزيارة مكتبنا."
-        descriptionEn="We are here to help you and answer all your inquiries. Do not hesitate to contact us through our multiple channels or by visiting our office."
+        descriptionEn="We are here to help you and answer all your inquiries. Feel free to reach us through our multiple channels or by visiting our office."
         imageFallbackUrl="/heroes/contact.jpg"
         height="small"
       />

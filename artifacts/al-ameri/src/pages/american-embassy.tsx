@@ -123,7 +123,7 @@ export default function AmericanEmbassy() {
         titleAr="خدمات السفارة الأمريكية"
         titleEn="US Embassy Services"
         descriptionAr="دعم شامل لطلبات التأشيرة الأمريكية. من تجهيز النماذج إلى التحضير للمقابلة، نحن معك خطوة بخطوة."
-        descriptionEn="Comprehensive support for US visa applications. From preparing forms to interview coaching, we are with you step by step."
+        descriptionEn="Comprehensive support for US visa applications. From form preparation to interview coaching, we are with you every step of the way."
         imageFallbackUrl="/heroes/american.jpg"
       />
 

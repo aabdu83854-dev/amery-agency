@@ -72,7 +72,7 @@ export default function Facilitation() {
         titleAr="خدمات التسهيل والمرافقة"
         titleEn="Facilitation & Support"
         descriptionAr="قطاع التأثير. نذلل لك الصعاب ونجعل إقامتك أو زيارتك لماليزيا خالية من التوتر. من لحظة وصولك للمطار وحتى إنجاز كافة أعمالك."
-        descriptionEn="Impact sector. We ease the difficulties and make your stay or visit to Malaysia stress-free. From the moment you arrive at the airport until you finish all your business."
+        descriptionEn="We remove every obstacle and make your stay or visit to Malaysia stress-free. From the moment you arrive at the airport until all your business is completed."
         imageFallbackUrl="/heroes/facilitation.jpg"
       />
 
