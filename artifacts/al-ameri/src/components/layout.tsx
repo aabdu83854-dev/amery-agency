@@ -49,7 +49,7 @@ export function Layout({ children }: { children: ReactNode }) {
               <img 
                 src={`${import.meta.env.BASE_URL}logo-new.png`} 
                 alt="Al-Ameri Travel Agency Logo" 
-                className="h-12 w-auto opacity-[1] border-t-[color:var(--tw-gradient-via)] border-r-[color:var(--tw-gradient-via)] border-b-[color:var(--tw-gradient-via)] border-l-[color:var(--tw-gradient-via)] border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px] rounded-tl-[2px] rounded-tr-[2px] rounded-br-[2px] rounded-bl-[2px] mt-[0px] mb-[0px] pt-[0px] pb-[0px] pl-[4px] pr-[4px] ml-[20px] mr-[20px]"
+                className="h-16 md:h-20 w-auto object-contain mx-3"
                 onError={(e) => {
                   e.currentTarget.src = "https://via.placeholder.com/150x50?text=Al-Ameri+Logo";
                 }}
