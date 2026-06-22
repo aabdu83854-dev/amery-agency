@@ -187,7 +187,7 @@ export function Layout({ children }: { children: ReactNode }) {
               <ul className={`space-y-4 ${lang === "ar" ? "font-arabic" : ""}`}>
                 <li className="flex items-start gap-3 text-secondary-foreground/80">
                   <MapPin className="text-accent shrink-0 mt-1" size={18} />
-                  <span>Pearl Avenue 822, Jalan Pasir Emas, Taman Berjaya, 43000 Kajang, Selangor, Malaysia</span>
+                  <span>One South, 43300 Seri Kembangan, Selangor, Malaysia</span>
                 </li>
                 <li className="flex items-center gap-3 text-secondary-foreground/80">
                   <Phone className="text-accent shrink-0" size={18} />

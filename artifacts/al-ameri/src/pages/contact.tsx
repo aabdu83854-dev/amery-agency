@@ -63,8 +63,8 @@ export default function Contact() {
                       {t("العنوان", "Address")}
                     </h3>
                     <p className="text-muted-foreground font-sans text-sm leading-relaxed" dir="ltr" style={{textAlign: lang === "ar" ? 'right' : 'left'}}>
-                      Pearl Avenue 822, Jalan Pasir Emas,<br />
-                      Taman Berjaya, 43000 Kajang,<br />
+                      One South,<br />
+                      43300 Seri Kembangan,<br />
                       Selangor, Malaysia
                     </p>
                   </div>
@@ -199,7 +199,7 @@ export default function Contact() {
       <section className="h-[400px] w-full bg-slate-200 relative">
         <div className={`absolute inset-0 flex items-center justify-center flex-col text-slate-500 ${lang === "ar" ? "font-arabic" : ""}`}>
           <MapPin className="w-12 h-12 mb-4 opacity-50" />
-          <p className="text-lg">{t("خريطة الموقع (Kajang, Selangor)", "Location Map (Kajang, Selangor)")}</p>
+          <p className="text-lg">{t("خريطة الموقع (Seri Kembangan, Selangor)", "Location Map (Seri Kembangan, Selangor)")}</p>
           <p className="text-sm font-sans mt-2">Map embed placeholder</p>
         </div>
       </section>
