@@ -47,9 +47,9 @@ export function Layout({ children }: { children: ReactNode }) {
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center gap-3">
               <img 
-                src={`${import.meta.env.BASE_URL}logo.png`} 
+                src={`${import.meta.env.BASE_URL}logo-new.png`} 
                 alt="Al-Ameri Travel Agency Logo" 
-                className="h-12 w-auto mt-[9px] mb-[9px] pt-[0px] pb-[0px] pl-[44px] pr-[44px] ml-[33px] mr-[33px] opacity-[1] border-t-[color:var(--tw-gradient-via)] border-r-[color:var(--tw-gradient-via)] border-b-[color:var(--tw-gradient-via)] border-l-[color:var(--tw-gradient-via)] border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px] rounded-tl-[2px] rounded-tr-[2px] rounded-br-[2px] rounded-bl-[2px]"
+                className="h-12 w-auto opacity-[1] border-t-[color:var(--tw-gradient-via)] border-r-[color:var(--tw-gradient-via)] border-b-[color:var(--tw-gradient-via)] border-l-[color:var(--tw-gradient-via)] border-t-[1px] border-r-[1px] border-b-[1px] border-l-[1px] rounded-tl-[2px] rounded-tr-[2px] rounded-br-[2px] rounded-bl-[2px] mt-[0px] mb-[0px] pt-[0px] pb-[0px] pl-[4px] pr-[4px] ml-[20px] mr-[20px]"
                 onError={(e) => {
                   e.currentTarget.src = "https://via.placeholder.com/150x50?text=Al-Ameri+Logo";
                 }}

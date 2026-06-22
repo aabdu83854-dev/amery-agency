@@ -44,13 +44,12 @@ export function HeroSection({
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 to-secondary/50"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-secondary via-transparent to-transparent"></div>
       </div>
-
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl" dir={isAr ? "rtl" : "ltr"}>
           <div className={`inline-block px-4 py-1.5 rounded-full bg-accent/20 text-accent border border-accent/30 text-sm font-medium tracking-wider mb-6 animate-in slide-in-from-bottom-4 duration-500 ${isAr ? "font-sans" : "font-arabic"}`}>
             {subtitle}
           </div>
-          <h1 className={`text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight animate-in slide-in-from-bottom-6 duration-700 ${isAr ? "font-arabic" : "font-sans"}`}>
+          <h1 className="md:text-5xl lg:text-6xl font-extrabold mb-6 animate-in slide-in-from-bottom-6 duration-700 font-arabic text-[28px]">
             {title}
           </h1>
           <p className={`text-lg md:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl animate-in slide-in-from-bottom-8 duration-700 delay-100 ${isAr ? "font-arabic" : "font-sans"}`}>
