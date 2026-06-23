@@ -58,7 +58,6 @@ export const DESTINATIONS: Destination[] = [
       `${BASE}tourism/g/petronas-2.jpg`,
       `${BASE}tourism/g/petronas-3.jpg`,
       `${BASE}tourism/g/petronas-4.jpg`,
-      `${BASE}tourism/g/petronas-5.jpg`,
       `${BASE}tourism/g/petronas-6.jpg`,
     ],
     highlights: [
