@@ -1,0 +1,82 @@
+[
+  {
+    "id": "8f3a1c2e-0b1a-4d2e-9c11-1a2b3c4d5e01",
+    "position": 1,
+    "filepath": "src/pages/slides/Title.tsx",
+    "title": "Al-Ameri Travel Agency",
+    "description": "Title slide with the floating Malacca Straits Mosque hero",
+    "speakerNotes": ""
+  },
+  {
+    "id": "8f3a1c2e-0b1a-4d2e-9c11-1a2b3c4d5e02",
+    "position": 2,
+    "filepath": "src/pages/slides/Project.tsx",
+    "title": "The Project",
+    "description": "What Al-Ameri is and its three core ideas",
+    "speakerNotes": ""
+  },
+  {
+    "id": "8f3a1c2e-0b1a-4d2e-9c11-1a2b3c4d5e03",
+    "position": 3,
+    "filepath": "src/pages/slides/Audience.tsx",
+    "title": "Who It Serves",
+    "description": "Three core traveler audiences",
+    "speakerNotes": ""
+  },
+  {
+    "id": "8f3a1c2e-0b1a-4d2e-9c11-1a2b3c4d5e04",
+    "position": 4,
+    "filepath": "src/pages/slides/Bilingual.tsx",
+    "title": "Bilingual by Design",
+    "description": "Arabic-default RTL and English parity comparison",
+    "speakerNotes": ""
+  },
+  {
+    "id": "8f3a1c2e-0b1a-4d2e-9c11-1a2b3c4d5e05",
+    "position": 5,
+    "filepath": "src/pages/slides/Tourism.tsx",
+    "title": "Twenty Destinations",
+    "description": "Six-image destination grid",
+    "speakerNotes": ""
+  },
+  {
+    "id": "8f3a1c2e-0b1a-4d2e-9c11-1a2b3c4d5e06",
+    "position": 6,
+    "filepath": "src/pages/slides/MuslimFriendly.tsx",
+    "title": "Muslim-Friendly Focus",
+    "description": "Halal, prayer, heritage, and family experiences",
+    "speakerNotes": ""
+  },
+  {
+    "id": "8f3a1c2e-0b1a-4d2e-9c11-1a2b3c4d5e07",
+    "position": 7,
+    "filepath": "src/pages/slides/Embassies.tsx",
+    "title": "Embassy Guidance",
+    "description": "American, Chinese, and Yemeni embassy guides",
+    "speakerNotes": ""
+  },
+  {
+    "id": "8f3a1c2e-0b1a-4d2e-9c11-1a2b3c4d5e08",
+    "position": 8,
+    "filepath": "src/pages/slides/Facilitation.tsx",
+    "title": "Facilitation & Support",
+    "description": "Visa, itinerary, WhatsApp, and local know-how",
+    "speakerNotes": ""
+  },
+  {
+    "id": "8f3a1c2e-0b1a-4d2e-9c11-1a2b3c4d5e09",
+    "position": 9,
+    "filepath": "src/pages/slides/TechStack.tsx",
+    "title": "How It's Built",
+    "description": "React, Vite, TypeScript, Tailwind, shadcn, wouter",
+    "speakerNotes": ""
+  },
+  {
+    "id": "8f3a1c2e-0b1a-4d2e-9c11-1a2b3c4d5e10",
+    "position": 10,
+    "filepath": "src/pages/slides/Closing.tsx",
+    "title": "Plan Your Journey",
+    "description": "Closing slide bookending the title hero",
+    "speakerNotes": ""
+  }
+]

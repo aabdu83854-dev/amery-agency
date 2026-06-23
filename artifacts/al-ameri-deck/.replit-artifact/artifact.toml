@@ -1,0 +1,31 @@
+kind = "slides"
+previewPath = "/al-ameri-deck/"
+title = "Al-Ameri Project Deck"
+version = "1.0.0"
+id = "artifacts/al-ameri-deck"
+router = "path"
+
+[[integratedSkills]]
+name = "slides"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/al-ameri-deck/" ]
+localPort = 23315
+
+[services.development]
+run = "pnpm --filter @workspace/al-ameri-deck run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/al-ameri-deck", "run", "build" ]
+publicDir = "artifacts/al-ameri-deck/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23315"
+BASE_PATH = "/al-ameri-deck/"
