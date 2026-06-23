@@ -101,3 +101,45 @@ id = "6RPeleRuF9yKiZPWHMFN5"
 uri = "file://artifacts/al-ameri/public/heroes/contact.jpg"
 type = "image"
 title = "customer service agent modern office contact us"
+
+[[outputs]]
+id = "usm4i01WmUK_PYU734oZG"
+uri = "file://.local/outputs/Visa-Gateway-Malaysia.pdf"
+type = "pdf"
+title = "Visa Gateway Malaysia.pdf"
+
+[[outputs]]
+id = "b7H9z1ukKA0fTtPikuvYO"
+uri = "file://.local/outputs/Visa-Gateway-Malaysia.pptx"
+type = "slides"
+title = "Visa Gateway Malaysia.pptx"
+
+[[outputs]]
+id = "Y71I-aTrPMq3YXvbUXmn8"
+uri = "file://artifacts/al-ameri-promo/public/images/malaysia-beach.jpg"
+type = "image"
+title = "beautiful tropical beach Langkawi Malaysia clear water"
+
+[[outputs]]
+id = "VSA7-dJcWvp5cXcPhTm-w"
+uri = "file://artifacts/al-ameri-promo/public/images/malaysia-mosque.jpg"
+type = "image"
+title = "beautiful modern mosque in Malaysia putrajaya sunset"
+
+[[outputs]]
+id = "X3aKgtXTfVR1-XEVFArPa"
+uri = "file://artifacts/al-ameri-promo/public/images/klcc.jpg"
+type = "image"
+title = "kuala lumpur petronas twin towers skyline sunset"
+
+[[outputs]]
+id = "A5JbRh-27wRdfZWFVMwxu"
+uri = "file://artifacts/al-ameri-promo/public/images/family.jpg"
+type = "image"
+title = "happy arab muslim family traveling luggage airport"
+
+[[outputs]]
+id = "maMvHLTCchfSp-R1gLBVw"
+uri = "file://artifacts/al-ameri-promo/public/audio/bg_music.mp3"
+type = "audio"
+title = "background music"

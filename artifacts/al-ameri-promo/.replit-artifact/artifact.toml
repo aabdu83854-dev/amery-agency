@@ -1,0 +1,31 @@
+kind = "video"
+previewPath = "/al-ameri-promo/"
+title = "Al-Ameri Promo Video"
+version = "1.0.0"
+id = "artifacts/al-ameri-promo"
+router = "path"
+
+[[integratedSkills]]
+name = "video-js"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/al-ameri-promo/" ]
+localPort = 19395
+
+[services.development]
+run = "pnpm --filter @workspace/al-ameri-promo run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/al-ameri-promo", "run", "build" ]
+publicDir = "artifacts/al-ameri-promo/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19395"
+BASE_PATH = "/al-ameri-promo/"
