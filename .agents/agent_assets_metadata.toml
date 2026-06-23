@@ -60,6 +60,12 @@ uri = "file://artifacts/al-ameri/public/tourism/genting.png"
 type = "image"
 title = "genting highlands resort mountain"
 
+[[generated]]
+id = "G9rE5QMDO0kr8BIPxX6TX"
+uri = "file://artifacts/al-ameri-promo/public/images/embassy-china.png"
+type = "image"
+title = "generated_image"
+
 [[outputs]]
 id = "EfHseV9FFKxUPR7d-ErPZ"
 uri = "file://artifacts/al-ameri/public/heroes/home.jpg"

@@ -42,17 +42,14 @@ export function Scene1() {
         </motion.div>
 
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-display text-[var(--color-text-inverse)] leading-tight">
-          {'ماليزيا'.split('').map((char, i) => (
-            <motion.span
-              key={i}
-              className="inline-block"
-              initial={{ opacity: 0, y: 40, rotateX: -40 }}
-              animate={phase >= 2 ? { opacity: 1, y: 0, rotateX: 0 } : { opacity: 0, y: 40, rotateX: -40 }}
-              transition={{ type: 'spring', stiffness: 300, damping: 20, delay: phase >= 2 ? i * 0.05 : 0 }}
-            >
-              {char}
-            </motion.span>
-          ))}
+          <motion.span
+            className="inline-block"
+            initial={{ opacity: 0, y: 40, rotateX: -40 }}
+            animate={phase >= 2 ? { opacity: 1, y: 0, rotateX: 0 } : { opacity: 0, y: 40, rotateX: -40 }}
+            transition={{ type: 'spring', stiffness: 300, damping: 20 }}
+          >
+            ماليزيا
+          </motion.span>
           <br />
           <motion.span
             className="inline-block text-[var(--color-primary)] mt-2"
