@@ -1,1 +1,3 @@
 - [Unsplash IDs in Replit proxy](unsplash-ids.md) — some Unsplash photo IDs fail silently (dark bg) in Replit preview proxy; use confirmed working IDs only.
+- [Localize tourism images](tourism-images.md) — many Unsplash IDs are 404 in this repo; download to public/ and serve same-origin. onError must be guarded (one-time swap) or it infinite-loops.
+- [code_execution sandbox limits](code-exec-sandbox.md) — `AbortSignal` is undefined in the JS sandbox; never use AbortSignal.timeout in fetch helpers, use Promise.race timeout.

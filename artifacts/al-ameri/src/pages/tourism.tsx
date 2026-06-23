@@ -9,12 +9,10 @@ function DestCard({
   dest,
   lang,
   t,
-  getImageUrl,
 }: {
   dest: Destination;
   lang: Lang;
   t: (ar: string, en: string) => string;
-  getImageUrl: (path: string) => string;
 }) {
   return (
     <Link href={`/tourism/${dest.id}`} className="block h-full">
@@ -25,8 +23,10 @@ function DestCard({
             alt={dest.nameEn}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
             onError={(e) => {
-              e.currentTarget.src =
-                "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800&auto=format&fit=crop";
+              const img = e.currentTarget;
+              if (img.dataset.fb) return;
+              img.dataset.fb = "1";
+              img.src = `${import.meta.env.BASE_URL}heroes/tourism.jpg`;
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
@@ -71,10 +71,6 @@ export default function Tourism() {
   const { lang } = useLanguage();
   const t = (ar: string, en: string) => lang === "ar" ? ar : en;
 
-  const getImageUrl = (path: string) => {
-    return import.meta.env.BASE_URL.replace(/\/$/, "") + path;
-  };
-
   return (
     <Layout>
       <HeroSection 
@@ -100,7 +96,7 @@ export default function Tourism() {
           {/* General Destinations */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
             {DESTINATIONS.filter(d => d.category === "general").map((dest) => (
-              <DestCard key={dest.id} dest={dest} lang={lang} t={t} getImageUrl={getImageUrl} />
+              <DestCard key={dest.id} dest={dest} lang={lang} t={t} />
             ))}
           </div>
 
@@ -120,7 +116,7 @@ export default function Tourism() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {DESTINATIONS.filter(d => d.category === "terengganu").map((dest) => (
-                <DestCard key={dest.id} dest={dest} lang={lang} t={t} getImageUrl={getImageUrl} />
+                <DestCard key={dest.id} dest={dest} lang={lang} t={t} />
               ))}
             </div>
           </div>
@@ -141,7 +137,7 @@ export default function Tourism() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {DESTINATIONS.filter(d => d.category === "putrajaya").map((dest) => (
-                <DestCard key={dest.id} dest={dest} lang={lang} t={t} getImageUrl={getImageUrl} />
+                <DestCard key={dest.id} dest={dest} lang={lang} t={t} />
               ))}
             </div>
           </div>

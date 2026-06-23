@@ -54,12 +54,12 @@ export const DESTINATIONS: Destination[] = [
     image: "/tourism/petronas.png",
     heroImage: `${BASE}tourism/petronas.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546708688-662580dfbf3a?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1510255909249-14a0f443ee9e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1506161476142-2bbf189280d4?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1516008544498-34eb10813ce8?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/petronas-1.jpg`,
+      `${BASE}tourism/g/petronas-2.jpg`,
+      `${BASE}tourism/g/petronas-3.jpg`,
+      `${BASE}tourism/g/petronas-4.jpg`,
+      `${BASE}tourism/g/petronas-5.jpg`,
+      `${BASE}tourism/g/petronas-6.jpg`,
     ],
     highlights: [
       { titleAr: "إطلالة بانورامية", titleEn: "Panoramic Views", descAr: "منصة مراقبة في الطابق 86", descEn: "Observation deck on the 86th floor", icon: "Camera" },
@@ -73,28 +73,28 @@ export const DESTINATIONS: Destination[] = [
         nameEn: "SkyBridge",
         descAr: "جسر زجاجي يربط بين البرجين في الطابقين 41 و 42.",
         descEn: "Glass bridge connecting the towers at levels 41 & 42.",
-        image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/petronas-7.jpg`
       },
       {
         nameAr: "حديقة كيه إل سي سي",
         nameEn: "KLCC Park",
         descAr: "مساحات خضراء واسعة ونوافير راقصة تضيء ليلاً.",
         descEn: "Spacious green areas and dancing fountains illuminated at night.",
-        image: "https://images.unsplash.com/photo-1546708688-662580dfbf3a?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/petronas-8.jpg`
       },
       {
         nameAr: "أكواريا كيه إل سي سي",
         nameEn: "Aquaria KLCC",
         descAr: "حوض أسماك ضخم يعرض آلاف الكائنات البحرية.",
         descEn: "Massive aquarium showcasing thousands of marine creatures.",
-        image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/petronas-9.jpg`
       },
       {
         nameAr: "سوريا كيه إل سي سي",
         nameEn: "Suria KLCC",
         descAr: "وجهة تسوق رئيسية لأرقى العلامات التجارية.",
         descEn: "A premier shopping destination for luxury brands.",
-        image: "https://images.unsplash.com/photo-1510255909249-14a0f443ee9e?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/petronas-10.jpg`
       }
     ],
     practicalInfo: {
@@ -116,14 +116,14 @@ export const DESTINATIONS: Destination[] = [
     descAr: "أرخبيل استوائي ساحر يتكون من 99 جزيرة قبالة الساحل الغربي لماليزيا. تتميز بشواطئها الرملية البيضاء ومياها الصافية، وتعتبر وجهة مثالية للباحثين عن الاسترخاء والأنشطة المائية في آن واحد.\n\nتضم الجزيرة معالم شهيرة مثل التلفريك (Langkawi SkyCab) الذي يأخذك في رحلة مذهلة فوق الغابات المطيرة الكثيفة للوصول إلى جسر السماء (SkyBridge) المعلق بين قمم الجبال. كما تشتهر بغابات المانغروف التي يمكنك استكشافها بالقوارب، وشلالات الآبار السبعة، إلى جانب كونها منطقة معفاة من الرسوم الجمركية.",
     descEn: "A magical tropical archipelago consisting of 99 islands off the west coast of Malaysia. Known for its white sandy beaches and clear waters, it is an ideal destination for those seeking both relaxation and water activities.\n\nThe island features famous landmarks like the Langkawi SkyCab cable car, which takes you on an amazing journey over dense rainforests to the SkyBridge suspended between mountain peaks. It is also famous for its mangrove forests which you can explore by boat, the Seven Wells Waterfalls, and being a duty-free shopping zone.",
     image: "/tourism/langkawi.png",
-    heroImage: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=1600&auto=format&fit=crop",
+    heroImage: `${BASE}tourism/g/langkawi-1.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1540202404-b711142289eb?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1537162998323-3d3675e0e87c?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1621644781442-9903b7fc3442?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/langkawi-1.jpg`,
+      `${BASE}tourism/g/langkawi-2.jpg`,
+      `${BASE}tourism/g/langkawi-3.jpg`,
+      `${BASE}tourism/g/langkawi-4.jpg`,
+      `${BASE}tourism/g/langkawi-5.jpg`,
+      `${BASE}tourism/g/langkawi-6.jpg`,
     ],
     highlights: [
       { titleAr: "شواطئ رملية", titleEn: "Sandy Beaches", descAr: "رمال بيضاء ناعمة", descEn: "Pure white sands", icon: "Umbrella" },
@@ -137,28 +137,28 @@ export const DESTINATIONS: Destination[] = [
         nameEn: "Langkawi SkyCab",
         descAr: "أحد أشد خطوط التلفريك انحداراً في العالم.",
         descEn: "One of the steepest cable car rides in the world.",
-        image: "https://images.unsplash.com/photo-1621644781442-9903b7fc3442?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/langkawi-7.jpg`
       },
       {
         nameAr: "ميدان النسر",
         nameEn: "Eagle Square",
         descAr: "تمثال ضخم لنسر يستعد للطيران، رمز الجزيرة.",
         descEn: "A massive statue of an eagle ready to take flight, the island's symbol.",
-        image: "https://images.unsplash.com/photo-1537162998323-3d3675e0e87c?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/langkawi-8.jpg`
       },
       {
         nameAr: "غابات المانغروف",
         nameEn: "Kilim Geoforest Park",
         descAr: "رحلات بالقوارب لاستكشاف الطبيعة والكهوف.",
         descEn: "Boat tours to explore nature and limestone caves.",
-        image: "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/langkawi-9.jpg`
       },
       {
         nameAr: "شاطئ سينانج",
         nameEn: "Pantai Cenang",
         descAr: "أشهر شواطئ لنكاوي، نابض بالحياة والأنشطة.",
         descEn: "Langkawi's most popular beach, bustling with life and activities.",
-        image: "https://images.unsplash.com/photo-1540202404-b711142289eb?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/langkawi-10.jpg`
       }
     ],
     practicalInfo: {
@@ -182,12 +182,12 @@ export const DESTINATIONS: Destination[] = [
     image: "/tourism/penang.png",
     heroImage: `${BASE}tourism/penang.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1570183864708-306fc6e0ea79?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1555819206-7b30da4f1506?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1616089338270-43ce9c2e0b57?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1518337583765-728b7e41b212?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1544485542-a279c6d48259?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/penang-1.jpg`,
+      `${BASE}tourism/g/penang-2.jpg`,
+      `${BASE}tourism/g/penang-3.jpg`,
+      `${BASE}tourism/g/penang-4.jpg`,
+      `${BASE}tourism/g/penang-5.jpg`,
+      `${BASE}tourism/g/penang-6.jpg`,
     ],
     highlights: [
       { titleAr: "تراث عالمي", titleEn: "World Heritage", descAr: "جورج تاون التاريخية", descEn: "Historic George Town", icon: "Landmark" },
@@ -201,28 +201,28 @@ export const DESTINATIONS: Destination[] = [
         nameEn: "George Town Street Art",
         descAr: "شوارع تاريخية مزينة بجداريات تفاعلية رائعة.",
         descEn: "Historic streets adorned with brilliant interactive murals.",
-        image: "https://images.unsplash.com/photo-1555819206-7b30da4f1506?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/penang-7.jpg`
       },
       {
         nameAr: "تل بينانج",
         nameEn: "Penang Hill",
         descAr: "منتجع جبلي بارد يوفر إطلالات بانورامية على الجزيرة.",
         descEn: "A cool hill resort offering panoramic views of the island.",
-        image: "https://images.unsplash.com/photo-1616089338270-43ce9c2e0b57?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/penang-8.jpg`
       },
       {
         nameAr: "معبد كيك لوك سي",
         nameEn: "Kek Lok Si Temple",
         descAr: "أكبر معبد بوذي في ماليزيا معمار مذهل.",
         descEn: "The largest Buddhist temple in Malaysia with stunning architecture.",
-        image: "https://images.unsplash.com/photo-1518337583765-728b7e41b212?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/penang-9.jpg`
       },
       {
         nameAr: "عقارات العشائر العائمة",
         nameEn: "Clan Jetties",
         descAr: "قرى خشبية تقليدية مبنية فوق الماء.",
         descEn: "Traditional wooden villages built over the water.",
-        image: "https://images.unsplash.com/photo-1544485542-a279c6d48259?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/penang-10.jpg`
       }
     ],
     practicalInfo: {
@@ -244,14 +244,14 @@ export const DESTINATIONS: Destination[] = [
     descAr: "تعتبر مرتفعات كاميرون الملاذ الجبلي الأشهر في ماليزيا، حيث تتميز بمناخها المعتدل والبارد طوال العام. تكتسي الجبال باللون الأخضر الزاهي بفضل مزارع الشاي الممتدة على التلال، مما يوفر مناظر طبيعية تحبس الأنفاس.\n\nتزخر المنطقة بالعديد من الأنشطة الهادئة، مثل زيارة مزارع الفراولة والزهور ومناحل العسل، وتذوق الشاي الطازج في المقاهي الإنجليزية ذات الطراز الكلاسيكي. لمحبي المغامرة، تقدم 'غابة الطحالب' (Mossy Forest) مسارات مشي مشوقة في غابة تبدو وكأنها من القصص الخيالية.",
     descEn: "Cameron Highlands is Malaysia's most popular hill retreat, known for its mild and cool climate year-round. The mountains are blanketed in vibrant green thanks to the rolling tea plantations, offering breathtaking landscapes.\n\nThe area is full of relaxing activities, such as visiting strawberry farms, flower gardens, and honey bee farms, as well as tasting fresh tea in classic English-style teahouses. For adventure lovers, the 'Mossy Forest' offers intriguing hiking trails in a forest that looks straight out of a fairy tale.",
     image: "/tourism/cameron.png",
-    heroImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1600&auto=format&fit=crop",
+    heroImage: `${BASE}tourism/g/cameron-1.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1582236021175-9b2f6dc448bc?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1543309914-99889baaf392?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1620306429532-6e2db0da8a07?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1626021666619-35a0ce09f6eb?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1517454378121-72991e4a1a36?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1533552093551-7f9fcff8736e?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/cameron-1.jpg`,
+      `${BASE}tourism/g/cameron-2.jpg`,
+      `${BASE}tourism/g/cameron-3.jpg`,
+      `${BASE}tourism/g/cameron-4.jpg`,
+      `${BASE}tourism/g/cameron-5.jpg`,
+      `${BASE}tourism/g/cameron-6.jpg`,
     ],
     highlights: [
       { titleAr: "مزارع الشاي", titleEn: "Tea Plantations", descAr: "تلال خضراء ساحرة", descEn: "Stunning green hills", icon: "Leaf" },
@@ -265,28 +265,28 @@ export const DESTINATIONS: Destination[] = [
         nameEn: "BOH Tea Plantation",
         descAr: "أكبر مزارع الشاي مع مقهى ذو إطلالة خلابة.",
         descEn: "Largest tea plantations with a scenic cafe.",
-        image: "https://images.unsplash.com/photo-1582236021175-9b2f6dc448bc?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/cameron-7.jpg`
       },
       {
         nameAr: "غابة الطحالب",
         nameEn: "Mossy Forest",
         descAr: "غابة جبلية باردة تغطيها الطحالب الخضراء.",
         descEn: "Cool mountainous forest covered in green moss.",
-        image: "https://images.unsplash.com/photo-1620306429532-6e2db0da8a07?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/cameron-8.jpg`
       },
       {
         nameAr: "مزارع الفراولة",
         nameEn: "Strawberry Farms",
         descAr: "قطف الفراولة الطازجة وتذوق الحلوى اللذيذة.",
         descEn: "Pick fresh strawberries and taste delicious desserts.",
-        image: "https://images.unsplash.com/photo-1543309914-99889baaf392?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/cameron-9.jpg`
       },
       {
         nameAr: "حديقة الزهور",
         nameEn: "Flora Park",
         descAr: "حدائق زهور خلابة مصممة بألوان زاهية.",
         descEn: "Beautifully designed flower gardens with vibrant colors.",
-        image: "https://images.unsplash.com/photo-1517454378121-72991e4a1a36?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/cameron-10.jpg`
       }
     ],
     practicalInfo: {
@@ -310,12 +310,12 @@ export const DESTINATIONS: Destination[] = [
     image: "/tourism/perhentian.png",
     heroImage: `${BASE}tourism/perhentian.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1544485542-a279c6d48259?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600863004811-1a3b839217ca?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1621644781442-9903b7fc3442?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/perhentian-1.jpg`,
+      `${BASE}tourism/g/perhentian-2.jpg`,
+      `${BASE}tourism/g/perhentian-3.jpg`,
+      `${BASE}tourism/g/perhentian-4.jpg`,
+      `${BASE}tourism/g/perhentian-5.jpg`,
+      `${BASE}tourism/g/perhentian-6.jpg`,
     ],
     highlights: [
       { titleAr: "مياه كريستالية", titleEn: "Crystal Waters", descAr: "سباحة في مياه شفافة", descEn: "Swim in transparent waters", icon: "Waves" },
@@ -329,28 +329,28 @@ export const DESTINATIONS: Destination[] = [
         nameEn: "Turtle Point",
         descAr: "منطقة للغطس تتيح لك السباحة بجوار السلاحف البحرية.",
         descEn: "A snorkeling area allowing you to swim next to sea turtles.",
-        image: "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/perhentian-7.jpg`
       },
       {
         nameAr: "شاطئ لونج بيتش",
         nameEn: "Long Beach (Kecil)",
         descAr: "شاطئ نابض بالحياة يتميز برماله البيضاء وأنشطته المسائية.",
         descEn: "A vibrant beach featuring white sands and evening activities.",
-        image: "https://images.unsplash.com/photo-1544485542-a279c6d48259?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/perhentian-8.jpg`
       },
       {
         nameAr: "حديقة المرجان",
         nameEn: "Coral Garden",
         descAr: "تشكيلات مرجانية مبهرة تضج بأسماك النيمو والأسماك الملونة.",
         descEn: "Dazzling coral formations bustling with Nemo and colorful fish.",
-        image: "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/perhentian-9.jpg`
       },
       {
         nameAr: "برهنتيان بيسار",
         nameEn: "Perhentian Besar",
         descAr: "منتجعات عائلية هادئة وغابات مطيرة تمتد حتى الشاطئ.",
         descEn: "Quiet family resorts and rainforests stretching to the beach.",
-        image: "https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/perhentian-10.jpg`
       }
     ],
     practicalInfo: {
@@ -374,12 +374,12 @@ export const DESTINATIONS: Destination[] = [
     image: "/tourism/putrajaya-lake.png",
     heroImage: `${BASE}tourism/putrajaya-lake.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546708688-662580dfbf3a?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1510255909249-14a0f443ee9e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1516008544498-34eb10813ce8?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/putrajaya-lake-1.jpg`,
+      `${BASE}tourism/g/putrajaya-lake-2.jpg`,
+      `${BASE}tourism/g/putrajaya-lake-3.jpg`,
+      `${BASE}tourism/g/putrajaya-lake-4.jpg`,
+      `${BASE}tourism/g/putrajaya-lake-5.jpg`,
+      `${BASE}tourism/g/putrajaya-lake-6.jpg`,
     ],
     highlights: [
       { titleAr: "جولات بحرية", titleEn: "Lake Cruises", descAr: "قوارب تقليدية وحديثة", descEn: "Traditional and modern boats", icon: "Ship" },
@@ -393,28 +393,28 @@ export const DESTINATIONS: Destination[] = [
         nameEn: "Cruise Tasik Putrajaya",
         descAr: "رحلات نهارية وليلية مريحة لاستكشاف معالم المدينة من الماء.",
         descEn: "Comfortable day and night cruises to explore city landmarks from the water.",
-        image: "https://images.unsplash.com/photo-1546708688-662580dfbf3a?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/putrajaya-lake-7.jpg`
       },
       {
         nameAr: "جسر سيري واواسان",
         nameEn: "Seri Wawasan Bridge",
         descAr: "جسر بتصميم شراع سفينة يضاء بألوان رائعة في المساء.",
         descEn: "A sail-shaped bridge beautifully illuminated in the evening.",
-        image: "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/putrajaya-lake-8.jpg`
       },
       {
         nameAr: "مسجد بوترا (من البحيرة)",
         nameEn: "Putra Mosque (Lake View)",
         descAr: "إطلالة ساحرة للمسجد الوردي العائم جزئياً على البحيرة.",
         descEn: "A magical view of the pink mosque floating partially on the lake.",
-        image: "https://images.unsplash.com/photo-1510255909249-14a0f443ee9e?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/putrajaya-lake-9.jpg`
       },
       {
         nameAr: "نصب الألفية",
         nameEn: "Millennium Monument",
         descAr: "نصب تذكاري شاهق يشبه زهرة الكركديه على حافة البحيرة.",
         descEn: "A towering monument resembling a hibiscus flower on the lake's edge.",
-        image: "https://images.unsplash.com/photo-1516008544498-34eb10813ce8?q=80&w=600&auto=format&fit=crop"
+        image: `${BASE}tourism/g/putrajaya-lake-10.jpg`
       }
     ],
     practicalInfo: {
@@ -440,12 +440,12 @@ export const DESTINATIONS: Destination[] = [
     image: "/tourism/malacca.png",
     heroImage: `${BASE}tourism/malacca.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1583418855738-71b8a06a1ce5?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1570183864708-306fc6e0ea79?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1555819206-7b30da4f1506?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1518337583765-728b7e41b212?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1544485542-a279c6d48259?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/malacca-1.jpg`,
+      `${BASE}tourism/g/malacca-2.jpg`,
+      `${BASE}tourism/g/malacca-3.jpg`,
+      `${BASE}tourism/g/malacca-4.jpg`,
+      `${BASE}tourism/g/malacca-5.jpg`,
+      `${BASE}tourism/g/malacca-6.jpg`,
     ],
     highlights: [
       { titleAr: "تراث عالمي", titleEn: "World Heritage", descAr: "مدرجة في قائمة اليونسكو", descEn: "Listed by UNESCO", icon: "Landmark" },
@@ -454,10 +454,10 @@ export const DESTINATIONS: Destination[] = [
       { titleAr: "رحلة نهرية", titleEn: "River Cruise", descAr: "استكشاف المدينة من الماء", descEn: "Explore the city from the water", icon: "Ship" }
     ],
     attractions: [
-      { nameAr: "قلعة أ فاموسا", nameEn: "A Famosa Fort", descAr: "بوابة برتغالية تعود لعام 1512م.", descEn: "Portuguese gateway dating to 1512.", image: "https://images.unsplash.com/photo-1583418855738-71b8a06a1ce5?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "الميدان الهولندي", nameEn: "Dutch Square (Stadthuys)", descAr: "المبنى الحكومي الهولندي الأحمر الشهير.", descEn: "Famous red Dutch government building.", image: "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "شارع جونكر", nameEn: "Jonker Street", descAr: "قلب الحي الصيني مع محلات عتيقة ومطاعم.", descEn: "Heart of Chinatown with antique shops and restaurants.", image: "https://images.unsplash.com/photo-1555819206-7b30da4f1506?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "رحلة نهر ملقا", nameEn: "Malacca River Cruise", descAr: "جولة مائية مضاءة ليلاً بين الجداريات.", descEn: "Night-lit water tour between murals.", image: "https://images.unsplash.com/photo-1518337583765-728b7e41b212?q=80&w=600&auto=format&fit=crop" }
+      { nameAr: "قلعة أ فاموسا", nameEn: "A Famosa Fort", descAr: "بوابة برتغالية تعود لعام 1512م.", descEn: "Portuguese gateway dating to 1512.", image: `${BASE}tourism/g/malacca-7.jpg` },
+      { nameAr: "الميدان الهولندي", nameEn: "Dutch Square (Stadthuys)", descAr: "المبنى الحكومي الهولندي الأحمر الشهير.", descEn: "Famous red Dutch government building.", image: `${BASE}tourism/g/malacca-8.jpg` },
+      { nameAr: "شارع جونكر", nameEn: "Jonker Street", descAr: "قلب الحي الصيني مع محلات عتيقة ومطاعم.", descEn: "Heart of Chinatown with antique shops and restaurants.", image: `${BASE}tourism/g/malacca-9.jpg` },
+      { nameAr: "رحلة نهر ملقا", nameEn: "Malacca River Cruise", descAr: "جولة مائية مضاءة ليلاً بين الجداريات.", descEn: "Night-lit water tour between murals.", image: `${BASE}tourism/g/malacca-10.jpg` }
     ],
     practicalInfo: {
       bestTimeAr: "نهاية الأسبوع لتجربة سوق جونكر الليلي النابض بالحياة",
@@ -480,12 +480,12 @@ export const DESTINATIONS: Destination[] = [
     image: "/tourism/batucaves.png",
     heroImage: `${BASE}tourism/batucaves.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1588416499018-d8c621e7d2b1?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1566895291455-5f25e5d2a4e5?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1510255909249-14a0f443ee9e?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/batucaves-1.jpg`,
+      `${BASE}tourism/g/batucaves-2.jpg`,
+      `${BASE}tourism/g/batucaves-3.jpg`,
+      `${BASE}tourism/g/batucaves-4.jpg`,
+      `${BASE}tourism/g/batucaves-5.jpg`,
+      `${BASE}tourism/g/batucaves-6.jpg`,
     ],
     highlights: [
       { titleAr: "تمثال ذهبي عملاق", titleEn: "Giant Golden Statue", descAr: "موروغان الـ43 متراً", descEn: "43-meter Murugan", icon: "Star" },
@@ -494,10 +494,10 @@ export const DESTINATIONS: Destination[] = [
       { titleAr: "مهرجان تايبوسام", titleEn: "Thaipusam Festival", descAr: "احتفال ديني مذهل يناير-فبراير", descEn: "Amazing religious festival Jan-Feb", icon: "Users" }
     ],
     attractions: [
-      { nameAr: "تمثال موروغان الذهبي", nameEn: "Lord Murugan Statue", descAr: "التمثال الذهبي الأطول من نوعه في العالم.", descEn: "World's tallest golden statue of its kind.", image: "https://images.unsplash.com/photo-1588416499018-d8c621e7d2b1?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "كهف الكاتدرائية", nameEn: "Cathedral Cave", descAr: "الكهف الرئيسي بأسقفه الشاهقة وإضاءته الطبيعية.", descEn: "Main cave with soaring ceilings and natural lighting.", image: "https://images.unsplash.com/photo-1581793745862-99fde7fa73d2?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "كهف راماياناH", nameEn: "Ramayana Cave", descAr: "تماثيل ملونة تصور مشاهد الملحمة الهندية.", descEn: "Colorful statues depicting scenes from the Indian epic.", image: "https://images.unsplash.com/photo-1566895291455-5f25e5d2a4e5?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "الكهف المظلم", nameEn: "Dark Cave", descAr: "كهف بيولوجي نادر يضم 23 نوعاً من الخفافيش.", descEn: "Rare biological cave housing 23 species of bats.", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop" }
+      { nameAr: "تمثال موروغان الذهبي", nameEn: "Lord Murugan Statue", descAr: "التمثال الذهبي الأطول من نوعه في العالم.", descEn: "World's tallest golden statue of its kind.", image: `${BASE}tourism/g/batucaves-7.jpg` },
+      { nameAr: "كهف الكاتدرائية", nameEn: "Cathedral Cave", descAr: "الكهف الرئيسي بأسقفه الشاهقة وإضاءته الطبيعية.", descEn: "Main cave with soaring ceilings and natural lighting.", image: `${BASE}tourism/g/batucaves-8.jpg` },
+      { nameAr: "كهف راماياناH", nameEn: "Ramayana Cave", descAr: "تماثيل ملونة تصور مشاهد الملحمة الهندية.", descEn: "Colorful statues depicting scenes from the Indian epic.", image: `${BASE}tourism/g/batucaves-9.jpg` },
+      { nameAr: "الكهف المظلم", nameEn: "Dark Cave", descAr: "كهف بيولوجي نادر يضم 23 نوعاً من الخفافيش.", descEn: "Rare biological cave housing 23 species of bats.", image: `${BASE}tourism/g/batucaves-10.jpg` }
     ],
     practicalInfo: {
       bestTimeAr: "الصباح الباكر قبل الحشود وحرارة الشمس",
@@ -518,14 +518,14 @@ export const DESTINATIONS: Destination[] = [
     descAr: "تامان نيجارا هي محمية طبيعية وطنية تمتد على أكثر من 4300 كيلومتر مربع وتعود إلى 130 مليون سنة، مما يجعلها من أقدم الغابات المطيرة على وجه الأرض. تضم الغابة تنوعاً بيولوجياً هائلاً يشمل النمور الماليزية والفيلة البرية والطيور النادرة.\n\nأبرز تجاربها جسور السير فوق الأشجار (Canopy Walk) المعلقة على ارتفاع 40 متراً، وهي من الأطول في العالم. كما تتيح الغابة رحلات قوارب في نهر تيمبيلينج، وزيارات لقرى السكان الأصليين (أوراق أصلي)، وجولات ليلية مثيرة لمراقبة الحياة البرية.",
     descEn: "Taman Negara is a national nature reserve covering over 4,300 square kilometers and dating back 130 million years, making it one of the oldest rainforests on Earth. The forest has enormous biodiversity including Malayan tigers, wild elephants, and rare birds.\n\nIts main highlight is the Canopy Walk suspended bridges 40 meters above the trees, among the world's longest. The forest also offers boat trips on the Tembeling River, visits to indigenous Orang Asli villages, and exciting night walks for wildlife watching.",
     image: "/tourism/tamannegara.png",
-    heroImage: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=1600&auto=format&fit=crop",
+    heroImage: `${BASE}tourism/g/tamannegara-1.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/tamannegara-1.jpg`,
+      `${BASE}tourism/g/tamannegara-2.jpg`,
+      `${BASE}tourism/g/tamannegara-3.jpg`,
+      `${BASE}tourism/g/tamannegara-4.jpg`,
+      `${BASE}tourism/g/tamannegara-5.jpg`,
+      `${BASE}tourism/g/tamannegara-6.jpg`,
     ],
     highlights: [
       { titleAr: "أقدم غابة مطيرة", titleEn: "Oldest Rainforest", descAr: "130 مليون سنة من التاريخ", descEn: "130 million years of history", icon: "TreePine" },
@@ -534,10 +534,10 @@ export const DESTINATIONS: Destination[] = [
       { titleAr: "حياة برية", titleEn: "Wildlife", descAr: "نمور وفيلة وطيور نادرة", descEn: "Tigers, elephants and rare birds", icon: "Eye" }
     ],
     attractions: [
-      { nameAr: "جسور الغابة المعلقة", nameEn: "Canopy Walkway", descAr: "أحد أطول جسور الغابة في العالم.", descEn: "One of the world's longest canopy walkways.", image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "رحلة نهر تيمبيلينج", nameEn: "Tembeling River Boat", descAr: "رحلة قارب بين الغابات الكثيفة.", descEn: "Boat ride through dense jungle.", image: "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "قرية أوراق أصلي", nameEn: "Orang Asli Village", descAr: "تعرف على ثقافة السكان الأصليين وحياتهم.", descEn: "Learn about the indigenous peoples' culture.", image: "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "الجولة الليلية", nameEn: "Night Jungle Walk", descAr: "مغامرة ليلية لمراقبة الحيوانات النشطة.", descEn: "Night adventure to spot nocturnal animals.", image: "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?q=80&w=600&auto=format&fit=crop" }
+      { nameAr: "جسور الغابة المعلقة", nameEn: "Canopy Walkway", descAr: "أحد أطول جسور الغابة في العالم.", descEn: "One of the world's longest canopy walkways.", image: `${BASE}tourism/g/tamannegara-7.jpg` },
+      { nameAr: "رحلة نهر تيمبيلينج", nameEn: "Tembeling River Boat", descAr: "رحلة قارب بين الغابات الكثيفة.", descEn: "Boat ride through dense jungle.", image: `${BASE}tourism/g/tamannegara-8.jpg` },
+      { nameAr: "قرية أوراق أصلي", nameEn: "Orang Asli Village", descAr: "تعرف على ثقافة السكان الأصليين وحياتهم.", descEn: "Learn about the indigenous peoples' culture.", image: `${BASE}tourism/g/tamannegara-9.jpg` },
+      { nameAr: "الجولة الليلية", nameEn: "Night Jungle Walk", descAr: "مغامرة ليلية لمراقبة الحيوانات النشطة.", descEn: "Night adventure to spot nocturnal animals.", image: `${BASE}tourism/g/tamannegara-10.jpg` }
     ],
     practicalInfo: {
       bestTimeAr: "بين مارس ومايو (أقل أمطاراً)، وتجنب موسم الفيضانات ديسمبر-يناير",
@@ -558,14 +558,14 @@ export const DESTINATIONS: Destination[] = [
     descAr: "جزيرة ريدانج هي جوهرة بحر الصين الجنوبي وإحدى أجمل جزر ماليزيا قاطبةً. تقع ضمن 'منتزه ريدانج البحري' المحمي، مما يحافظ على مياهها الفيروزية وشعابها المرجانية الزاهية في حالة استثنائية.\n\nتعتبر الجزيرة وجهة لا غنى عنها لعشاق الغطس والغوص، حيث يمكنك السباحة جنباً إلى جنب مع السلاحف البحرية الضخمة، والأسماك الملونة بأنواعها المتعددة، وسط مشهد تحت مائي ساحر. الشاطئ الرئيسي 'باسر بانجانج' من أجمل الشواطئ في جنوب شرق آسيا بأكمله.",
     descEn: "Redang Island is a jewel of the South China Sea and one of Malaysia's most beautiful islands. Located within the protected 'Redang Marine Park', which preserves its turquoise waters and vibrant coral reefs in exceptional condition.\n\nThe island is a must-visit for snorkeling and diving enthusiasts, where you can swim alongside giant sea turtles and colorful fish of many species, amidst a breathtaking underwater scene. The main beach 'Pasir Panjang' is one of the most beautiful beaches in all of Southeast Asia.",
     image: "/tourism/redang.png",
-    heroImage: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=1600&auto=format&fit=crop",
+    heroImage: `${BASE}tourism/g/redang-1.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1551361415-69c87624334f?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1588416499018-d8c621e7d2b1?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1537162998323-3d3675e0e87c?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/redang-1.jpg`,
+      `${BASE}tourism/g/redang-2.jpg`,
+      `${BASE}tourism/g/redang-3.jpg`,
+      `${BASE}tourism/g/redang-4.jpg`,
+      `${BASE}tourism/g/redang-5.jpg`,
+      `${BASE}tourism/g/redang-6.jpg`,
     ],
     highlights: [
       { titleAr: "منتزه بحري محمي", titleEn: "Protected Marine Park", descAr: "شعاب مرجانية بكر", descEn: "Pristine coral reefs", icon: "Shield" },
@@ -574,10 +574,10 @@ export const DESTINATIONS: Destination[] = [
       { titleAr: "شعاب ملونة", titleEn: "Colorful Reefs", descAr: "حياة بحرية متنوعة", descEn: "Diverse marine life", icon: "Star" }
     ],
     attractions: [
-      { nameAr: "شاطئ باسر بانجانج", nameEn: "Pasir Panjang Beach", descAr: "رمال بيضاء ومياه فيروزية ساحرة.", descEn: "White sands and mesmerizing turquoise waters.", image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "محطة أبحاث ريدانج", nameEn: "Redang Marine Research Station", descAr: "مركز لحماية السلاحف والحياة البحرية.", descEn: "Center for turtle and marine life protection.", image: "https://images.unsplash.com/photo-1551361415-69c87624334f?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "الغطس في المنتزه البحري", nameEn: "Marine Park Snorkeling", descAr: "تجربة الغطس في شعاب ملونة محمية.", descEn: "Snorkeling in protected colorful reefs.", image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "صيد الحبار الليلي", nameEn: "Night Squid Fishing", descAr: "نشاط ليلي ممتع على القوارب التقليدية.", descEn: "Fun night activity on traditional boats.", image: "https://images.unsplash.com/photo-1537162998323-3d3675e0e87c?q=80&w=600&auto=format&fit=crop" }
+      { nameAr: "شاطئ باسر بانجانج", nameEn: "Pasir Panjang Beach", descAr: "رمال بيضاء ومياه فيروزية ساحرة.", descEn: "White sands and mesmerizing turquoise waters.", image: `${BASE}tourism/g/redang-7.jpg` },
+      { nameAr: "محطة أبحاث ريدانج", nameEn: "Redang Marine Research Station", descAr: "مركز لحماية السلاحف والحياة البحرية.", descEn: "Center for turtle and marine life protection.", image: `${BASE}tourism/g/redang-8.jpg` },
+      { nameAr: "الغطس في المنتزه البحري", nameEn: "Marine Park Snorkeling", descAr: "تجربة الغطس في شعاب ملونة محمية.", descEn: "Snorkeling in protected colorful reefs.", image: `${BASE}tourism/g/redang-9.jpg` },
+      { nameAr: "صيد الحبار الليلي", nameEn: "Night Squid Fishing", descAr: "نشاط ليلي ممتع على القوارب التقليدية.", descEn: "Fun night activity on traditional boats.", image: `${BASE}tourism/g/redang-10.jpg` }
     ],
     practicalInfo: {
       bestTimeAr: "مارس حتى أكتوبر (مغلقة نوفمبر-فبراير بسبب الرياح الموسمية)",
@@ -600,12 +600,12 @@ export const DESTINATIONS: Destination[] = [
     image: "/tourism/klcc.png",
     heroImage: `${BASE}tourism/klcc.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546708688-662580dfbf3a?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1506161476142-2bbf189280d4?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1510255909249-14a0f443ee9e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/klcc-1.jpg`,
+      `${BASE}tourism/g/klcc-2.jpg`,
+      `${BASE}tourism/g/klcc-3.jpg`,
+      `${BASE}tourism/g/klcc-4.jpg`,
+      `${BASE}tourism/g/klcc-5.jpg`,
+      `${BASE}tourism/g/klcc-6.jpg`,
     ],
     highlights: [
       { titleAr: "تسوق فاخر", titleEn: "Luxury Shopping", descAr: "أرقى المتاجر العالمية", descEn: "World's finest stores", icon: "ShoppingBag" },
@@ -614,10 +614,10 @@ export const DESTINATIONS: Destination[] = [
       { titleAr: "حديقة خضراء", titleEn: "KLCC Park", descAr: "واحة خضراء وسط المدينة", descEn: "Green oasis in the city", icon: "TreePine" }
     ],
     attractions: [
-      { nameAr: "أكواريا كيه إل سي سي", nameEn: "Aquaria KLCC", descAr: "آلاف الكائنات البحرية في نفق زجاجي.", descEn: "Thousands of marine creatures in a glass tunnel.", image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "عروض النوافير الراقصة", nameEn: "Dancing Fountain Show", descAr: "عروض ليلية مجانية مع الموسيقى.", descEn: "Free nightly shows with music.", image: "https://images.unsplash.com/photo-1546708688-662580dfbf3a?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "سوريا كيه إل سي سي", nameEn: "Suria KLCC Mall", descAr: "6 طوابق من التسوق الفاخر.", descEn: "6 floors of luxury shopping.", image: "https://images.unsplash.com/photo-1510255909249-14a0f443ee9e?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "حديقة كيه إل سي سي", nameEn: "KLCC Park", descAr: "مسارات مشي وملاعب أطفال وبحيرات.", descEn: "Walking trails, children's playground and lakes.", image: "https://images.unsplash.com/photo-1506161476142-2bbf189280d4?q=80&w=600&auto=format&fit=crop" }
+      { nameAr: "أكواريا كيه إل سي سي", nameEn: "Aquaria KLCC", descAr: "آلاف الكائنات البحرية في نفق زجاجي.", descEn: "Thousands of marine creatures in a glass tunnel.", image: `${BASE}tourism/g/klcc-7.jpg` },
+      { nameAr: "عروض النوافير الراقصة", nameEn: "Dancing Fountain Show", descAr: "عروض ليلية مجانية مع الموسيقى.", descEn: "Free nightly shows with music.", image: `${BASE}tourism/g/klcc-8.jpg` },
+      { nameAr: "سوريا كيه إل سي سي", nameEn: "Suria KLCC Mall", descAr: "6 طوابق من التسوق الفاخر.", descEn: "6 floors of luxury shopping.", image: `${BASE}tourism/g/klcc-9.jpg` },
+      { nameAr: "حديقة كيه إل سي سي", nameEn: "KLCC Park", descAr: "مسارات مشي وملاعب أطفال وبحيرات.", descEn: "Walking trails, children's playground and lakes.", image: `${BASE}tourism/g/klcc-10.jpg` }
     ],
     practicalInfo: {
       bestTimeAr: "المساء لعروض النوافير (9 م و10 م)",
@@ -638,14 +638,14 @@ export const DESTINATIONS: Destination[] = [
     descAr: "مرتفعات جنتنج هي وجهة سياحية وترفيهية لا مثيل لها تقع على ارتفاع 1800 متر فوق مستوى سطح البحر. تحيط بها الغيوم الكثيفة والضباب طوال العام، مما يوفر مناخاً بارداً منعشاً ومشهداً طبيعياً ساحراً بعيداً عن حر المدينة.\n\nتضم المرتفعات مدينة الملاهي الداخلية 'سكايتروبوليس' وملاهي الهواء الطلق 'جنتنج سكاي ووردز' التي تضم ألعاباً مثيرة لجميع الأعمار، إلى جانب مراكز التسوق الضخمة ومجمع فنادق ضخم وأشهر المطاعم الماليزية والدولية.",
     descEn: "Genting Highlands is an unparalleled tourism and entertainment destination located at 1,800 meters above sea level. It is surrounded by thick clouds and mist year-round, providing a cool refreshing climate and a breathtaking natural scenery far from the city heat.\n\nThe highlands feature the 'Skytropolis' indoor entertainment city and 'Genting SkyWorlds' outdoor theme park with thrilling rides for all ages, alongside massive shopping centers, a large hotel complex, and famous Malaysian and international restaurants.",
     image: "/tourism/genting.png",
-    heroImage: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=1600&auto=format&fit=crop",
+    heroImage: `${BASE}tourism/g/genting-1.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582236021175-9b2f6dc448bc?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1620306429532-6e2db0da8a07?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546708688-662580dfbf3a?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1621644781442-9903b7fc3442?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/genting-1.jpg`,
+      `${BASE}tourism/g/genting-2.jpg`,
+      `${BASE}tourism/g/genting-3.jpg`,
+      `${BASE}tourism/g/genting-4.jpg`,
+      `${BASE}tourism/g/genting-5.jpg`,
+      `${BASE}tourism/g/genting-6.jpg`,
     ],
     highlights: [
       { titleAr: "مناخ بارد", titleEn: "Cool Climate", descAr: "1800م فوق سطح البحر", descEn: "1800m above sea level", icon: "Wind" },
@@ -654,10 +654,10 @@ export const DESTINATIONS: Destination[] = [
       { titleAr: "تسوق وترفيه", titleEn: "Shopping & Fun", descAr: "مراكز تسوق ضخمة", descEn: "Massive shopping complexes", icon: "ShoppingBag" }
     ],
     attractions: [
-      { nameAr: "سكايتروبوليس", nameEn: "Skytropolis Indoor", descAr: "مدينة ملاهي داخلية ضخمة للعائلات.", descEn: "Massive indoor theme park for families.", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "جنتنج سكاي ووردز", nameEn: "Genting SkyWorlds", descAr: "ملاهي هواء الطلق مثيرة بمناطق متعددة.", descEn: "Outdoor theme park with multiple themed zones.", image: "https://images.unsplash.com/photo-1582236021175-9b2f6dc448bc?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "تلفريك أوانا", nameEn: "Awana SkyWay Cable Car", descAr: "تلفريك بانورامي فوق الغابات والضباب.", descEn: "Panoramic cable car above forests and mist.", image: "https://images.unsplash.com/photo-1621644781442-9903b7fc3442?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "معبد كهوف شين سوي", nameEn: "Chin Swee Caves Temple", descAr: "معبد صيني تاريخي بإطلالة جبلية.", descEn: "Historic Chinese temple with mountain views.", image: "https://images.unsplash.com/photo-1620306429532-6e2db0da8a07?q=80&w=600&auto=format&fit=crop" }
+      { nameAr: "سكايتروبوليس", nameEn: "Skytropolis Indoor", descAr: "مدينة ملاهي داخلية ضخمة للعائلات.", descEn: "Massive indoor theme park for families.", image: `${BASE}tourism/g/genting-7.jpg` },
+      { nameAr: "جنتنج سكاي ووردز", nameEn: "Genting SkyWorlds", descAr: "ملاهي هواء الطلق مثيرة بمناطق متعددة.", descEn: "Outdoor theme park with multiple themed zones.", image: `${BASE}tourism/g/genting-8.jpg` },
+      { nameAr: "تلفريك أوانا", nameEn: "Awana SkyWay Cable Car", descAr: "تلفريك بانورامي فوق الغابات والضباب.", descEn: "Panoramic cable car above forests and mist.", image: `${BASE}tourism/g/genting-9.jpg` },
+      { nameAr: "معبد كهوف شين سوي", nameEn: "Chin Swee Caves Temple", descAr: "معبد صيني تاريخي بإطلالة جبلية.", descEn: "Historic Chinese temple with mountain views.", image: `${BASE}tourism/g/genting-10.jpg` }
     ],
     practicalInfo: {
       bestTimeAr: "طوال العام — المناخ بارد دائماً (15-25°C)، ويزدحم عطل نهاية الأسبوع",
@@ -682,12 +682,12 @@ export const DESTINATIONS: Destination[] = [
     image: "/tourism/kapas.png",
     heroImage: `${BASE}tourism/kapas.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1551361415-69c87624334f?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1540202404-b711142289eb?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1537162998323-3d3675e0e87c?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/kapas-1.jpg`,
+      `${BASE}tourism/g/kapas-2.jpg`,
+      `${BASE}tourism/g/kapas-3.jpg`,
+      `${BASE}tourism/g/kapas-4.jpg`,
+      `${BASE}tourism/g/kapas-5.jpg`,
+      `${BASE}tourism/g/kapas-6.jpg`,
     ],
     highlights: [
       { titleAr: "شواطئ بكر", titleEn: "Pristine Beaches", descAr: "رمال بيضاء كالقطن", descEn: "Cotton-white pristine sands", icon: "Sun" },
@@ -696,10 +696,10 @@ export const DESTINATIONS: Destination[] = [
       { titleAr: "مسارات الغابة", titleEn: "Forest Trails", descAr: "عبر غابات استوائية كثيفة", descEn: "Through dense tropical forests", icon: "TreePine" }
     ],
     attractions: [
-      { nameAr: "مسار الكابس-دراغون", nameEn: "Kapas-Dragon Trail", descAr: "مسار مشي يربط كاباس بجزيرة أناك كاباس.", descEn: "Hiking trail linking Kapas to Anak Kapas island.", image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "كهف جوسوق", nameEn: "Gua Busuk", descAr: "كهف بحري مثير يمكن استكشافه بالكياك.", descEn: "Exciting sea cave explorable by kayak.", image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "نقاط الغطس الشمالية", nameEn: "Northern Snorkeling Spots", descAr: "أحسن مناطق الغطس في الجزيرة.", descEn: "Best snorkeling spots on the island.", image: "https://images.unsplash.com/photo-1551361415-69c87624334f?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "جولات الكياك", nameEn: "Kayaking Tours", descAr: "استكشاف محيط الجزيرة بالكياك.", descEn: "Explore the island's surroundings by kayak.", image: "https://images.unsplash.com/photo-1540202404-b711142289eb?q=80&w=600&auto=format&fit=crop" }
+      { nameAr: "مسار الكابس-دراغون", nameEn: "Kapas-Dragon Trail", descAr: "مسار مشي يربط كاباس بجزيرة أناك كاباس.", descEn: "Hiking trail linking Kapas to Anak Kapas island.", image: `${BASE}tourism/g/kapas-7.jpg` },
+      { nameAr: "كهف جوسوق", nameEn: "Gua Busuk", descAr: "كهف بحري مثير يمكن استكشافه بالكياك.", descEn: "Exciting sea cave explorable by kayak.", image: `${BASE}tourism/g/kapas-8.jpg` },
+      { nameAr: "نقاط الغطس الشمالية", nameEn: "Northern Snorkeling Spots", descAr: "أحسن مناطق الغطس في الجزيرة.", descEn: "Best snorkeling spots on the island.", image: `${BASE}tourism/g/kapas-9.jpg` },
+      { nameAr: "جولات الكياك", nameEn: "Kayaking Tours", descAr: "استكشاف محيط الجزيرة بالكياك.", descEn: "Explore the island's surroundings by kayak.", image: `${BASE}tourism/g/kapas-10.jpg` }
     ],
     practicalInfo: {
       bestTimeAr: "مارس حتى أكتوبر (موسم الصيف)",
@@ -720,14 +720,14 @@ export const DESTINATIONS: Destination[] = [
     descAr: "جزيرة لانج تيرنجاه هي الجوهرة المخفية لترنجانو، تقع بين جزيرتي برهنتيان وريدانج الشهيرتين. تتميز بعدد محدود من المنتجعات الصغيرة مما يضمن هدوءاً نادراً وبيئة طبيعية بكر بعيدة عن الازدحام السياحي.\n\nتتميز الجزيرة بمياه فيروزية شديدة الصفاء وشعاب مرجانية غنية بالحياة البحرية، وتعتبر من أفضل وجهات الغطس في ماليزيا. يمكنك الاستمتاع بمشاهدة السلاحف البحرية بشكل شبه مضمون، والسباحة وسط أسماك مدرسة ملونة في بحيرة زرقاء فاتنة.",
     descEn: "Lang Tengah Island is Terengganu's hidden jewel, located between the famous Perhentian and Redang islands. It features a limited number of small resorts, ensuring rare tranquility and a pristine natural environment far from tourist crowds.\n\nThe island features crystal turquoise waters and coral reefs rich with marine life, making it one of Malaysia's top diving destinations. You can almost guarantee sea turtle sightings, and swim amongst colorful fish schools in a mesmerizing blue lagoon.",
     image: "/tourism/langterngah.png",
-    heroImage: "https://images.unsplash.com/photo-1540202404-b711142289eb?q=80&w=1600&auto=format&fit=crop",
+    heroImage: `${BASE}tourism/g/langterngah-1.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1544551763-46a013bb70d5?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600863004811-1a3b839217ca?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1621644781442-9903b7fc3442?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/langterngah-1.jpg`,
+      `${BASE}tourism/g/langterngah-2.jpg`,
+      `${BASE}tourism/g/langterngah-3.jpg`,
+      `${BASE}tourism/g/langterngah-4.jpg`,
+      `${BASE}tourism/g/langterngah-5.jpg`,
+      `${BASE}tourism/g/langterngah-6.jpg`,
     ],
     highlights: [
       { titleAr: "خصوصية كاملة", titleEn: "Complete Privacy", descAr: "منتجعات محدودة بلا ازدحام", descEn: "Limited resorts, no crowding", icon: "Shield" },
@@ -736,10 +736,10 @@ export const DESTINATIONS: Destination[] = [
       { titleAr: "سلاحف مضمونة", titleEn: "Turtle Sightings", descAr: "مشاهدة شبه مضمونة للسلاحف", descEn: "Almost guaranteed turtle encounters", icon: "Star" }
     ],
     attractions: [
-      { nameAr: "البحيرة الزرقاء", nameEn: "Blue Lagoon", descAr: "منطقة سباحة بمياه هادئة وفيروزية.", descEn: "Swimming area with calm turquoise waters.", image: "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "نقطة السلاحف", nameEn: "Turtle Point Diving", descAr: "موقع غوص شهير بتواجد السلاحف.", descEn: "Famous dive site known for turtle presence.", image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "الغطس الليلي", nameEn: "Night Snorkeling", descAr: "شاهد العوالق البيولوجية المضيئة بالليل.", descEn: "Witness bioluminescent plankton at night.", image: "https://images.unsplash.com/photo-1600863004811-1a3b839217ca?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "مسار الغابة الجبلي", nameEn: "Jungle Trek", descAr: "مسار قصير يوصل لنقطة مراقبة بانورامية.", descEn: "Short trail leading to a panoramic viewpoint.", image: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?q=80&w=600&auto=format&fit=crop" }
+      { nameAr: "البحيرة الزرقاء", nameEn: "Blue Lagoon", descAr: "منطقة سباحة بمياه هادئة وفيروزية.", descEn: "Swimming area with calm turquoise waters.", image: `${BASE}tourism/g/langterngah-7.jpg` },
+      { nameAr: "نقطة السلاحف", nameEn: "Turtle Point Diving", descAr: "موقع غوص شهير بتواجد السلاحف.", descEn: "Famous dive site known for turtle presence.", image: `${BASE}tourism/g/langterngah-8.jpg` },
+      { nameAr: "الغطس الليلي", nameEn: "Night Snorkeling", descAr: "شاهد العوالق البيولوجية المضيئة بالليل.", descEn: "Witness bioluminescent plankton at night.", image: `${BASE}tourism/g/langterngah-9.jpg` },
+      { nameAr: "مسار الغابة الجبلي", nameEn: "Jungle Trek", descAr: "مسار قصير يوصل لنقطة مراقبة بانورامية.", descEn: "Short trail leading to a panoramic viewpoint.", image: `${BASE}tourism/g/langterngah-10.jpg` }
     ],
     practicalInfo: {
       bestTimeAr: "مارس حتى أكتوبر، تجنب موسم الأمطار نوفمبر-فبراير",
@@ -760,14 +760,14 @@ export const DESTINATIONS: Destination[] = [
     descAr: "جزيرة تينجول هي الجزيرة الأبعد والأكثر نائيةً في ساحل ترنجانو، مما يجعلها وجهة حصرية للغواصين المحترفين وعشاق المغامرات البحرية الحقيقية. تضم مياهها ثروات بحرية نادرة لا توجد في أي جزيرة ماليزية أخرى.\n\nتشتهر الجزيرة بمشاهدات القرش الحوت العملاق وأسماك المانتا الضخمة في مواسم معينة، فضلاً عن حدائق مرجانية بكر لم تمسها يد الإنسان. الشعاب العميقة تضم تشكيلات 'بومي' المرجانية الضخمة التي تعيش حولها الأسماك الضخمة وثعابين البحر ونجوم البحر.",
     descEn: "Tenggol Island is the most remote island off Terengganu's coast, making it an exclusive destination for professional divers and true ocean adventure lovers. Its waters contain rare marine treasures found nowhere else in Malaysia.\n\nThe island is famous for whale shark and giant manta ray sightings during certain seasons, as well as pristine coral gardens untouched by human hands. The deep reefs contain massive 'bommie' coral formations inhabited by large fish, sea snakes, and starfish.",
     image: "/tourism/tenggol.png",
-    heroImage: "https://images.unsplash.com/photo-1582236021175-9b2f6dc448bc?q=80&w=1600&auto=format&fit=crop",
+    heroImage: `${BASE}tourism/g/tenggol-1.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1600863004811-1a3b839217ca?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1551361415-69c87624334f?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1544485542-a279c6d48259?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/tenggol-1.jpg`,
+      `${BASE}tourism/g/tenggol-2.jpg`,
+      `${BASE}tourism/g/tenggol-3.jpg`,
+      `${BASE}tourism/g/tenggol-4.jpg`,
+      `${BASE}tourism/g/tenggol-5.jpg`,
+      `${BASE}tourism/g/tenggol-6.jpg`,
     ],
     highlights: [
       { titleAr: "قرش الحوت", titleEn: "Whale Sharks", descAr: "مشاهدات نادرة موسمية", descEn: "Rare seasonal sightings", icon: "Eye" },
@@ -776,10 +776,10 @@ export const DESTINATIONS: Destination[] = [
       { titleAr: "عزلة تامة", titleEn: "Complete Isolation", descAr: "الجزيرة الأكثر نائية", descEn: "Malaysia's remotest island", icon: "Mountain" }
     ],
     attractions: [
-      { nameAr: "ممر المانتا", nameEn: "Manta Passage", descAr: "موقع الغوص الأشهر لمشاهدة المانتا.", descEn: "Most famous dive site for manta rays.", image: "https://images.unsplash.com/photo-1544550581-5f7ceaf7f992?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "مواقع قرش الحوت", nameEn: "Whale Shark Spots", descAr: "مشاهدة أضخم سمك في العالم.", descEn: "Spotting the world's largest fish.", image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "صخرة النمر", nameEn: "Tiger Rock", descAr: "موقع غوص عميق بشعاب رائعة.", descEn: "Deep dive site with spectacular reefs.", image: "https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "غابة المراوح البحرية", nameEn: "Sea Fan Forest", descAr: "حديقة مراوح بحرية عملاقة نادرة.", descEn: "Rare giant sea fan garden.", image: "https://images.unsplash.com/photo-1600863004811-1a3b839217ca?q=80&w=600&auto=format&fit=crop" }
+      { nameAr: "ممر المانتا", nameEn: "Manta Passage", descAr: "موقع الغوص الأشهر لمشاهدة المانتا.", descEn: "Most famous dive site for manta rays.", image: `${BASE}tourism/g/tenggol-7.jpg` },
+      { nameAr: "مواقع قرش الحوت", nameEn: "Whale Shark Spots", descAr: "مشاهدة أضخم سمك في العالم.", descEn: "Spotting the world's largest fish.", image: `${BASE}tourism/g/tenggol-8.jpg` },
+      { nameAr: "صخرة النمر", nameEn: "Tiger Rock", descAr: "موقع غوص عميق بشعاب رائعة.", descEn: "Deep dive site with spectacular reefs.", image: `${BASE}tourism/g/tenggol-9.jpg` },
+      { nameAr: "غابة المراوح البحرية", nameEn: "Sea Fan Forest", descAr: "حديقة مراوح بحرية عملاقة نادرة.", descEn: "Rare giant sea fan garden.", image: `${BASE}tourism/g/tenggol-10.jpg` }
     ],
     practicalInfo: {
       bestTimeAr: "مارس حتى أغسطس لمشاهدة قرش الحوت",
@@ -802,12 +802,12 @@ export const DESTINATIONS: Destination[] = [
     image: "/tourism/terengganu-city.png",
     heroImage: `${BASE}tourism/terengganu-city.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1570183864708-306fc6e0ea79?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583418855738-71b8a06a1ce5?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1555819206-7b30da4f1506?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1518337583765-728b7e41b212?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1566895291455-5f25e5d2a4e5?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/terengganu-city-1.jpg`,
+      `${BASE}tourism/g/terengganu-city-2.jpg`,
+      `${BASE}tourism/g/terengganu-city-3.jpg`,
+      `${BASE}tourism/g/terengganu-city-4.jpg`,
+      `${BASE}tourism/g/terengganu-city-5.jpg`,
+      `${BASE}tourism/g/terengganu-city-6.jpg`,
     ],
     highlights: [
       { titleAr: "المسجد المعائم", titleEn: "Floating Mosque", descAr: "أيقونة ترنجانو على النهر", descEn: "Terengganu's riverside icon", icon: "Landmark" },
@@ -816,10 +816,10 @@ export const DESTINATIONS: Destination[] = [
       { titleAr: "سوق تقليدي", titleEn: "Traditional Market", descAr: "مصنوعات يدوية وأطعمة محلية", descEn: "Handicrafts and local food", icon: "Utensils" }
     ],
     attractions: [
-      { nameAr: "مسجد ترنجانو المعائم", nameEn: "Tengku Tengah Zaharah Mosque", descAr: "المسجد الأبيض الأيقوني العائم على الماء.", descEn: "The iconic white mosque floating on water.", image: "https://images.unsplash.com/photo-1570183864708-306fc6e0ea79?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "متحف ولاية ترنجانو", nameEn: "Terengganu State Museum", descAr: "أكبر متحف في ماليزيا بمبانٍ تراثية ضخمة.", descEn: "Malaysia's largest museum with grand heritage buildings.", image: "https://images.unsplash.com/photo-1583418855738-71b8a06a1ce5?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "سوق باسر باياونج", nameEn: "Pasar Payang Central Market", descAr: "سوق شعبي نابض بالمصنوعات والأطعمة.", descEn: "Vibrant market full of crafts and local food.", image: "https://images.unsplash.com/photo-1555819206-7b30da4f1506?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "جزيرة دويونج", nameEn: "Pulau Duyong", descAr: "مركز صناعة القوارب التقليدية الكلاسيكية.", descEn: "Traditional classic boat building center.", image: "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=600&auto=format&fit=crop" }
+      { nameAr: "مسجد ترنجانو المعائم", nameEn: "Tengku Tengah Zaharah Mosque", descAr: "المسجد الأبيض الأيقوني العائم على الماء.", descEn: "The iconic white mosque floating on water.", image: `${BASE}tourism/g/terengganu-city-7.jpg` },
+      { nameAr: "متحف ولاية ترنجانو", nameEn: "Terengganu State Museum", descAr: "أكبر متحف في ماليزيا بمبانٍ تراثية ضخمة.", descEn: "Malaysia's largest museum with grand heritage buildings.", image: `${BASE}tourism/g/terengganu-city-8.jpg` },
+      { nameAr: "سوق باسر باياونج", nameEn: "Pasar Payang Central Market", descAr: "سوق شعبي نابض بالمصنوعات والأطعمة.", descEn: "Vibrant market full of crafts and local food.", image: `${BASE}tourism/g/terengganu-city-9.jpg` },
+      { nameAr: "جزيرة دويونج", nameEn: "Pulau Duyong", descAr: "مركز صناعة القوارب التقليدية الكلاسيكية.", descEn: "Traditional classic boat building center.", image: `${BASE}tourism/g/terengganu-city-10.jpg` }
     ],
     practicalInfo: {
       bestTimeAr: "مارس حتى أكتوبر لتجنب موسم الرياح الموسمية",
@@ -844,12 +844,12 @@ export const DESTINATIONS: Destination[] = [
     image: "/tourism/putra-mosque.png",
     heroImage: `${BASE}tourism/putra-mosque.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1570183864708-306fc6e0ea79?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583418855738-71b8a06a1ce5?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546708688-662580dfbf3a?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/putra-mosque-1.jpg`,
+      `${BASE}tourism/g/putra-mosque-2.jpg`,
+      `${BASE}tourism/g/putra-mosque-3.jpg`,
+      `${BASE}tourism/g/putra-mosque-4.jpg`,
+      `${BASE}tourism/g/putra-mosque-5.jpg`,
+      `${BASE}tourism/g/putra-mosque-6.jpg`,
     ],
     highlights: [
       { titleAr: "قبة وردية فريدة", titleEn: "Unique Pink Dome", descAr: "مستوحاة من مسجد الإمام في طهران", descEn: "Inspired by Tehran's Imam mosque", icon: "Landmark" },
@@ -858,10 +858,10 @@ export const DESTINATIONS: Destination[] = [
       { titleAr: "مفتوح للسياح", titleEn: "Open to Tourists", descAr: "زيارات خارج أوقات الصلاة", descEn: "Visits outside prayer times", icon: "Users" }
     ],
     attractions: [
-      { nameAr: "قاعة الصلاة الرئيسية", nameEn: "Main Prayer Hall", descAr: "تستوعب 14,000 مصلٍّ بزخارف إسلامية رائعة.", descEn: "Accommodates 14,000 worshippers with stunning Islamic decor.", image: "https://images.unsplash.com/photo-1570183864708-306fc6e0ea79?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "صحن المسجد المفتوح", nameEn: "Open Courtyard (Sahn)", descAr: "ساحة فضاء تطل على البحيرة.", descEn: "Open courtyard overlooking the lake.", image: "https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "نقطة التصوير الغروبي", nameEn: "Sunset Photography Spot", descAr: "أجمل نقطة لتصوير المسجد على البحيرة.", descEn: "Best point to photograph the mosque over the lake.", image: "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "معرض المسجد", nameEn: "Exhibition Gallery", descAr: "معرض تعريفي بتاريخ المسجد والإسلام.", descEn: "Introductory exhibition on mosque history and Islam.", image: "https://images.unsplash.com/photo-1583418855738-71b8a06a1ce5?q=80&w=600&auto=format&fit=crop" }
+      { nameAr: "قاعة الصلاة الرئيسية", nameEn: "Main Prayer Hall", descAr: "تستوعب 14,000 مصلٍّ بزخارف إسلامية رائعة.", descEn: "Accommodates 14,000 worshippers with stunning Islamic decor.", image: `${BASE}tourism/g/putra-mosque-7.jpg` },
+      { nameAr: "صحن المسجد المفتوح", nameEn: "Open Courtyard (Sahn)", descAr: "ساحة فضاء تطل على البحيرة.", descEn: "Open courtyard overlooking the lake.", image: `${BASE}tourism/g/putra-mosque-8.jpg` },
+      { nameAr: "نقطة التصوير الغروبي", nameEn: "Sunset Photography Spot", descAr: "أجمل نقطة لتصوير المسجد على البحيرة.", descEn: "Best point to photograph the mosque over the lake.", image: `${BASE}tourism/g/putra-mosque-9.jpg` },
+      { nameAr: "معرض المسجد", nameEn: "Exhibition Gallery", descAr: "معرض تعريفي بتاريخ المسجد والإسلام.", descEn: "Introductory exhibition on mosque history and Islam.", image: `${BASE}tourism/g/putra-mosque-10.jpg` }
     ],
     practicalInfo: {
       bestTimeAr: "وقت الغروب للحصول على أجمل الصور",
@@ -882,14 +882,14 @@ export const DESTINATIONS: Destination[] = [
     descAr: "الحديقة النباتية في بتراجايا هي إحدى أكبر الحدائق النباتية في جنوب شرق آسيا، تمتد على مساحة 92 هكتاراً وتضم أكثر من 700 نوع من النباتات المدارية والمحلية. صُممت لتكون متنفساً طبيعياً لسكان المدينة الإدارية وزوارها.\n\nتنقسم الحديقة إلى أقسام متخصصة متعددة، منها: حديقة النخيل التي تضم أكثر من 1000 نوع من النخيل، والحديقة العطرية التي تضم الأعشاب الطبية والتوابل، وحديقة الزهور وحديقة الأوركيد والبروميلياد، وحديقة الخيزران الخضراء النادرة.",
     descEn: "The Putrajaya Botanical Garden is one of Southeast Asia's largest botanical gardens, spanning 92 hectares and housing over 700 species of tropical and local plants. It was designed as a natural retreat for administrative city residents and visitors.\n\nThe garden is divided into multiple specialized sections, including: the Palm Garden with over 1,000 palm species, the Fragrant Garden with medicinal herbs and spices, the Flower Garden, the Orchid and Bromeliad Garden, and the rare Green Bamboo Garden.",
     image: "/tourism/putrajaya-botanical.png",
-    heroImage: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=1600&auto=format&fit=crop",
+    heroImage: `${BASE}tourism/g/putrajaya-botanical-1.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1517454378121-72991e4a1a36?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1533552093551-7f9fcff8736e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1582236021175-9b2f6dc448bc?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/putrajaya-botanical-1.jpg`,
+      `${BASE}tourism/g/putrajaya-botanical-2.jpg`,
+      `${BASE}tourism/g/putrajaya-botanical-3.jpg`,
+      `${BASE}tourism/g/putrajaya-botanical-4.jpg`,
+      `${BASE}tourism/g/putrajaya-botanical-5.jpg`,
+      `${BASE}tourism/g/putrajaya-botanical-6.jpg`,
     ],
     highlights: [
       { titleAr: "700+ نوع نباتي", titleEn: "700+ Plant Species", descAr: "تنوع نباتي استثنائي", descEn: "Exceptional plant diversity", icon: "Leaf" },
@@ -898,10 +898,10 @@ export const DESTINATIONS: Destination[] = [
       { titleAr: "هواء نقي", titleEn: "Fresh Air", descAr: "متنفس طبيعي في قلب المدينة", descEn: "Natural retreat in the city heart", icon: "Sun" }
     ],
     attractions: [
-      { nameAr: "حديقة النخيل", nameEn: "Palm Garden", descAr: "أكثر من 1000 نوع من أشجار النخيل.", descEn: "Over 1,000 species of palm trees.", image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "الحديقة العطرية", nameEn: "Fragrant Garden", descAr: "أعشاب طبية وتوابل استوائية عطرة.", descEn: "Medicinal herbs and aromatic tropical spices.", image: "https://images.unsplash.com/photo-1517454378121-72991e4a1a36?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "حديقة الأوركيد", nameEn: "Orchid Garden", descAr: "مئات أنواع الأوركيد الاستوائية النادرة.", descEn: "Hundreds of rare tropical orchid varieties.", image: "https://images.unsplash.com/photo-1533552093551-7f9fcff8736e?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "حديقة الخيزران", nameEn: "Bamboo Garden", descAr: "حديقة خيزران خضراء هادئة ومنعشة.", descEn: "Calm and refreshing green bamboo garden.", image: "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600&auto=format&fit=crop" }
+      { nameAr: "حديقة النخيل", nameEn: "Palm Garden", descAr: "أكثر من 1000 نوع من أشجار النخيل.", descEn: "Over 1,000 species of palm trees.", image: `${BASE}tourism/g/putrajaya-botanical-7.jpg` },
+      { nameAr: "الحديقة العطرية", nameEn: "Fragrant Garden", descAr: "أعشاب طبية وتوابل استوائية عطرة.", descEn: "Medicinal herbs and aromatic tropical spices.", image: `${BASE}tourism/g/putrajaya-botanical-8.jpg` },
+      { nameAr: "حديقة الأوركيد", nameEn: "Orchid Garden", descAr: "مئات أنواع الأوركيد الاستوائية النادرة.", descEn: "Hundreds of rare tropical orchid varieties.", image: `${BASE}tourism/g/putrajaya-botanical-9.jpg` },
+      { nameAr: "حديقة الخيزران", nameEn: "Bamboo Garden", descAr: "حديقة خيزران خضراء هادئة ومنعشة.", descEn: "Calm and refreshing green bamboo garden.", image: `${BASE}tourism/g/putrajaya-botanical-10.jpg` }
     ],
     practicalInfo: {
       bestTimeAr: "الصباح الباكر أو المساء — مفتوحة يومياً",
@@ -922,14 +922,14 @@ export const DESTINATIONS: Destination[] = [
     descAr: "قصر العدالة أو 'بالاس أوف جاستيس' هو مقر المحكمة الاتحادية لماليزيا ويعتبر أحد أكثر المباني الحكومية إثارةً للإعجاب المعماري في البلاد. يجمع في تصميمه بين الطراز الغرناطي الأندلسي بقببه المتعددة وأقواسه المعمارية والمعمار الإسلامي الحديث.\n\nبُني المبنى باستخدام الحجر الهندي والرخام الإيطالي، وتتصدره أقواس ضخمة وعمود مركزي بارز. يقع في موقع استراتيجي على الطريق الرئيسية مقابل ميدان بوترا، مما يجعله معلماً بصرياً أساسياً يرتبط ارتباطاً وثيقاً بصورة بتراجايا الإدارية.",
     descEn: "The Palace of Justice, or 'Istana Kehakiman', is the seat of Malaysia's Federal Court and one of the country's most architecturally impressive government buildings. Its design blends the Andalusian Granadan style with its multiple domes and architectural arches, with modern Islamic architecture.\n\nThe building is constructed using Indian stone and Italian marble, fronted by massive arches and a prominent central column. It sits in a strategic location on the main road opposite Putra Square, making it an essential visual landmark closely linked to Putrajaya's administrative image.",
     image: "/tourism/palace-justice.png",
-    heroImage: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=1600&auto=format&fit=crop",
+    heroImage: `${BASE}tourism/g/palace-justice-1.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1583418855738-71b8a06a1ce5?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546708688-662580dfbf3a?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1510255909249-14a0f443ee9e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1570183864708-306fc6e0ea79?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/palace-justice-1.jpg`,
+      `${BASE}tourism/g/palace-justice-2.jpg`,
+      `${BASE}tourism/g/palace-justice-3.jpg`,
+      `${BASE}tourism/g/palace-justice-4.jpg`,
+      `${BASE}tourism/g/palace-justice-5.jpg`,
+      `${BASE}tourism/g/palace-justice-6.jpg`,
     ],
     highlights: [
       { titleAr: "طراز أندلسي", titleEn: "Andalusian Style", descAr: "مستوحى من غرناطة الإسلامية", descEn: "Inspired by Islamic Granada", icon: "Landmark" },
@@ -938,10 +938,10 @@ export const DESTINATIONS: Destination[] = [
       { titleAr: "تصوير رائع", titleEn: "Photography Gem", descAr: "أحد أجمل مباني ماليزيا", descEn: "One of Malaysia's most photogenic buildings", icon: "Camera" }
     ],
     attractions: [
-      { nameAr: "واجهة المبنى الضخمة", nameEn: "Grand Building Facade", descAr: "أقواس وقباب أندلسية مذهلة للتصوير.", descEn: "Stunning Andalusian arches and domes for photography.", image: "https://images.unsplash.com/photo-1583418855738-71b8a06a1ce5?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "ساحة بوترا", nameEn: "Putra Square", descAr: "الميدان الرئيسي المقابل للقصر.", descEn: "Main square opposite the palace.", image: "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "حديقة الفسيفساء", nameEn: "Mosaic Garden Details", descAr: "تفاصيل فسيفساء إسلامية دقيقة مذهلة.", descEn: "Stunning intricate Islamic mosaic details.", image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "الجسر الرئيسي المجاور", nameEn: "Wawasan Bridge Nearby", descAr: "جسر مستقبلي على بعد خطوات.", descEn: "Futuristic bridge just steps away.", image: "https://images.unsplash.com/photo-1546708688-662580dfbf3a?q=80&w=600&auto=format&fit=crop" }
+      { nameAr: "واجهة المبنى الضخمة", nameEn: "Grand Building Facade", descAr: "أقواس وقباب أندلسية مذهلة للتصوير.", descEn: "Stunning Andalusian arches and domes for photography.", image: `${BASE}tourism/g/palace-justice-7.jpg` },
+      { nameAr: "ساحة بوترا", nameEn: "Putra Square", descAr: "الميدان الرئيسي المقابل للقصر.", descEn: "Main square opposite the palace.", image: `${BASE}tourism/g/palace-justice-1.jpg` },
+      { nameAr: "حديقة الفسيفساء", nameEn: "Mosaic Garden Details", descAr: "تفاصيل فسيفساء إسلامية دقيقة مذهلة.", descEn: "Stunning intricate Islamic mosaic details.", image: `${BASE}tourism/g/palace-justice-2.jpg` },
+      { nameAr: "الجسر الرئيسي المجاور", nameEn: "Wawasan Bridge Nearby", descAr: "جسر مستقبلي على بعد خطوات.", descEn: "Futuristic bridge just steps away.", image: `${BASE}tourism/g/palace-justice-3.jpg` }
     ],
     practicalInfo: {
       bestTimeAr: "الصباح لأفضل إضاءة للتصوير",
@@ -964,12 +964,12 @@ export const DESTINATIONS: Destination[] = [
     image: "/tourism/perdana-putra.png",
     heroImage: `${BASE}tourism/perdana-putra.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1546708688-662580dfbf3a?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583418855738-71b8a06a1ce5?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1510255909249-14a0f443ee9e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1570183864708-306fc6e0ea79?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/perdana-putra-1.jpg`,
+      `${BASE}tourism/g/perdana-putra-2.jpg`,
+      `${BASE}tourism/g/perdana-putra-3.jpg`,
+      `${BASE}tourism/g/perdana-putra-4.jpg`,
+      `${BASE}tourism/g/perdana-putra-5.jpg`,
+      `${BASE}tourism/g/perdana-putra-6.jpg`,
     ],
     highlights: [
       { titleAr: "مركز بتراجايا", titleEn: "Putrajaya's Center", descAr: "المحور البصري للعاصمة الإدارية", descEn: "Visual axis of the administrative capital", icon: "Landmark" },
@@ -978,10 +978,10 @@ export const DESTINATIONS: Destination[] = [
       { titleAr: "إطلالة على البحيرة", titleEn: "Lake Views", descAr: "منظر بانورامي من الأعلى", descEn: "Panoramic view from above", icon: "Eye" }
     ],
     attractions: [
-      { nameAr: "الساعة الزهرية", nameEn: "Floral Clock", descAr: "ساعة ضخمة مزروعة بالأزهار الملونة.", descEn: "Large clock planted with colorful flowers.", image: "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "ميدان بوترا", nameEn: "Putra Square", descAr: "الميدان الرسمي أمام المبنى للصور الرسمية.", descEn: "Official square in front of the building.", image: "https://images.unsplash.com/photo-1596423735880-5f2a689b903e?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "إطلالة البحيرة المقابلة", nameEn: "Lake View Vantage Point", descAr: "أجمل زاوية لتصوير المبنى من حافة البحيرة.", descEn: "Best angle to photograph the building from the lakeside.", image: "https://images.unsplash.com/photo-1546708688-662580dfbf3a?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "نصب الألفية القريب", nameEn: "Nearby Millennium Monument", descAr: "نصب تذكاري بشكل زهرة الكركديه الوطنية.", descEn: "Memorial monument shaped like the national hibiscus.", image: "https://images.unsplash.com/photo-1583418855738-71b8a06a1ce5?q=80&w=600&auto=format&fit=crop" }
+      { nameAr: "الساعة الزهرية", nameEn: "Floral Clock", descAr: "ساعة ضخمة مزروعة بالأزهار الملونة.", descEn: "Large clock planted with colorful flowers.", image: `${BASE}tourism/g/perdana-putra-7.jpg` },
+      { nameAr: "ميدان بوترا", nameEn: "Putra Square", descAr: "الميدان الرسمي أمام المبنى للصور الرسمية.", descEn: "Official square in front of the building.", image: `${BASE}tourism/g/perdana-putra-8.jpg` },
+      { nameAr: "إطلالة البحيرة المقابلة", nameEn: "Lake View Vantage Point", descAr: "أجمل زاوية لتصوير المبنى من حافة البحيرة.", descEn: "Best angle to photograph the building from the lakeside.", image: `${BASE}tourism/g/perdana-putra-9.jpg` },
+      { nameAr: "نصب الألفية القريب", nameEn: "Nearby Millennium Monument", descAr: "نصب تذكاري بشكل زهرة الكركديه الوطنية.", descEn: "Memorial monument shaped like the national hibiscus.", image: `${BASE}tourism/g/perdana-putra-10.jpg` }
     ],
     practicalInfo: {
       bestTimeAr: "الصباح للتصوير مع ضوء الشمس الذهبي",
@@ -1002,14 +1002,14 @@ export const DESTINATIONS: Destination[] = [
     descAr: "الأراضي الرطبة في بتراجايا هي محمية طبيعية فريدة ونادرة تقع في قلب المدينة الإدارية، تمتد على مساحة 197 هكتاراً. تعمل كمصفاة طبيعية لتنقية مياه بحيرة بتراجايا وموطناً لأكثر من 100 نوع من الطيور المهاجرة والمحلية.\n\nتُعد وجهة مثالية لعشاق الطبيعة ومراقبة الطيور، حيث تجد شبكة من الممرات الخشبية فوق المياه تأخذك في رحلة عبر بيئة المانغروف والأعشاب المائية. في المساء يمكن مشاهدة اليراعات التي تضيء المانغروف كأنجم ساقطة، وهو مشهد ساحر لا يُنسى.",
     descEn: "The Putrajaya Wetlands are a unique and rare nature reserve located in the heart of the administrative city, spanning 197 hectares. They act as a natural filter to purify Putrajaya Lake water and serve as a habitat for over 100 species of migratory and local birds.\n\nIt is an ideal destination for nature lovers and birdwatching, where you'll find a network of wooden walkways over the water taking you through mangrove and aquatic vegetation environments. In the evening, fireflies can be seen illuminating the mangroves like falling stars, creating an unforgettable magical scene.",
     image: "/tourism/putrajaya-wetlands.png",
-    heroImage: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop",
+    heroImage: `${BASE}tourism/g/putrajaya-wetlands-1.jpg`,
     gallery: [
-      "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1533552093551-7f9fcff8736e?q=80&w=800&auto=format&fit=crop"
+      `${BASE}tourism/g/putrajaya-wetlands-1.jpg`,
+      `${BASE}tourism/g/putrajaya-wetlands-2.jpg`,
+      `${BASE}tourism/g/putrajaya-wetlands-3.jpg`,
+      `${BASE}tourism/g/putrajaya-wetlands-4.jpg`,
+      `${BASE}tourism/g/putrajaya-wetlands-5.jpg`,
+      `${BASE}tourism/g/putrajaya-wetlands-6.jpg`,
     ],
     highlights: [
       { titleAr: "100+ نوع طيور", titleEn: "100+ Bird Species", descAr: "طيور مهاجرة ومحلية", descEn: "Migratory and local birds", icon: "Eye" },
@@ -1018,10 +1018,10 @@ export const DESTINATIONS: Destination[] = [
       { titleAr: "محمية بيولوجية", titleEn: "Biodiversity Reserve", descAr: "نظام بيئي متكامل ونادر", descEn: "Complete and rare ecosystem", icon: "Shield" }
     ],
     attractions: [
-      { nameAr: "برج مراقبة الطيور", nameEn: "Bird Watching Tower", descAr: "برج مرتفع لرصد الطيور بمنظار.", descEn: "Elevated tower for bird spotting with binoculars.", image: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "ممشى المانغروف الخشبي", nameEn: "Mangrove Boardwalk", descAr: "جولة مشي ممتعة فوق المياه.", descEn: "Enjoyable walk above the water.", image: "https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "جولة اليراعات الليلية", nameEn: "Night Firefly Walk", descAr: "مشهد ساحر من اليراعات في المانغروف.", descEn: "Magical firefly scene in the mangroves.", image: "https://images.unsplash.com/photo-1470770903676-69b98201ea1c?q=80&w=600&auto=format&fit=crop" },
-      { nameAr: "مركز أبحاث الأراضي الرطبة", nameEn: "Wetland Research Centre", descAr: "تعرف على بيئة الأراضي الرطبة وأهميتها.", descEn: "Learn about wetland ecology and its importance.", image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=600&auto=format&fit=crop" }
+      { nameAr: "برج مراقبة الطيور", nameEn: "Bird Watching Tower", descAr: "برج مرتفع لرصد الطيور بمنظار.", descEn: "Elevated tower for bird spotting with binoculars.", image: `${BASE}tourism/g/putrajaya-wetlands-7.jpg` },
+      { nameAr: "ممشى المانغروف الخشبي", nameEn: "Mangrove Boardwalk", descAr: "جولة مشي ممتعة فوق المياه.", descEn: "Enjoyable walk above the water.", image: `${BASE}tourism/g/putrajaya-wetlands-8.jpg` },
+      { nameAr: "جولة اليراعات الليلية", nameEn: "Night Firefly Walk", descAr: "مشهد ساحر من اليراعات في المانغروف.", descEn: "Magical firefly scene in the mangroves.", image: `${BASE}tourism/g/putrajaya-wetlands-9.jpg` },
+      { nameAr: "مركز أبحاث الأراضي الرطبة", nameEn: "Wetland Research Centre", descAr: "تعرف على بيئة الأراضي الرطبة وأهميتها.", descEn: "Learn about wetland ecology and its importance.", image: `${BASE}tourism/g/putrajaya-wetlands-10.jpg` }
     ],
     practicalInfo: {
       bestTimeAr: "الصباح الباكر لمراقبة الطيور، أو المساء لمشاهدة اليراعات",

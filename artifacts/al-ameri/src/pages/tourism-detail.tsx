@@ -37,7 +37,10 @@ export default function TourismDetail() {
           alt={destination.nameEn}
           className="w-full h-full object-cover opacity-60"
           onError={(e) => {
-            e.currentTarget.src = "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=1600&auto=format&fit=crop";
+            const img = e.currentTarget;
+            if (img.dataset.fb) return;
+            img.dataset.fb = "1";
+            img.src = `${import.meta.env.BASE_URL}heroes/tourism.jpg`;
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent"></div>
@@ -119,7 +122,10 @@ export default function TourismDetail() {
                     alt={attraction.nameEn} 
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     onError={(e) => {
-                      e.currentTarget.src = "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=400&auto=format&fit=crop";
+                      const img = e.currentTarget;
+                      if (img.dataset.fb) return;
+                      img.dataset.fb = "1";
+                      img.src = `${import.meta.env.BASE_URL}heroes/tourism.jpg`;
                     }}
                   />
                 </div>
@@ -151,7 +157,10 @@ export default function TourismDetail() {
                   className="w-full h-auto hover:scale-105 transition-transform duration-500 cursor-pointer object-cover bg-slate-100"
                   loading="lazy"
                   onError={(e) => {
-                    e.currentTarget.src = "https://images.unsplash.com/photo-1596422846543-74c6fc0e6f11?q=80&w=400&auto=format&fit=crop";
+                    const img = e.currentTarget;
+                    if (img.dataset.fb) return;
+                    img.dataset.fb = "1";
+                    img.src = `${import.meta.env.BASE_URL}heroes/tourism.jpg`;
                   }}
                 />
               </div>
@@ -203,7 +212,10 @@ export default function TourismDetail() {
 
         {/* CTA */}
         <div className="bg-primary text-white rounded-3xl p-10 text-center relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://images.unsplash.com/photo-1544485542-a279c6d48259?q=80&w=1600&auto=format&fit=crop')] bg-cover bg-center"></div>
+          <div
+            className="absolute top-0 left-0 w-full h-full opacity-10 bg-cover bg-center"
+            style={{ backgroundImage: `url(${import.meta.env.BASE_URL}heroes/tourism.jpg)` }}
+          ></div>
           <div className="relative z-10">
             <h2 className={`text-3xl font-bold mb-4 ${lang === "ar" ? "font-arabic" : ""}`}>
               {t("هل أعجبتك الوجهة؟", "Like this destination?")}
