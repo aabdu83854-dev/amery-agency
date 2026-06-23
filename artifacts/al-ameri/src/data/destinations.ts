@@ -44,69 +44,6 @@ const BASE = import.meta.env.BASE_URL;
 
 export const DESTINATIONS: Destination[] = [
   {
-    id: "petronas",
-    nameAr: "برجا بتروناس التوأم",
-    nameEn: "Petronas Twin Towers",
-    taglineAr: "أيقونة العاصمة كوالالمبور المعمارية",
-    taglineEn: "The architectural icon of Kuala Lumpur",
-    descAr: "يعتبر برجا بتروناس التوأم من أشهر المعالم السياحية في ماليزيا وأطول برجين توأمين في العالم. يتميزان بتصميم إسلامي مذهل يجمع بين الحداثة والتراث. يمكن للزوار الصعود إلى الجسر المعلق (Skybridge) في الطابق 41، ثم المتابعة إلى منصة المراقبة في الطابق 86 للحصول على إطلالة بانورامية ساحرة على العاصمة.\n\nتحت البرجين يقع مركز تسوق 'سوريا كيه إل سي سي' الفاخر الذي يضم أشهر الماركات العالمية، ومطاعم متنوعة، بالإضافة إلى حوض أسماك 'أكواريا' وعالم الاستكشاف 'بتروساينس'. وفي الخارج، تقع حديقة واسعة تضم نوافير راقصة ومسارات للمشي وسط المساحات الخضراء.",
-    descEn: "The Petronas Twin Towers are one of Malaysia's most famous landmarks and the tallest twin towers in the world. They feature a stunning Islamic design that blends modernity with heritage. Visitors can go up to the Skybridge on the 41st floor, then continue to the observation deck on the 86th floor for a magical panoramic view of the capital.\n\nBelow the towers is the luxurious 'Suria KLCC' shopping mall, housing top global brands, diverse restaurants, as well as the 'Aquaria' aquarium and 'Petrosains' discovery center. Outside, a vast park offers dancing fountains and walking trails amidst green spaces.",
-    image: "/tourism/petronas.png",
-    heroImage: `${BASE}tourism/petronas.jpg`,
-    gallery: [
-      `${BASE}tourism/g/petronas-1.jpg`,
-      `${BASE}tourism/g/petronas-2.jpg`,
-      `${BASE}tourism/g/petronas-3.jpg`,
-      `${BASE}tourism/g/petronas-4.jpg`,
-      `${BASE}tourism/g/petronas-6.jpg`,
-    ],
-    highlights: [
-      { titleAr: "إطلالة بانورامية", titleEn: "Panoramic Views", descAr: "منصة مراقبة في الطابق 86", descEn: "Observation deck on the 86th floor", icon: "Camera" },
-      { titleAr: "تسوق فاخر", titleEn: "Luxury Shopping", descAr: "مول سوريا كيه إل سي سي", descEn: "Suria KLCC mall", icon: "ShoppingBag" },
-      { titleAr: "حديقة ونوافير", titleEn: "Park & Fountains", descAr: "حديقة كيه إل سي سي الرائعة", descEn: "Beautiful KLCC Park", icon: "TreePine" },
-      { titleAr: "أنشطة عائلية", titleEn: "Family Activities", descAr: "أكواريا وبتروساينس", descEn: "Aquaria and Petrosains", icon: "Users" }
-    ],
-    attractions: [
-      {
-        nameAr: "الجسر المعلق (SkyBridge)",
-        nameEn: "SkyBridge",
-        descAr: "جسر زجاجي يربط بين البرجين في الطابقين 41 و 42.",
-        descEn: "Glass bridge connecting the towers at levels 41 & 42.",
-        image: `${BASE}tourism/g/petronas-7.jpg`
-      },
-      {
-        nameAr: "حديقة كيه إل سي سي",
-        nameEn: "KLCC Park",
-        descAr: "مساحات خضراء واسعة ونوافير راقصة تضيء ليلاً.",
-        descEn: "Spacious green areas and dancing fountains illuminated at night.",
-        image: `${BASE}tourism/g/petronas-8.jpg`
-      },
-      {
-        nameAr: "أكواريا كيه إل سي سي",
-        nameEn: "Aquaria KLCC",
-        descAr: "حوض أسماك ضخم يعرض آلاف الكائنات البحرية.",
-        descEn: "Massive aquarium showcasing thousands of marine creatures.",
-        image: `${BASE}tourism/g/petronas-9.jpg`
-      },
-      {
-        nameAr: "سوريا كيه إل سي سي",
-        nameEn: "Suria KLCC",
-        descAr: "وجهة تسوق رئيسية لأرقى العلامات التجارية.",
-        descEn: "A premier shopping destination for luxury brands.",
-        image: `${BASE}tourism/g/petronas-10.jpg`
-      }
-    ],
-    practicalInfo: {
-      bestTimeAr: "المساء لمشاهدة عروض النوافير الراقصة",
-      bestTimeEn: "Evening to watch the dancing fountains show",
-      howToGetThereAr: "محطة قطار KLCC مباشرة تحت البرجين",
-      howToGetThereEn: "KLCC LRT station directly beneath the towers",
-      tipsAr: "احجز تذاكر الصعود للبرج مسبقاً عبر الإنترنت لأنها تنفد بسرعة",
-      tipsEn: "Book tower tickets online in advance as they sell out quickly"
-    },
-    category: "general"
-  },
-  {
     id: "langkawi",
     nameAr: "جزيرة لنكاوي",
     nameEn: "Langkawi Island",
@@ -432,10 +369,10 @@ export const DESTINATIONS: Destination[] = [
     id: "malacca",
     nameAr: "مدينة ملقا (ملاكا)",
     nameEn: "Malacca (Melaka)",
-    taglineAr: "مدينة التراث العالمي وملتقى الحضارات",
-    taglineEn: "UNESCO World Heritage city and meeting of civilizations",
-    descAr: "ملقا مدينة تاريخية ساحلية تأسست في القرن الخامس عشر وأصبحت مركزاً تجارياً عالمياً. مدرجة ضمن التراث العالمي لليونسكو، تعكس تأثيرات برتغالية وهولندية وبريطانية فريدة جعلتها بوتقة انصهار للثقافات الآسيوية والأوروبية.\n\nتزخر المدينة بالمعالم التاريخية كقلعة 'أ فاموسا' البرتغالية، والميدان الهولندي الأحمر، وشارع جونكر الشهير بحوانيته التراثية ومطاعمه ذات المطبخ الفريد من نوعه. لا تفوت تجربة ركوب العربات الملونة المزينة بالأزهار الصناعية في الشوارع التاريخية.",
-    descEn: "Malacca is a historic coastal city founded in the 15th century that became a global trading center. Listed as a UNESCO World Heritage Site, it reflects unique Portuguese, Dutch, and British influences that made it a melting pot of Asian and European cultures.\n\nThe city is full of historic landmarks like the Portuguese 'A Famosa' fort, the red Dutch Square, and the famous Jonker Street with its heritage shops and unique cuisine restaurants. Don't miss riding the colorful flower-decorated tricycles through the historic streets.",
+    taglineAr: "عاصمة السلطنة الإسلامية وجوهرة التراث الماليزي",
+    taglineEn: "Capital of the Islamic Sultanate and gem of Malay heritage",
+    descAr: "ملقا مدينة تاريخية ساحلية تأسست في القرن الخامس عشر، وكانت عاصمة لسلطنة ملقا الإسلامية التي نشرت الإسلام في أرخبيل الملايو وجعلت المدينة مركزاً تجارياً وحضارياً عالمياً. وهي مدرجة ضمن قائمة التراث العالمي لليونسكو.\n\nتزخر المدينة بالمعالم الإسلامية والتراث الماليزي الأصيل، وأبرزها مسجد مضيق ملقا العائم الساحر عند غروب الشمس، وأقدم المساجد في ماليزيا، وقصر سلطنة ملقا الذي يروي قصة العصر الذهبي للملايو. ولا تفوت رحلة القارب الهادئة على نهر ملقا التاريخي.",
+    descEn: "Malacca is a historic coastal city founded in the 15th century, and was the capital of the Islamic Malacca Sultanate that spread Islam across the Malay Archipelago and made the city a global trade and cultural hub. It is listed as a UNESCO World Heritage Site.\n\nThe city is rich in Islamic landmarks and authentic Malay heritage, most notably the enchanting floating Malacca Straits Mosque at sunset, Malaysia's oldest mosques, and the Malacca Sultanate Palace that tells the story of the Malay golden age. Don't miss the peaceful boat ride along the historic Malacca River.",
     image: "/tourism/malacca.png",
     heroImage: `${BASE}tourism/malacca.jpg`,
     gallery: [
@@ -448,23 +385,23 @@ export const DESTINATIONS: Destination[] = [
     ],
     highlights: [
       { titleAr: "تراث عالمي", titleEn: "World Heritage", descAr: "مدرجة في قائمة اليونسكو", descEn: "Listed by UNESCO", icon: "Landmark" },
-      { titleAr: "قلعة تاريخية", titleEn: "Historic Fort", descAr: "قلعة أ فاموسا البرتغالية", descEn: "Portuguese A Famosa fort", icon: "Shield" },
-      { titleAr: "شارع جونكر", titleEn: "Jonker Street", descAr: "أسواق تراثية ومطبخ فريد", descEn: "Heritage markets and unique cuisine", icon: "Utensils" },
+      { titleAr: "سلطنة إسلامية", titleEn: "Islamic Sultanate", descAr: "عاصمة سلطنة ملقا التاريخية", descEn: "Capital of the historic Malacca Sultanate", icon: "Crown" },
+      { titleAr: "مسجد عائم", titleEn: "Floating Mosque", descAr: "مسجد مضيق ملقا الساحر", descEn: "The stunning Malacca Straits Mosque", icon: "Building2" },
       { titleAr: "رحلة نهرية", titleEn: "River Cruise", descAr: "استكشاف المدينة من الماء", descEn: "Explore the city from the water", icon: "Ship" }
     ],
     attractions: [
-      { nameAr: "قلعة أ فاموسا", nameEn: "A Famosa Fort", descAr: "بوابة برتغالية تعود لعام 1512م.", descEn: "Portuguese gateway dating to 1512.", image: `${BASE}tourism/g/malacca-7.jpg` },
-      { nameAr: "الميدان الهولندي", nameEn: "Dutch Square (Stadthuys)", descAr: "المبنى الحكومي الهولندي الأحمر الشهير.", descEn: "Famous red Dutch government building.", image: `${BASE}tourism/g/malacca-8.jpg` },
-      { nameAr: "شارع جونكر", nameEn: "Jonker Street", descAr: "قلب الحي الصيني مع محلات عتيقة ومطاعم.", descEn: "Heart of Chinatown with antique shops and restaurants.", image: `${BASE}tourism/g/malacca-9.jpg` },
-      { nameAr: "رحلة نهر ملقا", nameEn: "Malacca River Cruise", descAr: "جولة مائية مضاءة ليلاً بين الجداريات.", descEn: "Night-lit water tour between murals.", image: `${BASE}tourism/g/malacca-10.jpg` }
+      { nameAr: "مسجد مضيق ملقا العائم", nameEn: "Malacca Straits Mosque", descAr: "مسجد ساحر يبدو عائماً على الماء، وأجمل أوقات زيارته عند الغروب.", descEn: "A stunning mosque that appears to float on the water, best visited at sunset.", image: `${BASE}tourism/g/malacca-7.jpg` },
+      { nameAr: "مسجد كامبونج هولو", nameEn: "Kampung Hulu Mosque", descAr: "أقدم مسجد قائم في ماليزيا بطراز معماري فريد يعود لعام 1728م.", descEn: "Malaysia's oldest functioning mosque, with unique architecture dating to 1728.", image: `${BASE}tourism/g/malacca-8.jpg` },
+      { nameAr: "قصر سلطنة ملقا", nameEn: "Malacca Sultanate Palace", descAr: "نموذج خشبي مذهل لقصر السلاطين يضم متحفاً للتراث الماليزي الإسلامي.", descEn: "A magnificent wooden replica of the sultans' palace housing a Malay-Islamic heritage museum.", image: `${BASE}tourism/g/malacca-9.jpg` },
+      { nameAr: "رحلة نهر ملقا", nameEn: "Malacca River Cruise", descAr: "جولة قارب هادئة على ضفاف النهر التاريخي.", descEn: "A peaceful boat tour along the historic riverbanks.", image: `${BASE}tourism/g/malacca-10.jpg` }
     ],
     practicalInfo: {
-      bestTimeAr: "نهاية الأسبوع لتجربة سوق جونكر الليلي النابض بالحياة",
-      bestTimeEn: "Weekends to experience the lively Jonker Night Market",
+      bestTimeAr: "وقت الغروب لمشاهدة مسجد المضيق العائم في أبهى صوره",
+      bestTimeEn: "Sunset time to see the floating Straits Mosque at its most beautiful",
       howToGetThereAr: "حافلة سريعة من كوالالمبور (ساعتان) أو سيارة",
       howToGetThereEn: "Express bus from KL (2 hours) or by car",
-      tipsAr: "العربات الملونة (Trishaw) هي تجربة لا تُنسى وتصلح للتصوير",
-      tipsEn: "The colorful Trishaw rides are unforgettable and great for photos"
+      tipsAr: "خصص وقتاً لزيارة المسجد العائم على جزيرة ملقا واصطحب الكاميرا",
+      tipsEn: "Set aside time for the floating mosque on Malacca Island and bring your camera"
     },
     category: "general"
   },
