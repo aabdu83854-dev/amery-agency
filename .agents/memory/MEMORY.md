@@ -1,0 +1,5 @@
+- [Unsplash IDs in Replit proxy](unsplash-ids.md) — some Unsplash photo IDs fail silently (dark bg) in Replit preview proxy; use confirmed working IDs only.
+- [video-js scaffold typecheck noise](video-js-scaffold.md) — fresh video-js artifacts emit pre-existing tsc errors in read-only scaffold files; verify with validate-recording.sh + dev logs, not tsc.
+- [Slide layout overflow](slide-layout-overflow.md) — fixed-viewport slides overflow footers silently; budget vertical space, use min-h-0, screenshot every /slideN.
+- [Localize tourism images](tourism-images.md) — many Unsplash IDs are 404 in this repo; download to public/ and serve same-origin. onError must be guarded (one-time swap) or it infinite-loops.
+- [code_execution sandbox limits](code-exec-sandbox.md) — `AbortSignal` is undefined in the JS sandbox; never use AbortSignal.timeout in fetch helpers, use Promise.race timeout.

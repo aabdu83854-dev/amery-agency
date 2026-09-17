@@ -1,0 +1,151 @@
+uploads = []
+
+[[generated]]
+id = "ItXbIxbk7UUERVE9ldDDp"
+uri = "file://artifacts/al-ameri/public/tourism/petronas.png"
+type = "image"
+title = "petronas twin towers kuala lumpur"
+
+[[generated]]
+id = "ZhvIWBN4tdgyM6-AAaQpm"
+uri = "file://artifacts/al-ameri/public/tourism/langkawi.png"
+type = "image"
+title = "langkawi island tropical beach"
+
+[[generated]]
+id = "Omy6qejdtulRyurVo1Sih"
+uri = "file://artifacts/al-ameri/public/tourism/penang.png"
+type = "image"
+title = "penang george town heritage"
+
+[[generated]]
+id = "NAaZbRA__uLS1yHDGBYWe"
+uri = "file://artifacts/al-ameri/public/tourism/cameron.png"
+type = "image"
+title = "cameron highlands tea plantations"
+
+[[generated]]
+id = "cpAT5XnrUnyM_fVGC2F7P"
+uri = "file://artifacts/al-ameri/public/tourism/malacca.png"
+type = "image"
+title = "malacca red dutch square"
+
+[[generated]]
+id = "HF2LQCjOpJiTs6dwjEDnf"
+uri = "file://artifacts/al-ameri/public/tourism/batucaves.png"
+type = "image"
+title = "batu caves golden statue"
+
+[[generated]]
+id = "f5hD3_Y7gLva63LUz1LJI"
+uri = "file://artifacts/al-ameri/public/tourism/tamannegara.png"
+type = "image"
+title = "taman negara rainforest canopy"
+
+[[generated]]
+id = "VuMAPeOfmCh045MwFPgzA"
+uri = "file://artifacts/al-ameri/public/tourism/redang.png"
+type = "image"
+title = "redang island clear water"
+
+[[generated]]
+id = "0XGGdqe3RE_TfNxNnxgch"
+uri = "file://artifacts/al-ameri/public/tourism/klcc.png"
+type = "image"
+title = "klcc park and skyline"
+
+[[generated]]
+id = "Q3o7VgKGdJGkSXNGx-NY4"
+uri = "file://artifacts/al-ameri/public/tourism/genting.png"
+type = "image"
+title = "genting highlands resort mountain"
+
+[[generated]]
+id = "G9rE5QMDO0kr8BIPxX6TX"
+uri = "file://artifacts/al-ameri-promo/public/images/embassy-china.png"
+type = "image"
+title = "generated_image"
+
+[[outputs]]
+id = "EfHseV9FFKxUPR7d-ErPZ"
+uri = "file://artifacts/al-ameri/public/heroes/home.jpg"
+type = "image"
+title = "professional business office modern travel agency"
+
+[[outputs]]
+id = "OIvyJGO0bjwyTJvODA1iT"
+uri = "file://artifacts/al-ameri/public/heroes/chinese.jpg"
+type = "image"
+title = "chinese official documents visa passport"
+
+[[outputs]]
+id = "AYl6cm_T0svGBhM2G-OK3"
+uri = "file://artifacts/al-ameri/public/heroes/yemeni.jpg"
+type = "image"
+title = "arabic official documents stamping"
+
+[[outputs]]
+id = "dXZbrS6HJFSWIW8Xl6L18"
+uri = "file://artifacts/al-ameri/public/heroes/american.jpg"
+type = "image"
+title = "us visa application modern consultation room"
+
+[[outputs]]
+id = "uxXKVIOvWMmqTDpjT2BZ1"
+uri = "file://artifacts/al-ameri/public/heroes/tourism.jpg"
+type = "image"
+title = "kuala lumpur twin towers beautiful landscape"
+
+[[outputs]]
+id = "6HXp40YIk_UvCZQgNFlkC"
+uri = "file://artifacts/al-ameri/public/heroes/facilitation.jpg"
+type = "image"
+title = "luxury car airport pickup chauffeur"
+
+[[outputs]]
+id = "6RPeleRuF9yKiZPWHMFN5"
+uri = "file://artifacts/al-ameri/public/heroes/contact.jpg"
+type = "image"
+title = "customer service agent modern office contact us"
+
+[[outputs]]
+id = "usm4i01WmUK_PYU734oZG"
+uri = "file://.local/outputs/Visa-Gateway-Malaysia.pdf"
+type = "pdf"
+title = "Visa Gateway Malaysia.pdf"
+
+[[outputs]]
+id = "b7H9z1ukKA0fTtPikuvYO"
+uri = "file://.local/outputs/Visa-Gateway-Malaysia.pptx"
+type = "slides"
+title = "Visa Gateway Malaysia.pptx"
+
+[[outputs]]
+id = "Y71I-aTrPMq3YXvbUXmn8"
+uri = "file://artifacts/al-ameri-promo/public/images/malaysia-beach.jpg"
+type = "image"
+title = "beautiful tropical beach Langkawi Malaysia clear water"
+
+[[outputs]]
+id = "VSA7-dJcWvp5cXcPhTm-w"
+uri = "file://artifacts/al-ameri-promo/public/images/malaysia-mosque.jpg"
+type = "image"
+title = "beautiful modern mosque in Malaysia putrajaya sunset"
+
+[[outputs]]
+id = "X3aKgtXTfVR1-XEVFArPa"
+uri = "file://artifacts/al-ameri-promo/public/images/klcc.jpg"
+type = "image"
+title = "kuala lumpur petronas twin towers skyline sunset"
+
+[[outputs]]
+id = "A5JbRh-27wRdfZWFVMwxu"
+uri = "file://artifacts/al-ameri-promo/public/images/family.jpg"
+type = "image"
+title = "happy arab muslim family traveling luggage airport"
+
+[[outputs]]
+id = "maMvHLTCchfSp-R1gLBVw"
+uri = "file://artifacts/al-ameri-promo/public/audio/bg_music.mp3"
+type = "audio"
+title = "background music"
