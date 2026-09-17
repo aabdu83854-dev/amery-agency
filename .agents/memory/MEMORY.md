@@ -3,3 +3,4 @@
 - [Slide layout overflow](slide-layout-overflow.md) — fixed-viewport slides overflow footers silently; budget vertical space, use min-h-0, screenshot every /slideN.
 - [Localize tourism images](tourism-images.md) — many Unsplash IDs are 404 in this repo; download to public/ and serve same-origin. onError must be guarded (one-time swap) or it infinite-loops.
 - [code_execution sandbox limits](code-exec-sandbox.md) — `AbortSignal` is undefined in the JS sandbox; never use AbortSignal.timeout in fetch helpers, use Promise.race timeout.
+- [GitHub source publishing](github-push.md) — use the connected GitHub API when Git CLI auth fails; bootstrap empty repos before creating Git Data API blobs and trees.
