@@ -56,7 +56,7 @@ export function Layout({ children }: { children: ReactNode }) {
                 height={382}
               />
               <div className="leading-tight">
-                <span className={`block font-bold text-secondary text-base md:text-xl ${lang === "ar" ? "font-arabic" : ""}`}>
+                <span className={`block font-bold text-primary text-base md:text-xl ${lang === "ar" ? "font-arabic" : ""}`}>
                   {t("وكالة العامري للسفر", "Al-Ameri Travel Agency")}
                 </span>
                 <span className="hidden sm:block text-[11px] text-muted-foreground font-sans uppercase tracking-[0.18em] mt-0.5">
