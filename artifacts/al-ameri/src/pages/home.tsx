@@ -26,7 +26,7 @@ export default function Home() {
       titleEn: "Chinese Embassy",
       descAr: "تأشيرات بأنواعها، تصديق وثائق، وخدمات الترجمة للسفارة الصينية.",
       descEn: "All types of visas, document authentication, and translation services for the Chinese Embassy.",
-      icon: <Building2 className="w-10 h-10 text-primary" />,
+      icon: <Building2 className="w-8 h-8 text-primary" />,
       href: "/chinese-embassy",
       color: "bg-blue-50"
     },
@@ -35,7 +35,7 @@ export default function Home() {
       titleEn: "Yemeni Embassy",
       descAr: "تختيم الأوراق، وكالات شرعية، تجديد جوازات ومستندات مدنية.",
       descEn: "Document stamping, power of attorney, passport renewal and civil documents.",
-      icon: <FileText className="w-10 h-10 text-primary" />,
+      icon: <FileText className="w-8 h-8 text-primary" />,
       href: "/yemeni-embassy",
       color: "bg-red-50"
     },
@@ -44,7 +44,7 @@ export default function Home() {
       titleEn: "American Embassy",
       descAr: "تجهيز المقابلات، ترجمة معتمدة، وتعبئة نماذج DS-160.",
       descEn: "Interview preparation, certified translation, and DS-160 form filling.",
-      icon: <Globe2 className="w-10 h-10 text-primary" />,
+      icon: <Globe2 className="w-8 h-8 text-primary" />,
       href: "/american-embassy",
       color: "bg-blue-50"
     },
@@ -53,7 +53,7 @@ export default function Home() {
       titleEn: "Tourism in Malaysia",
       descAr: "اكتشف جمال ماليزيا مع برامجنا السياحية لأجمل الوجهات.",
       descEn: "Discover the beauty of Malaysia with our tourism programs to the most beautiful destinations.",
-      icon: <Map className="w-10 h-10 text-primary" />,
+      icon: <Map className="w-8 h-8 text-primary" />,
       href: "/tourism",
       color: "bg-green-50"
     },
@@ -62,7 +62,7 @@ export default function Home() {
       titleEn: "Facilitation Services",
       descAr: "استقبال من المطار، تأجير سيارات، حجوزات فندقية وترجمة.",
       descEn: "Airport pickup, car rental, hotel bookings and translation.",
-      icon: <Briefcase className="w-10 h-10 text-primary" />,
+      icon: <Briefcase className="w-8 h-8 text-primary" />,
       href: "/facilitation",
       color: "bg-amber-50"
     }
@@ -85,37 +85,36 @@ export default function Home() {
         height="large"
       >
         <div className="flex flex-wrap gap-4">
-          <Button asChild size="lg" className={`rounded-full px-8 bg-accent text-accent-foreground hover:bg-accent/90 border-0 ${lang === "ar" ? "font-arabic" : ""}`}>
+          <Button asChild size="lg" className={`rounded-full px-8 bg-accent text-accent-foreground hover:bg-accent/90 border-0 shadow-brand ${lang === "ar" ? "font-arabic" : ""}`}>
             <Link href="/chinese-embassy">{t("تصفح خدماتنا", "Browse Our Services")}</Link>
           </Button>
-          <Button asChild size="lg" variant="outline" className={`rounded-full px-8 bg-white/10 text-white border-white/20 hover:bg-white/20 ${lang === "ar" ? "font-arabic" : ""}`}>
+          <Button asChild size="lg" variant="outline" className={`btn-glass rounded-full px-8 text-white hover:text-white ${lang === "ar" ? "font-arabic" : ""}`}>
             <Link href="/contact">{t("اتصل بنا اليوم", "Contact Us Today")}</Link>
           </Button>
         </div>
       </HeroSection>
 
-      <section className="py-12 bg-primary text-primary-foreground relative -mt-8 z-20 mx-4 md:mx-auto md:max-w-6xl rounded-2xl shadow-xl">
+      <section className="py-10 md:py-12 bg-gradient-to-br from-primary to-[hsl(218_74%_38%)] text-primary-foreground relative -mt-10 z-20 mx-4 md:mx-auto md:max-w-6xl rounded-2xl shadow-brand-lg ring-1 ring-white/10">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, i) => (
               <div key={i} className={`text-center ${lang === "ar" ? "font-arabic" : ""}`}>
-                <div className="flex justify-center mb-3 text-accent/80 opacity-80">
+                <div className="flex justify-center mb-3 text-accent">
                   {stat.icon}
                 </div>
-                <div className="text-3xl md:text-4xl font-bold mb-2">{stat.value}</div>
-                <div className="text-sm md:text-base font-medium">{t(stat.labelAr, stat.labelEn)}</div>
+                <div className="text-3xl md:text-4xl font-bold mb-2" dir="ltr">{stat.value}</div>
+                <div className="text-sm md:text-base font-medium text-white/85">{t(stat.labelAr, stat.labelEn)}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-gray-50">
+      <section className="py-20 md:py-24 surface-wash">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16" dir={lang === "ar" ? "rtl" : "ltr"}>
-            <h2 className={`text-3xl md:text-4xl font-bold text-secondary mb-4 relative inline-block ${lang === "ar" ? "font-arabic" : ""}`}>
+            <h2 className={`heading-rule heading-rule-center text-3xl md:text-4xl font-bold text-secondary mb-4 ${lang === "ar" ? "font-arabic" : ""}`}>
               {t("خدماتنا الشاملة", "Our Comprehensive Services")}
-              <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-1.5 bg-accent rounded-full"></span>
             </h2>
             <p className={`text-muted-foreground mt-8 text-lg ${lang === "ar" ? "font-arabic" : ""}`}>
               {t("نقدم مجموعة متكاملة من الخدمات المصممة لتلبية احتياجات الجالية العربية والزوار في ماليزيا.", "We offer a complete range of services designed to meet the needs of the Arab community and visitors in Malaysia.")}
@@ -125,8 +124,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" dir={lang === "ar" ? "rtl" : "ltr"}>
             {services.map((service, i) => (
               <Link key={i} href={service.href}>
-                <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 group h-full flex flex-col hover:-translate-y-1">
-                  <div className={`w-20 h-20 rounded-2xl ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
+                <div className="bg-white rounded-2xl p-8 shadow-sm hover:shadow-brand-lg transition-all duration-300 border border-slate-100 hover:border-accent/40 group h-full flex flex-col hover:-translate-y-1">
+                  <div className={`w-16 h-16 rounded-2xl ${service.color} flex items-center justify-center mb-6 ring-1 ring-black/5 group-hover:scale-110 transition-transform`}>
                     {service.icon}
                   </div>
                   <h3 className={`text-2xl font-bold text-secondary mb-4 group-hover:text-primary transition-colors ${lang === "ar" ? "font-arabic" : ""}`}>
@@ -150,7 +149,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 bg-secondary text-white relative overflow-hidden">
+      <section className="py-20 md:py-24 bg-secondary text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
         
@@ -162,10 +161,10 @@ export default function Home() {
             {t("فريقنا جاهز للإجابة على جميع استفساراتك وتقديم التوجيه الصحيح خطوة بخطوة.", "Our team is ready to answer all your inquiries and provide proper step-by-step guidance.")}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button asChild size="lg" className={`rounded-full px-8 bg-accent text-accent-foreground hover:bg-accent/90 w-full sm:w-auto ${lang === "ar" ? "font-arabic" : ""}`}>
+            <Button asChild size="lg" className={`rounded-full px-8 bg-accent text-accent-foreground hover:bg-accent/90 shadow-brand w-full sm:w-auto ${lang === "ar" ? "font-arabic" : ""}`}>
               <Link href="/contact">{t("احجز استشارة مجانية", "Book a Free Consultation")}</Link>
             </Button>
-            <Button asChild size="lg" className={`rounded-full px-8 bg-[#25D366] text-white hover:bg-[#1DA851] w-full sm:w-auto ${lang === "ar" ? "font-arabic" : ""}`}>
+            <Button asChild size="lg" className={`rounded-full px-8 bg-whatsapp text-white hover:bg-whatsapp-hover w-full sm:w-auto ${lang === "ar" ? "font-arabic" : ""}`}>
               <a href="https://wa.me/message/EVO4ES3SH4TVA1" target="_blank" rel="noopener noreferrer">{t("تواصل عبر واتساب", "Contact via WhatsApp")}</a>
             </Button>
           </div>

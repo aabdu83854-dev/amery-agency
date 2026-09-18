@@ -39,44 +39,47 @@ export function Layout({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen flex flex-col font-sans" dir={lang === "ar" ? "rtl" : "ltr"}>
       <header 
-        className={`sticky top-0 z-50 transition-all duration-300 ${
-          isScrolled ? "bg-white shadow-md py-3" : "bg-white/95 backdrop-blur-sm py-4"
+        className={`sticky top-0 z-50 border-b transition-all duration-300 ${
+          isScrolled
+            ? "bg-white/95 backdrop-blur-md border-accent/30 shadow-brand py-2.5"
+            : "bg-white border-transparent py-4"
         }`}
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-3">
-              <img 
-                src={`${import.meta.env.BASE_URL}logo-new.png`} 
-                alt="Al-Ameri Travel Agency Logo" 
-                className="h-16 md:h-20 w-auto object-contain mx-3"
-                onError={(e) => {
-                  e.currentTarget.src = "https://via.placeholder.com/150x50?text=Al-Ameri+Logo";
-                }}
+            <Link href="/" className="flex items-center gap-3 shrink-0">
+              <img
+                src={`${import.meta.env.BASE_URL}logo-mark.png`}
+                alt="Al-Ameri Travel Agency"
+                className="h-10 md:h-12 w-auto object-contain"
+                width={406}
+                height={382}
               />
-              <div className="hidden sm:block">
-                <h1 className={`font-bold text-primary text-xl leading-tight ${lang === "ar" ? "font-arabic" : ""}`}>
+              <div className="leading-tight">
+                <span className={`block font-bold text-secondary text-base md:text-xl ${lang === "ar" ? "font-arabic" : ""}`}>
                   {t("وكالة العامري للسفر", "Al-Ameri Travel Agency")}
-                </h1>
-                <p className="text-xs text-muted-foreground font-sans uppercase tracking-wider">
+                </span>
+                <span className="hidden sm:block text-[11px] text-muted-foreground font-sans uppercase tracking-[0.18em] mt-0.5">
                   {t("Al-Ameri Travel Agency", "Travel & Tourism")}
-                </p>
+                </span>
               </div>
             </Link>
 
-            <nav className="hidden lg:flex items-center gap-6">
+            <nav className="hidden xl:flex items-center gap-5 2xl:gap-6">
               {navLinks.map((link) => (
                 <Link 
                   key={link.href} 
                   href={link.href}
-                  className={`relative group font-medium transition-colors ${lang === "ar" ? "font-arabic" : ""} ${
-                    location === link.href ? "text-primary" : "text-foreground hover:text-primary"
+                  className={`relative group py-1 font-medium whitespace-nowrap transition-colors ${lang === "ar" ? "font-arabic" : ""} ${
+                    location === link.href ? "text-primary" : "text-secondary/80 hover:text-primary"
                   }`}
                 >
-                  <span className="block text-sm sm:text-base">{lang === "ar" ? link.ar : link.en}</span>
-                  {location === link.href && (
-                    <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-accent rounded-full" />
-                  )}
+                  <span className="block text-sm 2xl:text-base">{lang === "ar" ? link.ar : link.en}</span>
+                  <span
+                    className={`absolute -bottom-0.5 left-0 h-0.5 rounded-full bg-accent transition-all duration-300 ${
+                      location === link.href ? "w-full" : "w-0 group-hover:w-full"
+                    }`}
+                  />
                 </Link>
               ))}
             </nav>
@@ -84,13 +87,14 @@ export function Layout({ children }: { children: ReactNode }) {
             <div className="flex items-center gap-3">
               <button
                 onClick={toggle}
-                className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-full bg-slate-100 hover:bg-slate-200 transition-colors text-foreground"
+                className="flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium rounded-full border border-primary/20 bg-primary/5 text-primary hover:bg-primary hover:text-primary-foreground transition-colors"
+                aria-label={lang === "ar" ? "Switch to English" : "التبديل إلى العربية"}
               >
                 <Globe size={16} />
                 <span>{lang === "ar" ? "EN" : "عربي"}</span>
               </button>
 
-              <Button asChild className={`hidden md:flex gap-2 bg-[#25D366] hover:bg-[#1DA851] text-white ${lang === "ar" ? "font-arabic" : ""}`}>
+              <Button asChild className={`hidden md:flex gap-2 bg-whatsapp hover:bg-whatsapp-hover text-white shadow-sm ${lang === "ar" ? "font-arabic" : ""}`}>
                 <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                   <MessageCircle size={18} />
                   <span>{t("تواصل معنا", "Contact Us")}</span>
@@ -98,7 +102,8 @@ export function Layout({ children }: { children: ReactNode }) {
               </Button>
               
               <button 
-                className="lg:hidden p-2 text-foreground"
+                className="xl:hidden p-2 rounded-lg text-secondary hover:bg-muted transition-colors"
+                aria-label={t("القائمة", "Menu")}
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               >
                 {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -108,23 +113,23 @@ export function Layout({ children }: { children: ReactNode }) {
         </div>
 
         {mobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t animate-in slide-in-from-top-2">
+          <div className="xl:hidden absolute top-full left-0 w-full bg-white shadow-brand-lg border-t border-accent/30 animate-in slide-in-from-top-2">
             <nav className="flex flex-col py-4">
               {navLinks.map((link) => (
                 <Link 
                   key={link.href} 
                   href={link.href}
-                  className={`px-6 py-3 flex justify-between items-center ${lang === "ar" ? "font-arabic" : ""} ${
-                    location === link.href 
-                      ? `bg-primary/5 text-primary border-${lang === "ar" ? "r" : "l"}-4 border-primary` 
-                      : `text-foreground border-${lang === "ar" ? "r" : "l"}-4 border-transparent`
+                  className={`px-6 py-3 flex justify-between items-center border-s-4 transition-colors ${lang === "ar" ? "font-arabic" : ""} ${
+                    location === link.href
+                      ? "bg-primary/5 text-primary border-primary"
+                      : "text-secondary/80 border-transparent hover:bg-muted hover:text-primary"
                   }`}
                 >
                   <span className="font-medium">{lang === "ar" ? link.ar : link.en}</span>
                 </Link>
               ))}
               <div className="px-6 mt-4">
-                <Button asChild className={`w-full gap-2 bg-[#25D366] hover:bg-[#1DA851] text-white ${lang === "ar" ? "font-arabic" : ""}`}>
+                <Button asChild className={`w-full gap-2 bg-whatsapp hover:bg-whatsapp-hover text-white shadow-sm ${lang === "ar" ? "font-arabic" : ""}`}>
                   <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                     <MessageCircle size={18} />
                     <span>{t("تواصل معنا عبر واتساب", "Contact us via WhatsApp")}</span>
@@ -142,15 +147,22 @@ export function Layout({ children }: { children: ReactNode }) {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             <div>
-              <div className="flex items-center gap-3 mb-6 bg-white/10 p-4 rounded-lg inline-block">
-                <img 
-                  src={`${import.meta.env.BASE_URL}logo.png`} 
-                  alt="Al-Ameri Logo" 
-                  className="h-16 w-auto filter brightness-0 invert"
-                  onError={(e) => {
-                    e.currentTarget.src = "https://via.placeholder.com/150x50?text=Logo";
-                  }}
+              <div className="flex items-center gap-4 mb-6">
+                <img
+                  src={`${import.meta.env.BASE_URL}logo-mark-white.png`}
+                  alt="Al-Ameri Travel Agency"
+                  className="h-14 w-auto object-contain"
+                  width={406}
+                  height={382}
                 />
+                <div className="leading-tight">
+                  <span className={`block text-lg font-bold text-white ${lang === "ar" ? "font-arabic" : ""}`}>
+                    {t("وكالة العامري للسفر", "Al-Ameri Travel Agency")}
+                  </span>
+                  <span className="block text-[11px] text-white/60 font-sans uppercase tracking-[0.18em] mt-1">
+                    Al-Ameri Travel Agency
+                  </span>
+                </div>
               </div>
               <p className={`text-secondary-foreground/80 mb-6 leading-relaxed ${lang === "ar" ? "font-arabic" : ""}`}>
                 {t(
@@ -161,9 +173,8 @@ export function Layout({ children }: { children: ReactNode }) {
             </div>
 
             <div>
-              <h3 className={`text-lg font-bold mb-6 text-white relative inline-block ${lang === "ar" ? "font-arabic" : ""}`}>
+              <h3 className={`heading-rule text-lg font-bold mb-6 text-white ${lang === "ar" ? "font-arabic" : ""}`}>
                 {t("روابط سريعة", "Quick Links")}
-                <span className={`absolute -bottom-2 ${lang === "ar" ? "right-0" : "left-0"} w-1/2 h-1 bg-accent rounded-full`}></span>
               </h3>
               <ul className={`space-y-3 ${lang === "ar" ? "font-arabic" : ""}`}>
                 {navLinks.slice(1, 6).map((link) => (
@@ -178,9 +189,8 @@ export function Layout({ children }: { children: ReactNode }) {
             </div>
 
             <div>
-              <h3 className={`text-lg font-bold mb-6 text-white relative inline-block ${lang === "ar" ? "font-arabic" : ""}`}>
+              <h3 className={`heading-rule text-lg font-bold mb-6 text-white ${lang === "ar" ? "font-arabic" : ""}`}>
                 {t("معلومات التواصل", "Contact Info")}
-                <span className={`absolute -bottom-2 ${lang === "ar" ? "right-0" : "left-0"} w-1/2 h-1 bg-accent rounded-full`}></span>
               </h3>
               <ul className={`space-y-4 ${lang === "ar" ? "font-arabic" : ""}`}>
                 <li className="flex items-start gap-3 text-secondary-foreground/80">
@@ -199,9 +209,8 @@ export function Layout({ children }: { children: ReactNode }) {
             </div>
 
             <div>
-              <h3 className={`text-lg font-bold mb-6 text-white relative inline-block ${lang === "ar" ? "font-arabic" : ""}`}>
+              <h3 className={`heading-rule text-lg font-bold mb-6 text-white ${lang === "ar" ? "font-arabic" : ""}`}>
                 {t("ساعات العمل", "Business Hours")}
-                <span className={`absolute -bottom-2 ${lang === "ar" ? "right-0" : "left-0"} w-1/2 h-1 bg-accent rounded-full`}></span>
               </h3>
               <ul className={`space-y-3 text-secondary-foreground/80 ${lang === "ar" ? "font-arabic" : ""}`}>
                 <li className="flex justify-between border-b border-white/10 pb-2">
@@ -221,7 +230,7 @@ export function Layout({ children }: { children: ReactNode }) {
           </div>
 
           <div className={`border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-secondary-foreground/60 ${lang === "ar" ? "flex-row-reverse font-arabic" : "font-sans"}`}>
-            <p>&copy; {new Date().getFullYear()} Al-Ameri Travel Agency. All rights reserved.</p>
+            <p dir="ltr" className="font-sans">&copy; {new Date().getFullYear()} Al-Ameri Travel Agency. All rights reserved.</p>
             <p dir="rtl">{t("جميع الحقوق محفوظة لوكالة العامري للسفر", "All rights reserved for Al-Ameri Travel Agency")}</p>
           </div>
         </div>
@@ -230,7 +239,7 @@ export function Layout({ children }: { children: ReactNode }) {
         href={WHATSAPP_LINK}
         target="_blank"
         rel="noopener noreferrer"
-        className={`fixed bottom-6 ${lang === "ar" ? "left-6" : "right-6"} z-50 bg-[#25D366] text-white p-4 rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 hover:scale-105 transition-all duration-300 flex items-center justify-center group`}
+        className={`fixed bottom-6 ${lang === "ar" ? "left-6" : "right-6"} z-50 bg-whatsapp hover:bg-whatsapp-hover text-white p-4 rounded-full shadow-brand-lg hover:-translate-y-1 hover:scale-105 transition-all duration-300 flex items-center justify-center group`}
         aria-label="Contact on WhatsApp"
       >
         <MessageCircle size={28} />

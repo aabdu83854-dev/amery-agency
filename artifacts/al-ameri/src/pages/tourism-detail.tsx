@@ -223,7 +223,7 @@ export default function TourismDetail() {
             <p className={`text-primary-foreground/80 mb-8 max-w-2xl mx-auto text-lg ${lang === "ar" ? "font-arabic" : ""}`}>
               {t("تواصل معنا الآن لتنظيم رحلة سياحية متكاملة تناسب ميزانيتك وتشمل حجوزات الفنادق والطيران.", "Contact us now to organize a complete tour package fitting your budget, including hotel and flight bookings.")}
             </p>
-            <Button size="lg" className={`bg-[#25D366] hover:bg-[#1DA851] text-white gap-2 font-bold px-8 py-6 text-lg rounded-full ${lang === "ar" ? "font-arabic" : ""}`} asChild>
+            <Button size="lg" className={`bg-whatsapp hover:bg-whatsapp-hover text-white gap-2 font-bold px-8 py-6 text-lg rounded-full ${lang === "ar" ? "font-arabic" : ""}`} asChild>
               <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">
                 <MessageCircle size={24} />
                 {t("احجز رحلتك الآن", "Book Your Trip Now")}

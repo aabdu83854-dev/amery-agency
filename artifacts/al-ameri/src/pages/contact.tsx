@@ -147,7 +147,7 @@ export default function Contact() {
                 {t("أرسل لنا رسالة", "Send Us a Message")}
               </h2>
               <p className={`text-sm text-muted-foreground mb-6 flex items-center gap-2 ${lang === "ar" ? "font-arabic" : ""}`}>
-                <MessageCircle className="text-[#25D366] w-4 h-4 shrink-0" />
+                <MessageCircle className="text-whatsapp w-4 h-4 shrink-0" />
                 {t("سيتم فتح واتساب برسالة جاهزة", "WhatsApp will open with a ready message")}
               </p>
 
@@ -236,7 +236,7 @@ export default function Contact() {
 
                 <Button
                   type="submit"
-                  className={`w-full h-14 text-lg rounded-xl gap-3 mt-2 bg-[#25D366] hover:bg-[#1DA851] text-white font-bold flex items-center justify-center ${lang === "ar" ? "font-arabic" : ""}`}
+                  className={`w-full h-14 text-lg rounded-xl gap-3 mt-2 bg-whatsapp hover:bg-whatsapp-hover text-white font-bold flex items-center justify-center ${lang === "ar" ? "font-arabic" : ""}`}
                 >
                   <MessageCircle className="w-6 h-6" />
                   {t("إرسال عبر واتساب", "Send via WhatsApp")}

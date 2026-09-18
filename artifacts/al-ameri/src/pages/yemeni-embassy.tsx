@@ -186,7 +186,7 @@ export default function YemeniEmbassy() {
                 href="https://wa.me/message/EVO4ES3SH4TVA1" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center h-12 px-8 rounded-full bg-[#25D366] text-white font-bold hover:bg-[#1DA851] transition-colors"
+                className="inline-flex items-center justify-center h-12 px-8 rounded-full bg-whatsapp text-white font-bold hover:bg-whatsapp-hover transition-colors"
               >
                 {t("تواصل معنا عبر واتساب", "Contact us via WhatsApp")}
               </a>
