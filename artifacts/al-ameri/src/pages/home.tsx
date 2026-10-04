@@ -69,10 +69,10 @@ export default function Home() {
   ];
 
   const stats = [
-    { value: "+10", labelAr: "سنوات خبرة", labelEn: "Years Experience", icon: <Clock /> },
-    { value: "+15", labelAr: "سفارات نتعامل معها", labelEn: "Embassies Served", icon: <Building2 /> },
-    { value: "+5000", labelAr: "عميل سعيد", labelEn: "Happy Clients", icon: <Users /> },
-    { value: "100%", labelAr: "ضمان الموثوقية", labelEn: "Trust Guarantee", icon: <CheckCircle2 /> },
+    { value: "3", labelAr: "سفارات نخدمها", labelEn: "Embassies Served", icon: <Building2 /> },
+    { value: "3", labelAr: "لغات نخدمك بها", labelEn: "Languages We Speak", icon: <Users /> },
+    { value: "5", labelAr: "خدمات تحت سقف واحد", labelEn: "Services Under One Roof", icon: <CheckCircle2 /> },
+    { value: "KL", labelAr: "مقرّنا كوالالمبور", labelEn: "Based in Kuala Lumpur", icon: <Clock /> },
   ];
 
   return (
