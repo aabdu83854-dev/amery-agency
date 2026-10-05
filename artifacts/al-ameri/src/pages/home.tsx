@@ -12,6 +12,7 @@ import {
   Users, 
   Clock, 
   Globe2,
+  GraduationCap,
   ArrowLeft,
   ArrowRight
 } from "lucide-react";
@@ -49,6 +50,15 @@ export default function Home() {
       color: "bg-blue-50"
     },
     {
+      titleAr: "الدراسة في ماليزيا",
+      titleEn: "Study in Malaysia",
+      descAr: "تسجيل في معاهد اللغة والجامعات، تجهيز الملف، والتأشيرة الطلابية.",
+      descEn: "Registration in language institutes and universities, file preparation and student visa.",
+      icon: <GraduationCap className="w-8 h-8 text-primary" />,
+      href: "/study",
+      color: "bg-indigo-50"
+    },
+    {
       titleAr: "السياحة في ماليزيا",
       titleEn: "Tourism in Malaysia",
       descAr: "اكتشف جمال ماليزيا مع برامجنا السياحية لأجمل الوجهات.",
@@ -71,7 +81,7 @@ export default function Home() {
   const stats = [
     { value: "3", labelAr: "سفارات نخدمها", labelEn: "Embassies Served", icon: <Building2 /> },
     { value: "3", labelAr: "لغات نخدمك بها", labelEn: "Languages We Speak", icon: <Users /> },
-    { value: "5", labelAr: "خدمات تحت سقف واحد", labelEn: "Services Under One Roof", icon: <CheckCircle2 /> },
+    { value: "6", labelAr: "خدمات تحت سقف واحد", labelEn: "Services Under One Roof", icon: <CheckCircle2 /> },
     { value: "KL", labelAr: "مقرّنا كوالالمبور", labelEn: "Based in Kuala Lumpur", icon: <Clock /> },
   ];
 
