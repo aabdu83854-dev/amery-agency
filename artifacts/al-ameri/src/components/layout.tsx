@@ -29,6 +29,7 @@ export function Layout({ children }: { children: ReactNode }) {
     { href: "/chinese-embassy", ar: "السفارة الصينية", en: "Chinese Embassy" },
     { href: "/yemeni-embassy", ar: "السفارة اليمنية", en: "Yemeni Embassy" },
     { href: "/american-embassy", ar: "السفارة الأمريكية", en: "American Embassy" },
+    { href: "/study", ar: "الدراسة", en: "Study" },
     { href: "/tourism", ar: "السياحة", en: "Tourism" },
     { href: "/facilitation", ar: "خدمات التسهيل", en: "Facilitation" },
     { href: "/contact", ar: "اتصل بنا", en: "Contact" },
@@ -177,7 +178,7 @@ export function Layout({ children }: { children: ReactNode }) {
                 {t("روابط سريعة", "Quick Links")}
               </h3>
               <ul className={`space-y-3 ${lang === "ar" ? "font-arabic" : ""}`}>
-                {navLinks.slice(1, 6).map((link) => (
+                {navLinks.slice(1, 7).map((link) => (
                   <li key={link.href}>
                     <Link href={link.href} className="text-secondary-foreground/80 hover:text-accent transition-colors flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-accent/50 block"></span>
