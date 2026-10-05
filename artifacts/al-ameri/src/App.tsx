@@ -12,6 +12,7 @@ import AmericanEmbassy from "@/pages/american-embassy";
 import Tourism from "@/pages/tourism";
 import TourismDetail from "@/pages/tourism-detail";
 import Facilitation from "@/pages/facilitation";
+import Study from "@/pages/study";
 import Contact from "@/pages/contact";
 
 const queryClient = new QueryClient();
@@ -26,6 +27,7 @@ function Router() {
       <Route path="/tourism" component={Tourism} />
       <Route path="/tourism/:id" component={TourismDetail} />
       <Route path="/facilitation" component={Facilitation} />
+      <Route path="/study" component={Study} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
